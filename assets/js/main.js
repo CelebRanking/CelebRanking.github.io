@@ -169,20 +169,20 @@ $(document).ready(function () {
                 rankChange = `<p style="display:inline;color:#04c604;font-size:90%">${myJson[name]['rchange']}</p>`
             }
 
-            const rankd = $('<td/>').html(`<a href="https://celebbattles.github.io/details?name=${name}" 
+            const rankd = $('<td/>').html(`<a href="https://celebranking.github.io/details?name=${name}" 
             class="leaderboard-link" target="_blank">${i} ${rankChange} </a>`);
             row.append(rankd);
 
-            const named = $('<td/>').html(`<a href="https://celebbattles.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${name}</a>`);
+            const named = $('<td/>').html(`<a href="https://celebranking.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${name}</a>`);
             row.append(named);
 
-            const ratingd = $('<td/>').html(`<a href="https://celebbattles.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${myJson[name]['rat']}</a>`);
+            const ratingd = $('<td/>').html(`<a href="https://celebranking.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${myJson[name]['rat']}</a>`);
             row.append(ratingd);
 
-            const numd = $('<td/>').html(`<a href="https://celebbattles.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${myJson[name]['num']}</a>`);
+            const numd = $('<td/>').html(`<a href="https://celebranking.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${myJson[name]['num']}</a>`);
             row.append(numd);
 
-            const winPerd = $('<td/>').html(`<a href="https://celebbattles.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${myJson[name]['winPer']}%</a>`);
+            const winPerd = $('<td/>').html(`<a href="https://celebranking.github.io/details?name=${name}" class="leaderboard-link" target="_blank">${myJson[name]['winPer']}%</a>`);
             row.append(winPerd);
 
             $('#leaderboard').append(row);
@@ -235,7 +235,7 @@ $(document).ready(function () {
             $('#name-r' + i).html(celeb);
             $('#rank-r' + i).html(`Rank ${myJson[celeb]['rank']}, ELO ${myJson[celeb]['rat']} ${myJson[celeb]['rchange'] === "-" ? "" : myJson[celeb]['rchange']}`);
             $('#img-r' + i).attr('src', `assets/img/${celeb}.jpg`);
-            $('#ahref-r' + i).attr('href', `https://celebbattles.github.io/details?name=${celeb}`)
+            $('#ahref-r' + i).attr('href', `https://celebranking.github.io/details?name=${celeb}`)
 
             i++;
 
@@ -255,7 +255,7 @@ $(document).ready(function () {
     }
     const hashes = getUrlVars();
     const celeb = hashes.name.replaceAll('%20', ' ')
-    $('#title-details').html(`CelebBattles - ${celeb}`);
+    $('#title-details').html(`CelebRanking - ${celeb}`);
 
     const alt_subs = {
         'Taylor Swift': 'WorshipTaylorSwift',
@@ -264,12 +264,12 @@ $(document).ready(function () {
 
     $.get('../../rankings.json', function (myJson) {
         const freq = myJson[celeb]['freq'].split(",")
-        const freq_str = `<a class="name-link" href="https://celebbattles.github.io/details?name=${freq[0]}">${freq[0]}</a> <br> ${freq[1]} battles, ${Number(freq[1]) - Number(freq[2])} wins (${Math.round((Number(freq[1]) - Number(freq[2])) / Number(freq[1]) * 100 * 10) / 10}%)`
+        const freq_str = `<a class="name-link" href="https://celebranking.github.io/details?name=${freq[0]}">${freq[0]}</a> <br> ${freq[1]} battles, ${Number(freq[1]) - Number(freq[2])} wins (${Math.round((Number(freq[1]) - Number(freq[2])) / Number(freq[1]) * 100 * 10) / 10}%)`
         const best = myJson[celeb]['best'].split(",")
-        const best_str = `<a class="name-link" href="https://celebbattles.github.io/details?name=${best[0]}">${best[0]}</a> <br> ${best[1]} battles, ${Number(best[1]) - Number(best[2])} wins (${Math.round((Number(best[1]) - Number(best[2])) / Number(best[1]) * 100 * 10) / 10}%)`
+        const best_str = `<a class="name-link" href="https://celebranking.github.io/details?name=${best[0]}">${best[0]}</a> <br> ${best[1]} battles, ${Number(best[1]) - Number(best[2])} wins (${Math.round((Number(best[1]) - Number(best[2])) / Number(best[1]) * 100 * 10) / 10}%)`
         const worst = myJson[celeb]['worst'].split(",")
-        const worst_str = `<a class="name-link" href="https://celebbattles.github.io/details?name=${worst[0]}">${worst[0]}</a> <br> ${worst[1]} battles, ${Number(worst[1]) - Number(worst[2])} wins (${Math.round((Number(worst[1]) - Number(worst[2])) / Number(worst[1]) * 100 * 10) / 10}%)`
-        const battle_link = `<a class="name-link" href="https://www.reddit.com/r/CelebBattles/search?q=${celeb.replaceAll(' ', '+')}&restrict_sr=on&include_over_18=on&sort=new&t=all" target="_blank">Go to Reddit</a> <img src="assets/img/external-link-square-alt-solid.svg" class="external-link"></img>`
+        const worst_str = `<a class="name-link" href="https://celebranking.github.io/details?name=${worst[0]}">${worst[0]}</a> <br> ${worst[1]} battles, ${Number(worst[1]) - Number(worst[2])} wins (${Math.round((Number(worst[1]) - Number(worst[2])) / Number(worst[1]) * 100 * 10) / 10}%)`
+        const battle_link = `<a class="name-link" href="https://www.reddit.com/r/CelebRanking/search?q=${celeb.replaceAll(' ', '+')}&restrict_sr=on&include_over_18=on&sort=new&t=all" target="_blank">Go to Reddit</a> <img src="assets/img/external-link-square-alt-solid.svg" class="external-link"></img>`
 
         $('#celeb-name').html(celeb)
         $('#celeb-img').attr('src', `assets/img/${celeb}.jpg`);
@@ -302,19 +302,19 @@ $(document).ready(function () {
     const hashes = getUrlVars();
     const celeb1 = hashes.celeb1.replaceAll('%20', ' ')
     const celeb2 = hashes.celeb2.replaceAll('%20', ' ')
-    $('#title-h2h').html(`CelebBattles - ${celeb1} | ${celeb2}`);
+    $('#title-h2h').html(`CelebRanking - ${celeb1} | ${celeb2}`);
 
     $.get('../../rankings.json', function (myJson) {
         $('#h2h-header').html(`${celeb1} | ${celeb2}`)
 
-        const searchLink = `https://www.redditpx.com/r/CelebBattles/search?q=${celeb1}+vs+${celeb2}&restrict_sr=on&include_over_18=on&sort=relevance&t=all`
+        const searchLink = `https://www.redditpx.com/r/CelebRanking/search?q=${celeb1}+vs+${celeb2}&restrict_sr=on&include_over_18=on&sort=relevance&t=all`
         $('#battle-slideshow').attr('data', searchLink);
 
         $('#h2h-celeb-1-img').attr('src', `assets/img/${celeb1}.jpg`);
         $('#h2h-celeb-2-img').attr('src', `assets/img/${celeb2}.jpg`);
 
-        $('#h2h-celeb-1-href').attr('href', `https://celebbattles.github.io/details?name=${celeb1}`);
-        $('#h2h-celeb-2-href').attr('href', `https://celebbattles.github.io/details?name=${celeb2}`);
+        $('#h2h-celeb-1-href').attr('href', `https://celebranking.github.io/details?name=${celeb1}`);
+        $('#h2h-celeb-2-href').attr('href', `https://celebranking.github.io/details?name=${celeb2}`);
 
         const c1score = myJson[celeb1]['h2h'][celeb2];
         const c2score = myJson[celeb2]['h2h'][celeb1];
@@ -381,7 +381,7 @@ $(document).ready(function () {
                 if (value.toLowerCase().startsWith(searchField.toLowerCase())) {
                     cnt++
                     $('#result').append(`<li class="list-group-item"><a class="search-result" 
-                    href="https://celebbattles.github.io/details?name=${value}">${value}</a></li>`);
+                    href="https://celebranking.github.io/details?name=${value}">${value}</a></li>`);
                 }
             })
         });

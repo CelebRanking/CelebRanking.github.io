@@ -1,4 +1,4 @@
-# Source code for celebbattles.github.io
+# Source code for celebranking.github.io
 
 Libraries used
 
