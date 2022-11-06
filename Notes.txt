@@ -1,0 +1,5 @@
+"rchange": "\u25b21" = Pfeil +1
+"rchange": "\u25b22" = Pfeil +2
+
+"rchange": "\u25bc1" = Pfeil -1
+"rchange": "\u25bc2" = Pfeil -2
