@@ -239,7 +239,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 123) {
+            if (i == 122) {
                 break;
             }
         }
@@ -261,7 +261,6 @@ $(document).ready(function () {
         'Taylor Swift': 'WorshipTaylorSwift',
         'Anya Taylor-Joy': 'Anya_TaylorJoy',
         'Jenna Ortega': 'JennaOrtegaLust',
-        'Rose Leslie': 'RoseLeslie',
         'Millie Bobby Brown': 'MillieBobbyBrown2'
     }
 
