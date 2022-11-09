@@ -261,7 +261,13 @@ $(document).ready(function () {
         'Taylor Swift': 'WorshipTaylorSwift',
         'Anya Taylor-Joy': 'Anya_TaylorJoy',
         'Jenna Ortega': 'JennaOrtegaLust',
-        'Millie Bobby Brown': 'MillieBobbyBrown2'
+        'Millie Bobby Brown': 'MillieBobbyBrown2',
+        'Florence Pugh': 'FlorencePughNSFW',
+        'Dua Lipa': 'DuaLipaGW',
+        'Selena Gomez': 'SelenaGomezLust',
+        'Olivia Rodrigo': 'OliviaRodrigoNSFW',
+        'Lili Reinhart': 'LiliReinhartGW',
+        'Sydney Sweeney': 'SydneySweeneyGW'
     }
 
     $.get('../../rankings.json', function (myJson) {
