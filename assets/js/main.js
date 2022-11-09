@@ -239,7 +239,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 32) {
+            if (i == 123) {
                 break;
             }
         }
