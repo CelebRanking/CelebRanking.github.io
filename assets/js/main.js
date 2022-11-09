@@ -260,7 +260,9 @@ $(document).ready(function () {
     const alt_subs = {
         'Taylor Swift': 'WorshipTaylorSwift',
         'Anya Taylor-Joy': 'Anya_TaylorJoy',
-        'Jenna Ortega': 'JennaOrtegaLust'
+        'Jenna Ortega': 'JennaOrtegaLust',
+        'Rose Leslie': 'RoseLeslie',
+        'Millie Bobby Brown': 'MillieBobbyBrown2'
     }
 
     $.get('../../rankings.json', function (myJson) {
