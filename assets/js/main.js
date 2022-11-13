@@ -239,7 +239,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 122) {
+            if (i == 128) {
                 break;
             }
         }
@@ -267,7 +267,9 @@ $(document).ready(function () {
         'Selena Gomez': 'SelenaGomezLust',
         'Olivia Rodrigo': 'OliviaRodrigoNSFW',
         'Lili Reinhart': 'LiliReinhartGW',
-        'Sydney Sweeney': 'SydneySweeneyGW'
+        'Sydney Sweeney': 'SydneySweeneyGW',
+        'Caity Lotz': 'CaityLotzLust',
+        'Kira Kosarin': 'KiraKosarinLewd'
     }
 
     $.get('../../rankings.json', function (myJson) {
