@@ -412,7 +412,6 @@ $(document).ready(function () {
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
             const img = $('<img/>', { id: 'img-r' + i, 'class': 'img-fluid' })
-            const job = myJson[celeb]['job'].split(",")
             ahref.append(img)
             imgDiv.append(ahref)
 
