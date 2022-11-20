@@ -399,7 +399,7 @@ $(document).ready(function () {
 });
 
 /**
- * Load images of top celebs when actress page loads
+ * Load images of celebs when actress page loads
  */
  $(document).ready(function () {
     $.get('../../rankings.json', function (myJson) {
