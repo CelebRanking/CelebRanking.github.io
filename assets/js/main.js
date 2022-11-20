@@ -406,8 +406,10 @@ $(document).ready(function () {
         if (window.location.pathname !== '/actress') {
             return;
         }
-        var i = 0;
+        var i = actress;
         for (const celeb in myJson) {
+            const job = myJson[celeb]['job'].split(",")
+
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
             const img = $('<img/>', { id: 'img-r' + i, 'class': 'img-fluid' })
@@ -433,10 +435,12 @@ $(document).ready(function () {
             $('#rank-r' + i).html(`Rank ${myJson[celeb]['rank']}, ELO ${myJson[celeb]['rat']} ${myJson[celeb]['rchange'] === "-" ? "" : myJson[celeb]['rchange']}`);
             $('#img-r' + i).attr('src', `assets/img/${celeb}.jpg`);
             $('#ahref-r' + i).attr('href', `https://celebranking.github.io/details?name=${celeb}`)
+            
+            $('#job').html(myJson[celeb]['job'])
 
             i++;
 
-            if (i == 128) {
+            if (i != actress) {
                 break;
             }
         }
