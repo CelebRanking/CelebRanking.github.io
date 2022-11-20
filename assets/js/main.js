@@ -436,7 +436,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 100) {
+            if (i == 123) {
                 break;
             }
         }
