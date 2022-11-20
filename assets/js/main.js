@@ -406,10 +406,8 @@ $(document).ready(function () {
         if (window.location.pathname !== '/actress') {
             return;
         }
-
         var i = 0;
         for (const celeb in myJson) {
-
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
             const img = $('<img/>', { id: 'img-r' + i, 'class': 'img-fluid' })
@@ -438,7 +436,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i != 128) {
+            if (i == 128) {
                 break;
             }
         }
