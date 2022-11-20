@@ -406,6 +406,11 @@ $(document).ready(function () {
         if (window.location.pathname !== '/actress') {
             return;
         }
+
+        const job = myJson[celeb]['job'].split(",")
+
+        if (job == actress) {
+
         var i = 0;
         for (const celeb in myJson) {
 
@@ -441,5 +446,6 @@ $(document).ready(function () {
                 break;
             }
          }
+        }
     });
 });
