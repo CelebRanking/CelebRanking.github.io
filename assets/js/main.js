@@ -434,7 +434,6 @@ $(document).ready(function () {
             $('#rank-r' + i).html(`Rank ${myJson[celeb]['rank']}, ELO ${myJson[celeb]['rat']} ${myJson[celeb]['rchange'] === "-" ? "" : myJson[celeb]['rchange']}`);
             $('#img-r' + i).attr('src', `assets/img/${celeb}.jpg`);
             $('#ahref-r' + i).attr('href', `https://celebranking.github.io/details?name=${celeb}`)
-            $('#job').html(myJson[celeb]['job'])
 
             i++;
 
