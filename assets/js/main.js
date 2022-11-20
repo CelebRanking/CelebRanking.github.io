@@ -407,12 +407,12 @@ $(document).ready(function () {
             return;
         }
 
-        const job = myJson[celeb]['job'].split(",")
-
-        if (job == actress) {
-
         var i = 0;
         for (const celeb in myJson) {
+
+            const job = myJson[celeb]['job'].split(",")
+
+            if (job == actress) {
 
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
