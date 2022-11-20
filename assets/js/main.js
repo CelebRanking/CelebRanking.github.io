@@ -402,7 +402,7 @@ $(document).ready(function () {
  * Load images of celebs when actress page loads
  */
  $(document).ready(function () {
-    $.get('../../rankings.json', function (myJson) {
+    $.get('../../rankings-actress.json', function (myJson) {
         if (window.location.pathname !== '/actress') {
             return;
         }
@@ -436,7 +436,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 128) {
+            if (i == 100) {
                 break;
             }
         }
