@@ -410,10 +410,6 @@ $(document).ready(function () {
         var i = 0;
         for (const celeb in myJson) {
 
-            const job = myJson[celeb]['job'].split(",")
-
-            if (job == actress) {
-
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
             const img = $('<img/>', { id: 'img-r' + i, 'class': 'img-fluid' })
@@ -445,7 +441,6 @@ $(document).ready(function () {
             if (i != 128) {
                 break;
             }
-         }
         }
     });
 });
