@@ -411,17 +411,14 @@ $(document).ready(function () {
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
             const img = $('<img/>', { id: 'img-r' + i, 'class': 'img-fluid' })
-            const job = myJson[celeb]['job'].split(",")
             ahref.append(img)
             imgDiv.append(ahref)
 
             var infoDiv = $('<div/>', { 'class': 'member-info' })
             var h4 = $('<h4/>', { id: 'name-r' + i })
             var span = $('<span/>', { id: 'rank-r' + i })
-            var job = $('<job/>', { id: 'job-r'})
             infoDiv.append(h4)
             infoDiv.append(span)
-            infoDiv.append(job)
 
             var memberDiv = $('<div/>', { 'class': 'member' })
             memberDiv.append(imgDiv)
@@ -436,7 +433,6 @@ $(document).ready(function () {
             $('#rank-r' + i).html(`Rank ${myJson[celeb]['rank']}, ELO ${myJson[celeb]['rat']} ${myJson[celeb]['rchange'] === "-" ? "" : myJson[celeb]['rchange']}`);
             $('#img-r' + i).attr('src', `assets/img/${celeb}.jpg`);
             $('#ahref-r' + i).attr('href', `https://celebranking.github.io/details?name=${celeb}`)
-            $('#job-r').html(myJson[celeb]['job'])
 
             i++;
 
