@@ -411,7 +411,7 @@ $(document).ready(function () {
             const job = myJson[celeb]['job'].split(",")
             $('#job').html(myJson[celeb]['job'])
 
-            if (job = actress) {
+            // if (job = actress) {
 
             const imgDiv = $('<div/>', { 'class': 'member-img' })
             const ahref = $('<a/>', { id: 'ahref-r' + i })
@@ -444,7 +444,7 @@ $(document).ready(function () {
             if (i != 128) {
                 break;
             }
-        }
+        // }
 
         }
     });
