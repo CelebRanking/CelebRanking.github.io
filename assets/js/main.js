@@ -442,3 +442,48 @@ $(document).ready(function () {
         }
     });
 });
+
+/**
+ * Load images of celebs when singer page loads
+ */
+ $(document).ready(function () {
+    $.get('../../rankings-actress.json', function (myJson) {
+        if (window.location.pathname !== '/singer') {
+            return;
+        }
+        var i = 0;
+        for (const celeb in myJson) {
+            const imgDiv = $('<div/>', { 'class': 'member-img' })
+            const ahref = $('<a/>', { id: 'ahref-r' + i })
+            const img = $('<img/>', { id: 'img-r' + i, 'class': 'img-fluid' })
+            ahref.append(img)
+            imgDiv.append(ahref)
+
+            var infoDiv = $('<div/>', { 'class': 'member-info' })
+            var h4 = $('<h4/>', { id: 'name-r' + i })
+            var span = $('<span/>', { id: 'rank-r' + i })
+            infoDiv.append(h4)
+            infoDiv.append(span)
+
+            var memberDiv = $('<div/>', { 'class': 'member' })
+            memberDiv.append(imgDiv)
+            memberDiv.append(infoDiv)
+
+            var colDiv = $('<div/>', { 'class': 'col-lg-3 col-md-5 d-flex align-items-stretch' })
+            colDiv.append(memberDiv)
+
+            $('#col-holder').append(colDiv)
+
+            $('#name-r' + i).html(celeb);
+            $('#rank-r' + i).html(`Rank ${myJson[celeb]['rank']}, ELO ${myJson[celeb]['rat']} ${myJson[celeb]['rchange'] === "-" ? "" : myJson[celeb]['rchange']}`);
+            $('#img-r' + i).attr('src', `assets/img/${celeb}.jpg`);
+            $('#ahref-r' + i).attr('href', `https://celebranking.github.io/details?name=${celeb}`)
+
+            i++;
+
+            if (i == 100) {
+                break;
+            }
+        }
+    });
+});
