@@ -447,7 +447,7 @@ $(document).ready(function () {
  * Load images of celebs when singer page loads
  */
  $(document).ready(function () {
-    $.get('../../rankings-actress.json', function (myJson) {
+    $.get('../../rankings-singer.json', function (myJson) {
         if (window.location.pathname !== '/singer') {
             return;
         }
