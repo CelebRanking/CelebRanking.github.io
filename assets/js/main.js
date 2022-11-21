@@ -239,7 +239,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 128) {
+            if (i == 150) {
                 break;
             }
         }
@@ -436,7 +436,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 123) {
+            if (i == 150) {
                 break;
             }
         }
@@ -481,7 +481,7 @@ $(document).ready(function () {
 
             i++;
 
-            if (i == 100) {
+            if (i == 150) {
                 break;
             }
         }
