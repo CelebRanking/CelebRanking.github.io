@@ -493,7 +493,7 @@ $(document).ready(function () {
  */
  $(document).ready(function () {
     $.get('../../rankings-wrestler.json', function (myJson) {
-        if (window.location.pathname !== '/singer') {
+        if (window.location.pathname !== '/wrestler') {
             return;
         }
         var i = 0;
