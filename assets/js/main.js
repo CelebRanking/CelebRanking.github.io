@@ -538,7 +538,7 @@ $(document).ready(function () {
  */
  $(document).ready(function () {
     $.get('../../rankings-german-celebs.json', function (myJson) {
-        if (window.location.pathname !== '/singer') {
+        if (window.location.pathname !== '/german-celebs') {
             return;
         }
         var i = 0;
