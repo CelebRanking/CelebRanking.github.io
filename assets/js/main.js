@@ -492,7 +492,7 @@ $(document).ready(function () {
  * Load images of celebs when wrestler page loads
  */
  $(document).ready(function () {
-    $.get('../../rankings-german-celebs.json', function (myJson) {
+    $.get('../../rankings-wrestler.json', function (myJson) {
         if (window.location.pathname !== '/singer') {
             return;
         }
