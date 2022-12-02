@@ -270,7 +270,16 @@ $(document).ready(function () {
         'Sydney Sweeney': 'SydneySweeneyGW',
         'Caity Lotz': 'CaityLotzLust',
         'Kira Kosarin': 'KiraKosarinLewd',
-        'Alexa Bliss': 'AlexaBliss'
+        'Asuka': 'AsukaWWE',
+        'Dana Broke': 'WrestleFap',
+        'Nikki Cross': 'Nikki_Cross',
+        'Charlotte Flair': 'Charlotte_Flair',
+        'Emma': 'tenilledashwood',
+        'Lacy Evans': 'WomenOfWrestlingPlot',
+        'Naomi': 'NaomiWWE',
+        'Natalya': 'Nattie',
+        'Sasha Banks': 'SashaBanksWWE',
+        'Zelina Vega': 'Zelina_Vega'
     }
 
     $.get('../../rankings.json', function (myJson) {
