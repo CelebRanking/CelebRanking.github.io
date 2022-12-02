@@ -269,7 +269,8 @@ $(document).ready(function () {
         'Lili Reinhart': 'LiliReinhartGW',
         'Sydney Sweeney': 'SydneySweeneyGW',
         'Caity Lotz': 'CaityLotzLust',
-        'Kira Kosarin': 'KiraKosarinLewd'
+        'Kira Kosarin': 'KiraKosarinLewd',
+        'Alexa Bliss': 'AlexaBliss'
     }
 
     $.get('../../rankings.json', function (myJson) {
