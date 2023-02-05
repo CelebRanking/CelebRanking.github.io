@@ -32,15 +32,38 @@
   <script type="text/javascript" src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
 </head>
   <body>
-    <table id="table">
-      <tr>
-        <th>Name</th>
-        <th>Rating Face</th>
-        <th>Rating Tits</th>
-        <th>Rating Ass</th>
-        <th>Rating Overall</th>
-      </tr>
-    </table>
+    <main id="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Leaderboard</h2>
+            <div>
+              <input id="search" class="search-bar" autocomplete="off" placeholder="Search">
+              <ul id="result" class="search-list"></ul>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+      <section class="team leaderboard-team">
+        <div class="container">
+          <img src="assets/img/Ajux_loader.gif" class="loading">
+          <div id="leaderboard-holder" class="row">
+            <p id="lastupdated"></p>
+            <table id="leaderboard" class="table table-dark leaderboard table-responsive">
+              <thead>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th># of Battles</th>
+                <th>Win %</th>
+              </thead>
+            </table>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>    
     <script>
       const table = document.getElementById("table");
       const request = new XMLHttpRequest();
