@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table">
+      <tr>
+        <th>Name</th>
+        <th>Rating Face</th>
+        <th>Rating Tits</th>
+        <th>Rating Ass</th>
+        <th>Rating Overall</th>
+      </tr>
+    </table>
+    <script>
+      const table = document.getElementById("table");
+      const request = new XMLHttpRequest();
+      request.open("GET", "ratings.json", true);
+      request.onload = function() {
+        if (this.status === 200) {
+          const data = JSON.parse(this.responseText);
+          for (let i = 0; i < data.length; i++) {
+            const tr = document.createElement("tr");
+            const name = document.createElement("td");
+            name.innerHTML = data[i].name;
+            tr.appendChild(name);
+            const ratingFace = document.createElement("td");
+            ratingFace.innerHTML = data[i].ratingFace;
+            tr.appendChild(ratingFace);
+            const ratingTits = document.createElement("td");
+            ratingTits.innerHTML = data[i].ratingTits;
+            tr.appendChild(ratingTits);
+            const ratingAss = document.createElement("td");
+            ratingAss.innerHTML = data[i].ratingAss;
+            tr.appendChild(ratingAss);
+            const ratingOverall = document.createElement("td");
+            ratingOverall.innerHTML = data[i].ratingOverall;
+            tr.appendChild(ratingOverall);
+            table.appendChild(tr);
+          }
+        }
+      };
+      request.send();
+    </script>
+  </body>
+</html>
