@@ -43,3 +43,7 @@ td:first-child {
 .dataTables_length select {
   margin-left: 5px;
 }
+
+.highlight {
+  background-color: #ffc107;
+}
