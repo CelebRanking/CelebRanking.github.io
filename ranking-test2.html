@@ -44,9 +44,8 @@
       <script>
         const table = document.getElementById("table");
         const tbody = table.querySelector("tbody");
-        const url = ".\ratings.json";
         const request = new XMLHttpRequest();
-        request.open("GET", url, true);
+        request.open("GET", "ratings.json", true);
         request.onload = function() {
           if (this.status === 200) {
             const data = this.responseText.trim().split("\n").map(row => row.split(","));
