@@ -6,10 +6,10 @@ $(document).ready(function() {
       data: data,
       columns: [
         { data: 'name' },
-        { data: 'rating Face' },
-        { data: 'rating Tits' },
-        { data: 'rating Ass' },
-        { data: 'rating Overall' }
+        { data: 'ratingFace' },
+        { data: 'ratingTits' },
+        { data: 'ratingAss' },
+        { data: 'ratingOverall' }
       ]
     });
 
