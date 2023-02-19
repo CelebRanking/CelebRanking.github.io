@@ -1,97 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>celebranking</title>
-  <link rel="icon" type="image/png" href="tournaments/favicon.png" />
-  <html>
-    <head>
-      <style>
-        table {
-          width: 100%;
-          border-collapse: collapse;
-        }
-        th, td {
-          border: 1px solid black;
-          padding: 8px;
-          text-align: left;
-        }
-        th {
-          background-color: lightgray;
-          cursor: pointer;
-        }
-        .asc:after {
-          content: ' ▲';
-        }
-        .desc:after {
-          content: ' ▼';
-        }
-      </style>
-    </head>
-    <body>
-      <table id="table">
-        <thead>
-          <tr>
-            <th data-column="name">Name</th>
-            <th data-column="ratingFace">RatingFace</th>
-            <th data-column="ratingTits">RatingTits</th>
-            <th data-column="ratingAss">RatingAss</th>
-            <th data-column="ratingOverall">RatingOverall</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <script>
-        const table = document.getElementById("table");
-        const tbody = table.querySelector("tbody");
-        const request = new XMLHttpRequest();
-        request.open("GET", "ratings.json", true);
-        request.onload = function() {
-          if (this.status === 200) {
-            const data = this.responseText.trim().split("\n").map(row => row.split(","));
-            const headerRow = data.shift();
-            for (let i = 0; i < headerRow.length; i++) {
-              const th = table.querySelector(`[data-column="${headerRow[i]}"]`);
-              th.addEventListener("click", () => {
-                const isAsc = th.classList.contains("asc");
-                const column = th.getAttribute("data-column");
-                data.sort((a, b) => {
-                  const aVal = isNaN(a[i]) ? a[i] : Number(a[i]);
-                  const bVal = isNaN(b[i]) ? b[i] : Number(b[i]);
-                  if (isAsc) {
-                    return aVal > bVal ? 1 : -1;
-                  } else {
-                    return aVal < bVal ? 1 : -1;
-                  }
-                });
-                tbody.innerHTML = "";
-                for (let j = 0; j < data.length; j++) {
-                  const row = data[j];
-                  const tr = document.createElement("tr");
-                  for (let k = 0; k < row.length; k++) {
-                    const td = document.createElement("td");
-                    td.textContent = row[k];
-                    tr.appendChild(td);
-                  }
-                  tbody.appendChild(tr);
+<html>
+  <head>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: lightgray;
+        cursor: pointer;
+      }
+      .asc:after {
+        content: ' ▲';
+      }
+      .desc:after {
+        content: ' ▼';
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table">
+      <thead>
+        <tr>
+          <th data-column="Name">Name</th>
+          <th data-column="RatingF">RatingF</th>
+          <th data-column="RatingT">RatingT</th>
+          <th data-column="RatingA">RatingA</th>
+          <th data-column="RatingOverall">RatingOverall</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script>
+      const table = document.getElementById("table");
+      const tbody = table.querySelector("tbody");
+      const request = new XMLHttpRequest();
+      request.open("GET", "ratings.json", true);
+      request.onload = function() {
+        if (this.status === 200) {
+          const data = this.responseText.trim().split("\n").map(row => row.split(","));
+          const headerRow = data.shift();
+          for (let i = 0; i < headerRow.length; i++) {
+            const th = table.querySelector(`[data-column="${headerRow[i]}"]`);
+            th.addEventListener("click", () => {
+              const isAsc = th.classList.contains("asc");
+              const column = th.getAttribute("data-column");
+              data.sort((a, b) => {
+                const aVal = isNaN(a[i]) ? a[i] : Number(a[i]);
+                const bVal = isNaN(b[i]) ? b[i] : Number(b[i]);
+                if (isAsc) {
+                  return aVal > bVal ? 1 : -1;
+                } else {
+                  return aVal < bVal ? 1 : -1;
                 }
-                th.classList.toggle("asc", !isAsc);
-                th.classList.toggle("desc", isAsc);
               });
-            }
-            for (let i = 0; i < data.length; i++) {
-              const row = data[i];
-              const tr = document.createElement("tr");
-              for (let j = 0; j < row.length; j++) {
-                const td = document.createElement("td");
-                td.textContent = row[j];
-                tr.appendChild(td);
+              tbody.innerHTML = "";
+              for (let j = 0; j < data.length; j++) {
+                const row = data[j];
+                const tr = document.createElement("tr");
+                for (let k = 0; k < row.length; k++) {
+                  const td = document.createElement("td");
+                  td.textContent = row[k];
+                  tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
               }
-              tbody.appendChild(tr);
-            }
+              th.classList.toggle("asc", !isAsc);
+              th.classList.toggle("desc", isAsc);
+            });
           }
-        };
-        request.send();
-      </script>
-    </body>
-  </html>
+          for (let i = 0; i < data.length; i++) {
+            const row = data[i];
+            const tr = document.createElement("tr");
+            for (let j = 0; j < row.length; j++) {
+              const td = document.createElement("td");
+              td.textContent = row[j];
+              tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+          }
+        }
+      };
+      request.send();
+    </script>
+  </body>
+</html>
