@@ -1,91 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <style>
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: left;
-      }
-      th {
-        background-color: lightgray;
-        cursor: pointer;
-      }
-      .asc:after {
-        content: ' ▲';
-      }
-      .desc:after {
-        content: ' ▼';
-      }
-    </style>
+    <title>Sortable Table Example</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
   </head>
   <body>
-    <table id="table">
+    <table id="myTable">
       <thead>
         <tr>
-          <th data-column="Name">Name</th>
-          <th data-column="RatingF">RatingF</th>
-          <th data-column="RatingT">RatingT</th>
-          <th data-column="RatingA">RatingA</th>
-          <th data-column="RatingOverall">RatingOverall</th>
+          <th>Name</th>
+          <th>Rating Face</th>
+          <th>Rating Tits</th>
+          <th>Rating Ass</th>
+          <th>Rating Overall</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody>
+      </tbody>
     </table>
-    <script>
-      const table = document.getElementById("table");
-      const tbody = table.querySelector("tbody");
-      const request = new XMLHttpRequest();
-      request.open("GET", "ratings.json", true);
-      request.onload = function() {
-        if (this.status === 200) {
-          const data = this.responseText.trim().split("\n").map(row => row.split(","));
-          const headerRow = data.shift();
-          for (let i = 0; i < headerRow.length; i++) {
-            const th = table.querySelector(`[data-column="${headerRow[i]}"]`);
-            th.addEventListener("click", () => {
-              const isAsc = th.classList.contains("asc");
-              const column = th.getAttribute("data-column");
-              data.sort((a, b) => {
-                const aVal = isNaN(a[i]) ? a[i] : Number(a[i]);
-                const bVal = isNaN(b[i]) ? b[i] : Number(b[i]);
-                if (isAsc) {
-                  return aVal > bVal ? 1 : -1;
-                } else {
-                  return aVal < bVal ? 1 : -1;
-                }
-              });
-              tbody.innerHTML = "";
-              for (let j = 0; j < data.length; j++) {
-                const row = data[j];
-                const tr = document.createElement("tr");
-                for (let k = 0; k < row.length; k++) {
-                  const td = document.createElement("td");
-                  td.textContent = row[k];
-                  tr.appendChild(td);
-                }
-                tbody.appendChild(tr);
-              }
-              th.classList.toggle("asc", !isAsc);
-              th.classList.toggle("desc", isAsc);
-            });
-          }
-          for (let i = 0; i < data.length; i++) {
-            const row = data[i];
-            const tr = document.createElement("tr");
-            for (let j = 0; j < row.length; j++) {
-              const td = document.createElement("td");
-              td.textContent = row[j];
-              tr.appendChild(td);
-            }
-            tbody.appendChild(tr);
-          }
-        }
-      };
-      request.send();
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="ranking-test2.js"></script>
   </body>
 </html>
