@@ -1,28 +1,30 @@
-.bilder {
+#situations {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-}
-
-.option {
-	margin: 10px;
-	padding: 10px;
-	border: 2px solid black;
-	cursor: pointer;
-}
-
-.option:hover {
-	background-color: lightgrey;
-}
-
-.auswahl img {
-	border: 2px solid rgb(255, 0, 0);
-	padding: 10px;
-}
-
-.ausgewaehlt {
-	border: 2px solid red;
-	padding: 10px;
-}
-
+  }
+  
+  .situation {
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 300px;
+	height: 400px;
+  }
+  
+  .situation img {
+	max-width: 100%;
+	max-height: 250px;
+	margin-bottom: 20px;
+  }
+  
+  .situation h2 {
+	margin-bottom: 10px;
+  }
+  
+  .situation p {
+	font-size: 16px;
+  }
+  

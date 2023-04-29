@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bildauswahl</title>
-	<link rel="stylesheet" type="text/css" href="interactive.css">
-</head>
-<body>
-	<h1>Bildauswahl</h1>
-	
-	<div class="bilder">
-		<div class="option" id="option1" onclick="showImage('assets/img/Hailee Steinfeld.jpg')">
-			<h2>Option 1</h2>
-			<img src="assets/img/Hailee Steinfeld.jpg" alt="Bild 1">
-			<p>Kleiner Text unter Option 1</p>
-		</div>
-		<div class="option" id="option2" onclick="showImage('assets/img/Victoria Justice.jpg')">
-			<h2>Option 2</h2>
-			<img src="assets/img/Victoria Justice.jpg" alt="Bild 2">
-			<p>Kleiner Text unter Option 2</p>
-		</div>
-		<div class="option" id="option3" onclick="showImage('assets/img/Vanessa Hudgens.jpg')">
-			<h2>Option 3</h2>
-			<img src="assets/img/Vanessa Hudgens.jpg" alt="Bild 3">
-			<p>Kleiner Text unter Option 3</p>
-		</div>
-	</div>
-	
-	<div class="auswahl">
-		<img id="ausgewaehlt" src="assets/img/Hailee Steinfeld.jpg" alt="Ausgewähltes Bild">
-	</div>
-
-	<script src="interactive.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Situationen</title>
+    <link rel="stylesheet" href="interactive.css">
+  </head>
+  <body>
+    <h1>Situationen</h1>
+    <div id="situations">
+      <div class="situation">
+        <img src="assets/img/Hailee Steinfeld.jpg" alt="Situation 1">
+        <h2>Situation 1</h2>
+        <p>Dies ist eine Beschreibung von Situation 1.</p>
+      </div>
+      <div class="situation">
+        <img src="assets/img/Zendaya.jpg" alt="Situation 2">
+        <h2>Situation 2</h2>
+        <p>Dies ist eine Beschreibung von Situation 2.</p>
+      </div>
+      <div class="situation">
+        <img src="assets/img/Gal Gadot.jpg" alt="Situation 3">
+        <h2>Situation 3</h2>
+        <p>Dies ist eine Beschreibung von Situation 3.</p>
+      </div>
+    </div>
+    <script src="interactive.js"></script>
+  </body>
 </html>
