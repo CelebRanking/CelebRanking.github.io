@@ -1,9 +1,10 @@
-const situations = document.querySelectorAll('.situation');
-situations.forEach(situation => {
-  situation.addEventListener('click', () => {
-	// Entferne die Klasse 'selected' von allen Situationen
-	situations.forEach(s => s.classList.remove('selected'));
-	// Füge die Klasse 'selected' zur angeklickten Situation hinzu
-	situation.classList.add('selected');
+const images = document.querySelectorAll(".image");
+
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    images.forEach((img) => {
+      img.classList.remove("selected");
+    });
+    image.classList.add("selected");
   });
 });
