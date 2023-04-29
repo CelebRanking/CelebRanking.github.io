@@ -1,0 +1,28 @@
+.bilder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.option {
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+.option:hover {
+	background-color: lightgrey;
+}
+
+.auswahl {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.auswahl img {
+	max-width: 500px;
+	max-height: 500px;
+	border: 2px solid black;
+}
