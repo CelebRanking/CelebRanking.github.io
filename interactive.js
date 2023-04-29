@@ -1,13 +1,11 @@
-const situations = document.querySelectorAll(".situation");
+const situationsContainer = document.getElementById('situations');
+const situationsContainer2 = document.getElementById('situations2');
 
-situations.forEach((situation) => {
-  situation.addEventListener("click", (event) => {
-    // Entfernen Sie zuerst die rote Umrandung von allen Situationen
-    situations.forEach((situation) => {
-      situation.classList.remove("selected");
-    });
-    
-    // Fügen Sie der angeklickten Situation die rote Umrandung hinzu
-    event.currentTarget.classList.add("selected");
-  });
+situationsContainer.addEventListener('click', function() {
+  situationsContainer.classList.add('hidden');
+  situationsContainer2.classList.remove('hidden');
+});
+
+situationsContainer2.addEventListener('click', function() {
+  // handle clicks on situations in the second container
 });
