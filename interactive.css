@@ -1,14 +1,9 @@
 .situation {
-	display: inline-block;
-	margin: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	margin-bottom: 10px;
 	cursor: pointer;
   }
-  
-  .hidden {
-	display: none;
-  }
-  
   .selected {
-	border: 3px solid red;
+	border-color: red;
   }
-  
