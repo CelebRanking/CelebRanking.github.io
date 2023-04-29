@@ -1,42 +1,32 @@
-const situations = [
-	{
-	  image: "assets/img/Hailee Steinfeld.jpg",
-	  title: "Situation 1",
-	  description: "Dies ist eine Beschreibung von Situation 1.",
-	  options: [
-		{
-		  image: "assets/img/Hailee Steinfeld.jpg",
-		  title: "Option 1 für Situation 1",
-		  description: "Dies ist eine Beschreibung von Option 1 für Situation 1."
-		},
-		{
-		  image: "assets/img/Zendaya.jpg",
-		  title: "Option 2 für Situation 1",
-		  description: "Dies ist eine Beschreibung von Option 2 für Situation 1."
-		},
-		{
-		  image: "assets/img/Gal Gadot.jpg",
-		  title: "Option 3 für Situation 1",
-		  description: "Dies ist eine Beschreibung von Option 3 für Situation 1."
-		}
-	  ]
-	},
-	{
-	  image: "assets/img/Zendaya.jpg",
-	  title: "Situation 2",
-	  description: "Dies ist eine Beschreibung von Situation 2.",
-	  options: [
-		{
-		  image: "assets/img/Hailee Steinfeld.jpg",
-		  title: "Option 1 für Situation 2",
-		  description: "Dies ist eine Beschreibung von Option 1 für Situation 2."
-		},
-		{
-		  image: "assets/img/Zendaya.jpg",
-		  title: "Option 2 für Situation",
-		  description: "Dies ist eine Beschreibung von Option 2 für Situation 2."
-		}
-	  ]
-	},
-]
-  
+const situations = document.querySelectorAll('.situation');
+
+situations.forEach(situation => {
+  situation.addEventListener('click', () => {
+    // Entferne zuerst alle aktiven Klassen von den Situationen
+    situations.forEach(s => {
+      s.classList.remove('active');
+    });
+    // Füge der angeklickten Situation die aktive Klasse hinzu
+    situation.classList.add('active');
+    // Erstelle neue Situationen und füge sie dem Container hinzu
+    const newSituations = `
+      <div class="situation">
+        <img src="assets/img/Asuka.jpg" alt="Situation 4">
+        <h2>Situation 4</h2>
+        <p>Dies ist eine Beschreibung von Situation 4.</p>
+      </div>
+      <div class="situation">
+        <img src="assets/img/Bayley.jpg" alt="Situation 5">
+        <h2>Situation 5</h2>
+        <p>Dies ist eine Beschreibung von Situation 5.</p>
+      </div>
+      <div class="situation">
+        <img src="assets/img/Carmella.jpg" alt="Situation 6">
+        <h2>Situation 6</h2>
+        <p>Dies ist eine Beschreibung von Situation 6.</p>
+      </div>
+    `;
+    const situationsContainer = document.getElementById('situations');
+    situationsContainer.innerHTML += newSituations;
+  });
+});
