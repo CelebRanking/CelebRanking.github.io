@@ -28,5 +28,6 @@ body {
 
 h5 {
   text-align: center;
-  margin: auto;
+  margin-top: 10;
+  margin-bottom: 10;
 }
