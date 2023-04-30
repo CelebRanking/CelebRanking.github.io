@@ -1,7 +1,10 @@
 const images = [
   "assets/img/Alexa Bliss.jpg",
   "assets/img/Bayley.jpg",
-  "assets/img/Carmella.jpg"
+  "assets/img/Carmella.jpg",
+  "assets/img/Victoria Justice.jpg",
+  "assets/img/Shakira.jpg",
+  "assets/img/Zendaya.jpg"
 ];
 
 const selectImage = (id) => {
@@ -30,3 +33,6 @@ const selectImage = (id) => {
 document.getElementById("image1").onclick = () => selectImage("image1");
 document.getElementById("image2").onclick = () => selectImage("image2");
 document.getElementById("image3").onclick = () => selectImage("image3");
+document.getElementById("image4").onclick = () => selectImage("image4");
+document.getElementById("image5").onclick = () => selectImage("image5");
+document.getElementById("image6").onclick = () => selectImage("image6");
