@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bilderauswahl</title>
+    <title>Pick your Harem</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="interactive.css">
   </head>
   <body>
     <div class="container">
+      <h1>Pick your Harem</h1>
+      <p>Gesamt Budget: <span id="budget">30</span></p>
       <div class="row">
         <div class="col-md-4">
-          <img src="assets/img/Hailee Steinfeld.jpg" class="img-fluid rounded" alt="Bild 1" id="image1">
+          <img src="assets/img/Hailee Steinfeld.jpg" class="img-fluid rounded" alt="Bild 1" id="image1" data-price="1">
           <p>Bild 1</p>
         </div>
         <div class="col-md-4">
-          <img src="assets/img/Ana De Armas.jpg" class="img-fluid rounded" alt="Bild 2" id="image2">
+          <img src="assets/img/Ana De Armas.jpg" class="img-fluid rounded" alt="Bild 2" id="image2" data-price="2">
           <p>Bild 2</p>
         </div>
         <div class="col-md-4">
-          <img src="assets/img/Gal Gadot.jpg" class="img-fluid rounded" alt="Bild 3" id="image3">
+          <img src="assets/img/Natalie Portman.jpg" class="img-fluid rounded" alt="Bild 3" id="image3" data-price="3">
           <p>Bild 3</p>
         </div>
       </div>
-      <div class="row" id="selection"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/img/Sydney Sweeney.jpg" class="img-fluid rounded" alt="Bild 4" id="image4" data-price="1">
+          <p>Bild 4</p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/Florence Pugh.jpg" class="img-fluid rounded" alt="Bild 5" id="image5" data-price="2">
+          <p>Bild 5</p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/Jenna Ortega.jpg" class="img-fluid rounded" alt="Bild 6" id="image6" data-price="3">
+          <p>Bild 6</p>
+        </div>
+      </div>
     </div>
 
     <script src="interactive.js"></script>
