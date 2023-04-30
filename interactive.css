@@ -2,3 +2,7 @@
 	margin-top: 50px;
   }
   
+  .selected {
+    border: 3px solid yellow;
+  }
+    
