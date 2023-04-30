@@ -1,25 +1,4 @@
 .container {
-	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
-  }
-  
-  .gallery {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-  }
-  
-  .image {
-	width: 200px;
-	height: 200px;
-	margin: 10px;
-	cursor: pointer;
-	border: 2px solid white;
-  }
-  
-  .selected {
-	border: 2px solid yellow;
+	margin-top: 50px;
   }
   

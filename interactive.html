@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bilder-Auswahl</title>
+    <title>Bilderauswahl</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="interactive.css">
   </head>
   <body>
     <div class="container">
-      <h1>Bilder-Auswahl</h1>
-      <div class="gallery">
-        <img src="assets/img/Hailee Steinfeld.jpg" alt="Bild 1" class="image">
-        <img src="assets/img/Ana De Armas.jpg" alt="Bild 2" class="image">
-        <img src="assets/img/Jennifer Lawrence.jpg" alt="Bild 3" class="image">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/img/Hailee Steinfeld.jpg" class="img-fluid rounded" alt="Bild 1" id="image1">
+          <p>Bild 1</p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/Ana De Armas.jpg" class="img-fluid rounded" alt="Bild 2" id="image2">
+          <p>Bild 2</p>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/Gal Gadot.jpg" class="img-fluid rounded" alt="Bild 3" id="image3">
+          <p>Bild 3</p>
+        </div>
       </div>
+      <div class="row" id="selection"></div>
     </div>
 
     <script src="interactive.js"></script>
