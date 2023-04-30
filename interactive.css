@@ -19,8 +19,7 @@ body {
 
 .info-text {
   position: absolute;
-  top: 0;
-  bottom: 10;
+  top: 10;
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
