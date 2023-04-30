@@ -34,13 +34,13 @@ const selectImage = (id) => {
   updateSelectedImages();
   };
 
-document.getElementById("image1").onclick = () => selectImage("image1");
-document.getElementById("image2").onclick = () => selectImage("image2");
-document.getElementById("image3").onclick = () => selectImage("image3");
-document.getElementById("image4").onclick = () => selectImage("image4");
-document.getElementById("image5").onclick = () => selectImage("image5");
-document.getElementById("image6").onclick = () => selectImage("image6");
-document.getElementById("image7").onclick = () => selectImage("image7");
-document.getElementById("image8").onclick = () => selectImage("image8");
-document.getElementById("image9").onclick = () => selectImage("image9");
+document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
+document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
+document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
+document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
+document.getElementById("Florence Pugh").onclick = () => selectImage("Florence Pugh");
+document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
+document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
+document.getElementById("Kate Upton").onclick = () => selectImage("Kate Upton");
+document.getElementById("Taylor Swift").onclick = () => selectImage("Taylor Swift");
 document.getElementById("copyButton").onclick = copyToClipboard;
