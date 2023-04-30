@@ -43,4 +43,15 @@ document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Orteg
 document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
 document.getElementById("Kate Upton").onclick = () => selectImage("Kate Upton");
 document.getElementById("Taylor Swift").onclick = () => selectImage("Taylor Swift");
+
+document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
+document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
+document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
+document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
+document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
+document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
+document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
+document.getElementById("Florence Pugh").onclick = () => selectImage("Florence Pugh");
+document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
+
 document.getElementById("copyButton").onclick = copyToClipboard;
