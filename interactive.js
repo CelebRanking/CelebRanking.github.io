@@ -1,16 +1,16 @@
 let budget = 30;
- const selectedImages = [];
+ const selectedcelebs = [];
 
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
         
-const updateSelectedImages = () => {
-  document.getElementById("selectedImages").value = selectedImages.join(", ");
+const updateselectedcelebs = () => {
+  document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
 }
         
 const copyToClipboard = () => {
-  const textarea = document.getElementById("selectedImages");
+  const textarea = document.getElementById("selectedcelebs");
   textarea.select();
   document.execCommand("copy");
 }
@@ -22,16 +22,16 @@ const selectImage = (id) => {
   if (selectedImage.classList.contains("selected")) {
     budget += price;
     selectedImage.classList.remove("selected");
-    const index = selectedImages.indexOf(id);
-    selectedImages.splice(index, 1);
+    const index = selectedcelebs.indexOf(id);
+    selectedcelebs.splice(index, 1);
   } else if (budget >= price) {
     budget -= price;
     selectedImage.classList.add("selected");
-    selectedImages.push(id);
+    selectedcelebs.push(id);
   }
 
   updateBudget();
-  updateSelectedImages();
+  updateselectedcelebs();
   };
 
 document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
