@@ -1,6 +1,5 @@
 .container {
   margin-top: 50px;
-  background-color: lightblue;
 }
 
 .selected {
@@ -8,5 +7,5 @@
 }
 
 .budget {
-  color: orange;
+  color: red;
 }
