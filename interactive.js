@@ -38,6 +38,6 @@ const selectImage = (id, selection) => {
   });
 };
 
-document.getElementById("image1").onclick = () => selectImage("image1");
-document.getElementById("image2").onclick = () => selectImage("image2");
-document.getElementById("image3").onclick = () => selectImage("image3");
+document.getElementById("image1").onclick = () => selectImage("image1", "selection1");
+document.getElementById("image2").onclick = () => selectImage("image2", "selection1");
+document.getElementById("image3").onclick = () => selectImage("image3", "selection1");
