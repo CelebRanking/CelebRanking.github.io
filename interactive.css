@@ -4,6 +4,8 @@ body {
 
 .container {
   margin-top: 50px;
+  border-style: solid;
+  border-color: orangered;
 }
 
 .selected {
