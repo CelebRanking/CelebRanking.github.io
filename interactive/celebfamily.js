@@ -4,9 +4,37 @@ const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
         
-const updateselectedcelebs = () => {
-  document.getElementById("selectedcelebs").value = selectedcelebs.join("Mother: , ");
-}
+// const updateselectedcelebs = () => {
+//   document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
+// }
+
+const updateSelectedCelebs = () => {
+  const formattedCelebs = selectedcelebs.map((celeb, index) => {
+    if (index === 0) {
+      return `mother: ${celeb}`;
+    } else if (index === 1) {
+      return `older sister: ${celeb}`;
+    } else if (index === 2) {
+      return `younger sister: ${celeb}`;
+    } else if (index === 3) {
+      return `1st aunt : ${celeb}`;
+    } else if (index === 4) {
+      return `2nd aunt: ${celeb}`;
+    } else if (index === 5) {
+      return `3rd aunt: ${celeb}`;
+    } else if (index === 6) {
+      return `girlfriend: ${celeb}`;
+    } else if (index === 7) {
+      return `girlfirends mother: ${celeb}`;
+    } else if (index === 8) {
+      return `girlfriends sister: ${celeb}`;
+    } else {
+      return celeb;
+    }
+  });
+  document.getElementById("selectedcelebs").value = formattedCelebs.join(", ");
+};
+
    
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
