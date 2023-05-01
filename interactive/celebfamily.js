@@ -34,14 +34,14 @@ const updateSelectedCelebs = () => {
   });
   document.getElementById("selectedcelebs").value = formattedCelebs.join(", ");
 };
-
    
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
-  textarea.value = `${getImageSelection()}`;
   textarea.select();
   document.execCommand("copy");
+  alert("Copied to clipboard!");
 };
+
 const selectImage = (id) => {
   const selectedImage = document.getElementById(id);
   const price = parseInt(selectedImage.dataset.price);
