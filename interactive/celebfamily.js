@@ -5,7 +5,7 @@ const updateBudget = () => {
 };
         
 const updateselectedcelebs = () => {
-  document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
+  document.getElementById("selectedcelebs").value = selectedcelebs.join("Mother: , ");
 }
    
 const copyToClipboard = () => {
