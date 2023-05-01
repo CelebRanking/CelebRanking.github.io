@@ -1,36 +1,51 @@
 let budget = 30;
-const selectedImages = [];
+ const selectedImages = [];
 
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
 
-const copyToClipboard = () => {
-  const textarea = document.getElementById("selectedcelebs");
-  textarea.value = `${getImageSelection()}`;
-  textarea.select();
-  document.execCommand("copy");
-};
-
 const resetSelectedImages = (row) => {
-  const images = row.querySelectorAll(".image");
-  images.forEach((image) => {
-    const id = image.id;
-    const price = parseInt(image.dataset.price);
-    if (image.classList.contains("selected")) {
-      if (selectedImages.length > 1 && selectedImages[selectedImages.length - 2].startsWith(id)) {
-        // if the previously selected image in the same row has the same id prefix
-        // it means that it belongs to the same group, so we don't need to deselect it
-        return;
-      }
-      budget += price;
-      image.classList.remove("selected");
-      const index = selectedImages.indexOf(id);
-      if (index > -1) {
-        selectedImages.splice(index, 1);
-      }
+  const selectedRowImages = Array.from(row.querySelectorAll(".selected"));
+  selectedRowImages.forEach((imgElem) => {
+    imgElem.classList.remove("selected");
+    const index = selectedImages.indexOf(imgElem.id);
+    if (index > -1) {
+      selectedImages.splice(index, 1);
     }
   });
+  updateSelectedCelebs();
+};
+        
+const updateSelectedCelebs = () => {
+  const textarea = document.getElementById("selectedcelebs");
+  textarea.value = "";
+  selectedImages.forEach((imgId) => {
+    const imgElem = document.getElementById(imgId);
+    const celebName = imgElem.nextElementSibling.textContent.split(" - ")[0];
+    textarea.value += celebName + ": " + imgElem.alt + "\n";
+  });
+};
+
+let familyMember = ["Your mother", "Your older sister", "Your younger sister"];
+const getFamilyMember = () => {
+  let selected = "";
+  for (let i = 0; i < familyMember.length; i++) {
+    if (document.getElementById(familyMember[i]).classList.contains("selected")) {
+      if (selected !== "") {
+        selected += "\n";
+      }
+      selected += `Your ${familyMember[i]}`;
+    }
+  }
+  return selected;
+}
+        
+const copyToClipboard = () => {
+  const textarea = document.getElementById("selectedcelebs");
+  textarea.value = `${getFamilyMember()}\n\n${getImageSelection()}`;
+  textarea.select();
+  document.execCommand("copy");
 };
 
 const selectImage = (id) => {
@@ -45,29 +60,18 @@ const selectImage = (id) => {
     if (index > -1) {
       selectedImages.splice(index, 1);
     }
-  } else {
+  } else if (budget >= price) {
     resetSelectedImages(row);
-    const groupPrefix = id.split("_")[0]; // the prefix of the group to which the selected image belongs
-    const groupImages = row.querySelectorAll(`[id^="${groupPrefix}"]`); // all images in the same group
-    const selectedGroupImages = Array.from(groupImages).filter((image) => image.classList.contains("selected")); // all selected images in the same group
-    if (selectedGroupImages.length === 0) {
-      // if no other image in the same group is selected
-      if (budget >= price) {
-        budget -= price;
-        selectedImage.classList.add("selected");
-        selectedImages.push(id);
-      } else {
-        alert("Not enough budget!");
-      }
-    } else {
-      alert("Only one image per row allowed!");
-    }
+    budget -= price;
+    selectedImage.classList.add("selected");
+    selectedImages.push(id);
+  } else {
+    alert("Not enough budget!");
   }
 
   updateBudget();
+  updateSelectedCelebs();
 };
-
-
 
 //mother
 document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
