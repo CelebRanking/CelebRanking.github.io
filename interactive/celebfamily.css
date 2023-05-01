@@ -32,3 +32,17 @@ body {
 .text-center {
   text-align: center;
 }
+
+#copyButton {
+  background-color: #c5a230; /* Hintergrundfarbe */
+  color: rgb(0, 0, 0); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: none; /* keine Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+}
+
+#copyButton:hover {
+  background-color: #3e8e41; /* Hintergrundfarbe beim Hover-Effekt */
+}

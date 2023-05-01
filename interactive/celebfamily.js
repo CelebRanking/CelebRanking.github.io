@@ -64,7 +64,7 @@ const selectImage = (id) => {
   }
 
   updateBudget();
-  updateselectedcelebs();
+  updateSelectedCelebs();
   };
 
 //mother
