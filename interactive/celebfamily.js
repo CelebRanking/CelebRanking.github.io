@@ -18,6 +18,11 @@ const resetSelectedImages = (row) => {
     const id = image.id;
     const price = parseInt(image.dataset.price);
     if (image.classList.contains("selected")) {
+      if (selectedImages.length > 1 && selectedImages[selectedImages.length - 2].startsWith(id)) {
+        // if the previously selected image in the same row has the same id prefix
+        // it means that it belongs to the same group, so we don't need to deselect it
+        return;
+      }
       budget += price;
       image.classList.remove("selected");
       const index = selectedImages.indexOf(id);
@@ -42,12 +47,20 @@ const selectImage = (id) => {
     }
   } else {
     resetSelectedImages(row);
-    if (budget >= price) {
-      budget -= price;
-      selectedImage.classList.add("selected");
-      selectedImages.push(id);
+    const groupPrefix = id.split("_")[0]; // the prefix of the group to which the selected image belongs
+    const groupImages = row.querySelectorAll(`[id^="${groupPrefix}"]`); // all images in the same group
+    const selectedGroupImages = Array.from(groupImages).filter((image) => image.classList.contains("selected")); // all selected images in the same group
+    if (selectedGroupImages.length === 0) {
+      // if no other image in the same group is selected
+      if (budget >= price) {
+        budget -= price;
+        selectedImage.classList.add("selected");
+        selectedImages.push(id);
+      } else {
+        alert("Not enough budget!");
+      }
     } else {
-      alert("Not enough budget!");
+      alert("Only one image per row allowed!");
     }
   }
 
@@ -91,5 +104,5 @@ document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie 
 document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
 document.getElementById("Natalie Emmanuel").onclick = () => selectImage("Natalie Emmanuel");
 document.getElementById("Elle Fanning").onclick = () => selectImage("Elle Fanning");
-
+//button
 document.getElementById("copyButton").onclick = copyToClipboard;
