@@ -1,51 +1,31 @@
 let budget = 30;
- const selectedImages = [];
+const selectedImages = [];
 
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
 
-const resetSelectedImages = (row) => {
-  const selectedRowImages = Array.from(row.querySelectorAll(".selected"));
-  selectedRowImages.forEach((imgElem) => {
-    imgElem.classList.remove("selected");
-    const index = selectedImages.indexOf(imgElem.id);
-    if (index > -1) {
-      selectedImages.splice(index, 1);
-    }
-  });
-  updateSelectedCelebs();
-};
-        
-const updateSelectedCelebs = () => {
-  const textarea = document.getElementById("selectedcelebs");
-  textarea.value = "";
-  selectedImages.forEach((imgId) => {
-    const imgElem = document.getElementById(imgId);
-    const celebName = imgElem.nextElementSibling.textContent.split(" - ")[0];
-    textarea.value += celebName + ": " + imgElem.alt + "\n";
-  });
-};
-
-let familyMember = ["Your mother", "Your older sister", "Your younger sister", "Your girlfriends sister"];
-const getFamilyMember = () => {
-  let selected = "";
-  for (let i = 0; i < familyMember.length; i++) {
-    if (document.getElementById(familyMember[i]).classList.contains("selected")) {
-      if (selected !== "") {
-        selected += "\n";
-      }
-      selected += `Your ${familyMember[i]}`;
-    }
-  }
-  return selected;
-}
-        
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
   textarea.value = `${getFamilyMember()}\n\n${getImageSelection()}`;
   textarea.select();
   document.execCommand("copy");
+};
+
+const resetSelectedImages = (row) => {
+  const images = row.querySelectorAll(".image");
+  images.forEach((image) => {
+    const id = image.id;
+    const price = parseInt(image.dataset.price);
+    if (image.classList.contains("selected")) {
+      budget += price;
+      image.classList.remove("selected");
+      const index = selectedImages.indexOf(id);
+      if (index > -1) {
+        selectedImages.splice(index, 1);
+      }
+    }
+  });
 };
 
 const selectImage = (id) => {
@@ -60,13 +40,15 @@ const selectImage = (id) => {
     if (index > -1) {
       selectedImages.splice(index, 1);
     }
-  } else if (budget >= price) {
-    resetSelectedImages(row);
-    budget -= price;
-    selectedImage.classList.add("selected");
-    selectedImages.push(id);
   } else {
-    alert("Not enough budget!");
+    resetSelectedImages(row);
+    if (budget >= price) {
+      budget -= price;
+      selectedImage.classList.add("selected");
+      selectedImages.push(id);
+    } else {
+      alert("Not enough budget!");
+    }
   }
 
   updateBudget();
