@@ -1,77 +1,35 @@
 let budget = 30;
- const selectedImages = [];
-
+ const selectedcelebs = [];
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
-
-const resetSelectedImages = (row) => {
-  const selectedRowImages = Array.from(row.querySelectorAll(".selected"));
-  selectedRowImages.forEach((imgElem) => {
-    imgElem.classList.remove("selected");
-    const index = selectedImages.indexOf(imgElem.id);
-    if (index > -1) {
-      selectedImages.splice(index, 1);
-    }
-  });
-  updateSelectedCelebs();
-};
         
-const updateSelectedCelebs = () => {
-  const textarea = document.getElementById("selectedcelebs");
-  textarea.value = "";
-  selectedImages.forEach((imgId) => {
-    const imgElem = document.getElementById(imgId);
-    const celebName = imgElem.nextElementSibling.textContent.split(" - ")[0];
-    textarea.value += celebName + ": " + imgElem.alt + "\n";
-  });
-};
-
-let familyMember = ["Your mother", "Your older sister", "Your younger sister"];
-const getFamilyMember = () => {
-  let selected = "";
-  for (let i = 0; i < familyMember.length; i++) {
-    if (document.getElementById(familyMember[i]).classList.contains("selected")) {
-      if (selected !== "") {
-        selected += "\n";
-      }
-      selected += `Your ${familyMember[i]}`;
-    }
-  }
-  return selected;
+const updateselectedcelebs = () => {
+  document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
 }
-        
+   
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
-  textarea.value = `${getFamilyMember()}\n\n${getImageSelection()}`;
+  textarea.value = `${getImageSelection()}`;
   textarea.select();
   document.execCommand("copy");
 };
-
 const selectImage = (id) => {
   const selectedImage = document.getElementById(id);
   const price = parseInt(selectedImage.dataset.price);
-  const row = selectedImage.closest(".row");
-
   if (selectedImage.classList.contains("selected")) {
     budget += price;
     selectedImage.classList.remove("selected");
-    const index = selectedImages.indexOf(id);
-    if (index > -1) {
-      selectedImages.splice(index, 1);
-    }
+    const index = selectedcelebs.indexOf(id);
+    selectedcelebs.splice(index, 1);
   } else if (budget >= price) {
-    resetSelectedImages(row);
     budget -= price;
     selectedImage.classList.add("selected");
-    selectedImages.push(id);
-  } else {
-    alert("Not enough budget!");
+    selectedcelebs.push(id);
   }
-
   updateBudget();
-  updateSelectedCelebs();
-};
+  updateselectedcelebs();
+  };
 
 //mother
 document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
