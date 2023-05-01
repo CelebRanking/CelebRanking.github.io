@@ -91,8 +91,12 @@ document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
 document.getElementById("Margot Robbie").onclick = () => selectImage("Margot Robbie");
 //aunt 2nd
 document.getElementById("Emilia Clarke").onclick = () => selectImage("Emilia Clarke");
-document.getElementById("Zoe Kravitz").onclick = () => selectImage("Zoe Kravitz");
+document.getElementById("Alexandra Daddario").onclick = () => selectImage("Alexandra Daddario");
 document.getElementById("Kaley Cuoco").onclick = () => selectImage("Kaley Cuoco");
+//aunt 3rd
+document.getElementById("Elizabeth Olsen").onclick = () => selectImage("Elizabeth Olsen");
+document.getElementById("Jennifer Lawrence").onclick = () => selectImage("Jennifer Lawrence");
+document.getElementById("Zoe Kravitz").onclick = () => selectImage("Zoe Kravitz");
 //girlfriend
 document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
 document.getElementById("Madison Beer").onclick = () => selectImage("Madison Beer");
