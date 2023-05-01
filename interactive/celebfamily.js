@@ -34,9 +34,9 @@ const selectImage = (id) => {
   updateselectedcelebs();
   };
 
-document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
-document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
-document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
+document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
+document.getElementById("Rihanna").onclick = () => selectImage("Rihanna");
+document.getElementById("Jessica Chastain").onclick = () => selectImage("Jessica Chastain");
 document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
 document.getElementById("Florence Pugh").onclick = () => selectImage("Florence Pugh");
 document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
