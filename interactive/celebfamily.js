@@ -34,24 +34,29 @@ const selectImage = (id) => {
   updateselectedcelebs();
   };
 
+//mother
 document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
 document.getElementById("Rihanna").onclick = () => selectImage("Rihanna");
 document.getElementById("Jessica Chastain").onclick = () => selectImage("Jessica Chastain");
+//older sister
 document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
 document.getElementById("Florence Pugh").onclick = () => selectImage("Florence Pugh");
+document.getElementById("Madison Pettis").onclick = () => selectImage("Madison Pettis");
+//younger sister
 document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
+document.getElementById("Millie Bobby Brown").onclick = () => selectImage("Millie Bobby Brown");
+document.getElementById("Olivia Rodrigo").onclick = () => selectImage("Olivia Rodrigo");
+//aunt
+document.getElementById("Mila Kunis").onclick = () => selectImage("Mila Kunis");
+document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
+document.getElementById("Margot Robbie").onclick = () => selectImage("Margot Robbie");
+//girlfriend
+document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
+document.getElementById("Madison Beer").onclick = () => selectImage("Madison Beer");
+document.getElementById("Lili Reinhart").onclick = () => selectImage("Lili Reinhart");
+//girlfriends mother
 document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
-document.getElementById("Kate Upton").onclick = () => selectImage("Kate Upton");
-document.getElementById("Taylor Swift").onclick = () => selectImage("Taylor Swift");
-
-document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
 document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
 document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
-document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
-document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
-document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
-document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
-document.getElementById("Florence Pugh").onclick = () => selectImage("Florence Pugh");
-document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
 
 document.getElementById("copyButton").onclick = copyToClipboard;
