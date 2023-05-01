@@ -5,12 +5,15 @@ const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
 
-const resetSelectedImages = () => {
-  selectedImages.forEach((imgId) => {
-    const imgElem = document.getElementById(imgId);
+const resetSelectedImages = (row) => {
+  const selectedRowImages = Array.from(row.querySelectorAll(".selected"));
+  selectedRowImages.forEach((imgElem) => {
     imgElem.classList.remove("selected");
+    const index = selectedImages.indexOf(imgElem.id);
+    if (index > -1) {
+      selectedImages.splice(index, 1);
+    }
   });
-  selectedImages = [];
   updateSelectedCelebs();
 };
         
@@ -53,9 +56,12 @@ const selectImage = (id) => {
   if (selectedImage.classList.contains("selected")) {
     budget += price;
     selectedImage.classList.remove("selected");
-    selectedImages = selectedImages.filter((imgId) => imgId !== id);
+    const index = selectedImages.indexOf(id);
+    if (index > -1) {
+      selectedImages.splice(index, 1);
+    }
   } else if (budget >= price) {
-    resetSelectedImages();
+    resetSelectedImages(row);
     budget -= price;
     selectedImage.classList.add("selected");
     selectedImages.push(id);
@@ -65,7 +71,7 @@ const selectImage = (id) => {
 
   updateBudget();
   updateSelectedCelebs();
-  };
+};
 
 //mother
 document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
