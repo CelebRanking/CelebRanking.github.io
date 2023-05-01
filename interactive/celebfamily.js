@@ -36,7 +36,7 @@ const selectImage = (id) => {
 
 //mother
 document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
-document.getElementById("Rihanna").onclick = () => selectImage("Rihanna");
+document.getElementById("Gal Gadot").onclick = () => selectImage("Gal Gadot");
 document.getElementById("Jessica Chastain").onclick = () => selectImage("Jessica Chastain");
 //older sister
 document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
@@ -51,7 +51,7 @@ document.getElementById("Mila Kunis").onclick = () => selectImage("Mila Kunis");
 document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
 document.getElementById("Margot Robbie").onclick = () => selectImage("Margot Robbie");
 //aunt 2nd
-document.getElementById("Gal Gadot").onclick = () => selectImage("Gal Gadot");
+document.getElementById("Emilia Clarke").onclick = () => selectImage("Emilia Clarke");
 document.getElementById("Zoe Kravitz").onclick = () => selectImage("Zoe Kravitz");
 document.getElementById("Kaley Cuoco").onclick = () => selectImage("Kaley Cuoco");
 //girlfriend
