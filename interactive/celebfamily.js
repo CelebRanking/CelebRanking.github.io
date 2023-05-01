@@ -89,7 +89,7 @@ document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity 
 document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
 //girlfriends sister
 document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
-document.getElementById("Elle Fanning").onclick = () => selectImage("Elle Fanning");
 document.getElementById("Natalie Emmanuel").onclick = () => selectImage("Natalie Emmanuel");
+document.getElementById("Elle Fanning").onclick = () => selectImage("Elle Fanning");
 
 document.getElementById("copyButton").onclick = copyToClipboard;
