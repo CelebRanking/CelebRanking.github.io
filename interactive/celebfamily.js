@@ -9,7 +9,7 @@ const updateselectedcelebs = () => {
   document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
 }
 
-let familyMember = ["Mother", "Sister", "Older Sister"];
+let familyMember = ["Your mother", "Your older sister", "Your younger sister"];
 const getFamilyMember = () => {
   let selected = "";
   for (let i = 0; i < familyMember.length; i++) {
