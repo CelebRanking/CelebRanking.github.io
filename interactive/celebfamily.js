@@ -27,7 +27,7 @@ const updateSelectedCelebs = () => {
   });
 };
 
-let familyMember = ["Your mother", "Your older sister", "Your younger sister"];
+let familyMember = ["Your mother", "Your older sister", "Your younger sister", "Your girlfriends sister"];
 const getFamilyMember = () => {
   let selected = "";
   for (let i = 0; i < familyMember.length; i++) {
