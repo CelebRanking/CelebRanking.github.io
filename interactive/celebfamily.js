@@ -69,12 +69,12 @@ document.getElementById("Florence Pugh").onclick = () => selectImage("Florence P
 document.getElementById("Madison Pettis").onclick = () => selectImage("Madison Pettis");
 //younger sister
 document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
-document.getElementById("Millie Bobby Brown").onclick = () => selectImage("Millie Bobby Brown");
 document.getElementById("Olivia Rodrigo").onclick = () => selectImage("Olivia Rodrigo");
+document.getElementById("Millie Bobby Brown").onclick = () => selectImage("Millie Bobby Brown");
 //aunt 1st
-document.getElementById("Mila Kunis").onclick = () => selectImage("Mila Kunis");
-document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
 document.getElementById("Margot Robbie").onclick = () => selectImage("Margot Robbie");
+document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
+document.getElementById("Mila Kunis").onclick = () => selectImage("Mila Kunis");
 //aunt 2nd
 document.getElementById("Emilia Clarke").onclick = () => selectImage("Emilia Clarke");
 document.getElementById("Alexandra Daddario").onclick = () => selectImage("Alexandra Daddario");
@@ -89,8 +89,8 @@ document.getElementById("Madison Beer").onclick = () => selectImage("Madison Bee
 document.getElementById("Lili Reinhart").onclick = () => selectImage("Lili Reinhart");
 //girlfriends mother
 document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
-document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
 document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
+document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
 //girlfriends sister
 document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
 document.getElementById("Natalie Emmanuel").onclick = () => selectImage("Natalie Emmanuel");
