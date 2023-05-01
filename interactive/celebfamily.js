@@ -1,13 +1,28 @@
 let budget = 30;
- const selectedcelebs = [];
+ const selectedImages = [];
 
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
+
+const resetSelectedImages = () => {
+  selectedImages.forEach((imgId) => {
+    const imgElem = document.getElementById(imgId);
+    imgElem.classList.remove("selected");
+  });
+  selectedImages = [];
+  updateSelectedCelebs();
+};
         
-const updateselectedcelebs = () => {
-  document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
-}
+const updateSelectedCelebs = () => {
+  const textarea = document.getElementById("selectedcelebs");
+  textarea.value = "";
+  selectedImages.forEach((imgId) => {
+    const imgElem = document.getElementById(imgId);
+    const celebName = imgElem.nextElementSibling.textContent.split(" - ")[0];
+    textarea.value += celebName + ": " + imgElem.alt + "\n";
+  });
+};
 
 let familyMember = ["Your mother", "Your older sister", "Your younger sister"];
 const getFamilyMember = () => {
@@ -33,16 +48,19 @@ const copyToClipboard = () => {
 const selectImage = (id) => {
   const selectedImage = document.getElementById(id);
   const price = parseInt(selectedImage.dataset.price);
+  const row = selectedImage.closest(".row");
 
   if (selectedImage.classList.contains("selected")) {
     budget += price;
     selectedImage.classList.remove("selected");
-    const index = selectedcelebs.indexOf(id);
-    selectedcelebs.splice(index, 1);
+    selectedImages = selectedImages.filter((imgId) => imgId !== id);
   } else if (budget >= price) {
+    resetSelectedImages();
     budget -= price;
     selectedImage.classList.add("selected");
-    selectedcelebs.push(id);
+    selectedImages.push(id);
+  } else {
+    alert("Not enough budget!");
   }
 
   updateBudget();
