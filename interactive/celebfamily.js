@@ -74,8 +74,8 @@ document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee 
 document.getElementById("Madison Beer").onclick = () => selectImage("Madison Beer");
 document.getElementById("Lili Reinhart").onclick = () => selectImage("Lili Reinhart");
 //girlfriends mother
-document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
 document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
+document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity Jones");
 document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
 //girlfriends sister
 document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
