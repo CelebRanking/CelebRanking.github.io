@@ -8,12 +8,27 @@ const updateBudget = () => {
 const updateselectedcelebs = () => {
   document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
 }
+
+let familyMember = ["Mother", "Sister", "Older Sister"];
+const getFamilyMember = () => {
+  let selected = "";
+  for (let i = 0; i < familyMember.length; i++) {
+    if (document.getElementById(familyMember[i]).classList.contains("selected")) {
+      if (selected !== "") {
+        selected += "\n";
+      }
+      selected += `Your ${familyMember[i]}`;
+    }
+  }
+  return selected;
+}
         
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
+  textarea.value = `${getFamilyMember()}\n\n${getImageSelection()}`;
   textarea.select();
   document.execCommand("copy");
-}
+};
 
 const selectImage = (id) => {
   const selectedImage = document.getElementById(id);
