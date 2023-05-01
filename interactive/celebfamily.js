@@ -7,7 +7,7 @@ const updateBudget = () => {
 
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
-  textarea.value = `${getFamilyMember()}\n\n${getImageSelection()}`;
+  textarea.value = `${getImageSelection()}`;
   textarea.select();
   document.execCommand("copy");
 };
@@ -44,6 +44,7 @@ const selectImage = (id) => {
     const index = selectedImages.indexOf(id);
     if (index > -1) {
       selectedImages.splice(index, 1);
+      document.getElementById("selectedcelebs").value = selectedImages.join(", ");
     }
   } else {
     resetSelectedImages(row);
@@ -56,8 +57,18 @@ const selectImage = (id) => {
         budget -= price;
         selectedImage.classList.add("selected");
         selectedImages.push(id);
+        document.getElementById("selectedcelebs").value = selectedImages.join(", ");
       } else {
         alert("Not enough budget!");
+      }
+    } else if (selectedGroupImages.length === 1 && selectedGroupImages[0].id === id) {
+      // if the selected image is the only selected image in the group
+      budget += price;
+      selectedImage.classList.remove("selected");
+      const index = selectedImages.indexOf(id);
+      if (index > -1) {
+        selectedImages.splice(index, 1);
+        document.getElementById("selectedcelebs").value = selectedImages.join(", ");
       }
     } else {
       alert("Only one image per row allowed!");
@@ -65,8 +76,8 @@ const selectImage = (id) => {
   }
 
   updateBudget();
-  updateSelectedCelebs();
 };
+
 
 //mother
 document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
