@@ -55,6 +55,7 @@ body {
   border-radius: 5px; /* abgerundete Ecken */
   font-size: 16px; /* Schriftgröße */
   cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
 }
 
 #gamehub-btn:hover {

@@ -13,26 +13,17 @@ p {
   margin-bottom: 30px;
 }
 
-.gamehub-btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+#gamehub-btn {
+  background-color: #c53030; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: none; /* keine Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
 }
 
-.gamehub-btn:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
-}
-
-.gamehub-btn:focus,
-.gamehub-btn.focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+#gamehub-btn:hover {
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
 }
