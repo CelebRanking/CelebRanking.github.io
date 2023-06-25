@@ -5,24 +5,6 @@
     <link rel="icon" type="image/png" href="../icons/favicon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="celebfamily.css">
-
-    <script>
-      // Überprüfen, ob der "pageviews"-Schlüssel im localStorage existiert
-      if(localStorage.getItem("pageviews")) {
-          // Wenn vorhanden, erhöhe den Wert um 1
-          localStorage.setItem("pageviews", parseInt(localStorage.getItem("pageviews")) + 1);
-      } else {
-          // Wenn nicht vorhanden, setze den Wert auf 1
-          localStorage.setItem("pageviews", 1);
-      }
-      
-      // Abrufen der Anzahl der Seitenaufrufe aus dem localStorage
-      var pageviews = localStorage.getItem("pageviews");
-      
-      // Anzeigen der Anzahl der Seitenaufrufe auf der Webseite
-      document.write("Anzahl der Seitenaufrufe: " + pageviews);
-  </script>
-
   </head>
   <body>
     <div class="container">
