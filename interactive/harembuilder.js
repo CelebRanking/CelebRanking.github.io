@@ -1,0 +1,91 @@
+let budget = 20;
+ const selectedcelebs = [];
+const updateBudget = () => {
+  document.getElementById("budget").textContent = budget;
+};
+        
+const updateselectedcelebs = () => {
+  document.getElementById("selectedcelebs").value = selectedcelebs.join(", ");
+}
+
+// const updateSelectedCelebs = () => {
+//   const formattedCelebs = selectedcelebs.map((celeb, index) => {
+//     if (index === 0) {
+//       return `mother: ${celeb}`;
+//     } else if (index === 1) {
+//       return `older sister: ${celeb}`;
+//     } else if (index === 2) {
+//       return `younger sister: ${celeb}`;
+//     } else if (index === 3) {
+//       return `1st aunt : ${celeb}`;
+//     } else if (index === 4) {
+//       return `2nd aunt: ${celeb}`;
+//     } else if (index === 5) {
+//       return `3rd aunt: ${celeb}`;
+//     } else if (index === 6) {
+//       return `girlfriend: ${celeb}`;
+//     } else if (index === 7) {
+//       return `girlfirends mother: ${celeb}`;
+//     } else if (index === 8) {
+//       return `girlfriends sister: ${celeb}`;
+//     } else {
+//       return celeb;
+//     }
+//   });
+//   document.getElementById("selectedcelebs").value = formattedCelebs.join(", ");
+// };
+   
+const copyToClipboard = () => {
+  const textarea = document.getElementById("selectedcelebs");
+  textarea.select();
+  document.execCommand("copy");
+  alert("Copied to clipboard!");
+};
+
+const selectImage = (id) => {
+  const selectedImage = document.getElementById(id);
+  const price = parseInt(selectedImage.dataset.price);
+  if (selectedImage.classList.contains("selected")) {
+    budget += price;
+    selectedImage.classList.remove("selected");
+    const index = selectedcelebs.indexOf(id);
+    selectedcelebs.splice(index, 1);
+  } else if (budget >= price) {
+    budget -= price;
+    selectedImage.classList.add("selected");
+    selectedcelebs.push(id);
+  }
+  updateBudget();
+  updateselectedcelebs();
+  };
+
+//5$
+document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
+document.getElementById("Emma Watson").onclick = () => selectImage("Emma Watson");
+document.getElementById("Alexandra Daddario").onclick = () => selectImage("Alexandra Daddario");
+document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
+//4$
+document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
+document.getElementById("Margot Robbie").onclick = () => selectImage("Margot Robbie");
+document.getElementById("Elizabeth Olsen").onclick = () => selectImage("Elizabeth Olsen");
+document.getElementById("Emilia Clarke").onclick = () => selectImage("Emilia Clarke");
+//3$
+document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
+document.getElementById("Olivia Rodrigo").onclick = () => selectImage("Olivia Rodrigo");
+document.getElementById("Brie Larson").onclick = () => selectImage("Brie Larson");
+document.getElementById("Madison Beer").onclick = () => selectImage("Madison Beer");
+//2$
+document.getElementById("Gal Gadot").onclick = () => selectImage("Gal Gadot");
+document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
+document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
+document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
+//1$
+document.getElementById("Zendaya").onclick = () => selectImage("Zendaya");
+document.getElementById("Taylor Swift").onclick = () => selectImage("Taylor Swift");
+document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
+document.getElementById("Dua Lipa").onclick = () => selectImage("Dua Lipa");
+//buttons
+document.getElementById("copyButton").onclick = copyToClipboard;
+document.getElementById("gamehub-btn").addEventListener("click", function() {
+  window.location.href = "interactive-hub.html";
+});
