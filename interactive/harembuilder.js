@@ -28,6 +28,8 @@ const selectImage = (id) => {
     budget -= price;
     selectedImage.classList.add("selected");
     selectedcelebs.push(id);
+  } else {
+    alert("Budget is already spent!");
   }
   updateBudget();
   updateselectedcelebs();
