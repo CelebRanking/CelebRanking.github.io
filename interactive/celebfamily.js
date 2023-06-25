@@ -95,5 +95,8 @@ document.getElementById("Felicity Jones").onclick = () => selectImage("Felicity 
 document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
 document.getElementById("Natalie Emmanuel").onclick = () => selectImage("Natalie Emmanuel");
 document.getElementById("Elle Fanning").onclick = () => selectImage("Elle Fanning");
-//button
+//buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
+document.getElementById("gamehub-btn").addEventListener("click", function() {
+  window.location.href = "interactive-hub.html";
+});
