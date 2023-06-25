@@ -47,7 +47,7 @@ body {
   background-color: #3e8e41; /* Hintergrundfarbe beim Hover-Effekt */
 }
 
-.gamehub-btn {
+#gamehub-btn {
   background-color: #c53030; /* Hintergrundfarbe */
   color: rgb(255, 255, 255); /* Schriftfarbe */
   padding: 10px 20px; /* Abstand von Text zum Button-Rand */
@@ -57,6 +57,6 @@ body {
   cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
 }
 
-.gamehub-btn:hover {
+#gamehub-btn:hover {
   background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
 }
