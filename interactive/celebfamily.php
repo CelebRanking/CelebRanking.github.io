@@ -25,6 +25,21 @@
 
   </head>
   <body>
+
+    <?php
+    // Dateiname für die Speicherung der Seitenaufrufe
+    $filename = "pageviews.txt";
+
+    // Lesen des aktuellen Seitenaufruf-Zählers aus der Datei
+    $pageviews = (int)file_get_contents($filename);
+
+    // Erhöhen des Zählers um 1
+    $pageviews++;
+
+    // Speichern des aktualisierten Zählers in der Datei
+    file_put_contents($filename, $pageviews);
+    ?>
+
     <div class="container">
       <h1>Pick your movie celeb family</h1>
         <div class="budget">  
