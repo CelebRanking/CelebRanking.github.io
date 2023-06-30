@@ -52,7 +52,7 @@ document.getElementById("Lili Reinhart").onclick = () => selectImage("Lili Reinh
 document.getElementById("Chloe Grace Moretz").onclick = () => selectImage("Chloe Grace Moretz");
 //2$
 document.getElementById("Sabrina Carpenter").onclick = () => selectImage("Sabrina Carpenter");
-document.getElementById("Katherine McNamara").onclick = () => selectImage("Katherine McNamara");
+document.getElementById("Florence Pugh").onclick = () => selectImage("Florence Pugh");
 document.getElementById("Leni Klum").onclick = () => selectImage("Leni Klum");
 document.getElementById("Amanda Seyfried").onclick = () => selectImage("Amanda Seyfried");
 //1$
