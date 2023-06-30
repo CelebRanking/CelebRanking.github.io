@@ -40,7 +40,7 @@ body {
 
 #copyButton {
   background-color: orangered; /* Hintergrundfarbe */
-  color: rgb(0, 0, 0); /* Schriftfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
   padding: 10px 20px; /* Abstand von Text zum Button-Rand */
   border: none; /* keine Umrandung */
   border-radius: 5px; /* abgerundete Ecken */
