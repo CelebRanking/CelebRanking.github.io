@@ -63,5 +63,5 @@ document.getElementById("Dua Lipa").onclick = () => selectImage("Dua Lipa");
 //buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
 document.getElementById("gamehub-btn").addEventListener("click", function() {
-  window.location.href = "interactive-hub.html";
+  window.location.href = "gamehub.html";
 });

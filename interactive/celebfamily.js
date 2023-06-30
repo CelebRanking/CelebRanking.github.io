@@ -98,5 +98,5 @@ document.getElementById("Elle Fanning").onclick = () => selectImage("Elle Fannin
 //buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
 document.getElementById("gamehub-btn").addEventListener("click", function() {
-  window.location.href = "interactive-hub.html";
+  window.location.href = "gamehub.html";
 });
