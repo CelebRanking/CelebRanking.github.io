@@ -44,11 +44,11 @@ document.getElementById("Taylor Swift").onclick = () => selectImage("Taylor Swif
 document.getElementById("Jennifer Lawrence").onclick = () => selectImage("Jennifer Lawrence");
 document.getElementById("Kate Upton").onclick = () => selectImage("Kate Upton");
 document.getElementById("Brie Larson").onclick = () => selectImage("Brie Larson");
-document.getElementById("Anya Taylor Joy").onclick = () => selectImage("Anya Taylor Joy");
+document.getElementById("Anya Taylor-Joy").onclick = () => selectImage("Anya Taylor-Joy");
 //3$
 document.getElementById("Dove Cameron").onclick = () => selectImage("Dove Cameron");
 document.getElementById("Sophie Turner").onclick = () => selectImage("Sophie Turner");
-document.getElementById("Lilli Reinhart").onclick = () => selectImage("Lilli Reinhart");
+document.getElementById("Lili Reinhart").onclick = () => selectImage("Lili Reinhart");
 document.getElementById("Chloe Grace Moretz").onclick = () => selectImage("Chloe Grace Moretz");
 //2$
 document.getElementById("Sabrina Carpenter").onclick = () => selectImage("Sabrina Carpenter");
@@ -59,7 +59,7 @@ document.getElementById("Amenda Seyfried").onclick = () => selectImage("Amenda S
 document.getElementById("Kate Hudson").onclick = () => selectImage("Kate Hudson");
 document.getElementById("Charlize Theron").onclick = () => selectImage("Charlize Theron");
 document.getElementById("Blake Lively").onclick = () => selectImage("Blake Lively");
-document.getElementById("Peyton List").onclick = () => selectImage("Peyton List");
+document.getElementById("Dakota Fanning").onclick = () => selectImage("Dakota Fanning");
 //buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
 document.getElementById("gamehub-btn").addEventListener("click", function() {
