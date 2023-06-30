@@ -6,7 +6,7 @@ body {
 .container {
   margin-top: 50px;
   border-style: solid;
-  border-color: violet;
+  border-color: rgb(224, 160, 64);
 }
 
 .selected {

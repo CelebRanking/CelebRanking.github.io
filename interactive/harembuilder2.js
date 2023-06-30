@@ -36,30 +36,30 @@ const selectImage = (id) => {
   };
 
 //5$
-document.getElementById("Ana De Armas").onclick = () => selectImage("Ana De Armas");
-document.getElementById("Emma Watson").onclick = () => selectImage("Emma Watson");
-document.getElementById("Alexandra Daddario").onclick = () => selectImage("Alexandra Daddario");
-document.getElementById("Hailee Steinfeld").onclick = () => selectImage("Hailee Steinfeld");
-//4$
 document.getElementById("Sydney Sweeney").onclick = () => selectImage("Sydney Sweeney");
 document.getElementById("Margot Robbie").onclick = () => selectImage("Margot Robbie");
 document.getElementById("Elizabeth Olsen").onclick = () => selectImage("Elizabeth Olsen");
-document.getElementById("Emilia Clarke").onclick = () => selectImage("Emilia Clarke");
-//3$
-document.getElementById("Jenna Ortega").onclick = () => selectImage("Jenna Ortega");
-document.getElementById("Olivia Rodrigo").onclick = () => selectImage("Olivia Rodrigo");
-document.getElementById("Brie Larson").onclick = () => selectImage("Brie Larson");
-document.getElementById("Madison Beer").onclick = () => selectImage("Madison Beer");
-//2$
-document.getElementById("Gal Gadot").onclick = () => selectImage("Gal Gadot");
-document.getElementById("Megan Fox").onclick = () => selectImage("Megan Fox");
-document.getElementById("Natalie Portman").onclick = () => selectImage("Natalie Portman");
-document.getElementById("Scarlett Johansson").onclick = () => selectImage("Scarlett Johansson");
-//1$
-document.getElementById("Zendaya").onclick = () => selectImage("Zendaya");
 document.getElementById("Taylor Swift").onclick = () => selectImage("Taylor Swift");
-document.getElementById("Victoria Justice").onclick = () => selectImage("Victoria Justice");
-document.getElementById("Dua Lipa").onclick = () => selectImage("Dua Lipa");
+//4$
+document.getElementById("Jennifer Lawrence").onclick = () => selectImage("Jennifer Lawrence");
+document.getElementById("Kate Upton").onclick = () => selectImage("Kate Upton");
+document.getElementById("Brie Larson").onclick = () => selectImage("Brie Larson");
+document.getElementById("Anya Taylor Joy").onclick = () => selectImage("Anya Taylor Joy");
+//3$
+document.getElementById("Dove Cameron").onclick = () => selectImage("Dove Cameron");
+document.getElementById("Sophie Turner").onclick = () => selectImage("Sophie Turner");
+document.getElementById("Lilli Reinhart").onclick = () => selectImage("Lilli Reinhart");
+document.getElementById("Chloe Grace Moretz").onclick = () => selectImage("Chloe Grace Moretz");
+//2$
+document.getElementById("Sabrina Carpenter").onclick = () => selectImage("Sabrina Carpenter");
+document.getElementById("Katherine McNamara").onclick = () => selectImage("Katherine McNamara");
+document.getElementById("Leni Klum").onclick = () => selectImage("Leni Klum");
+document.getElementById("Amenda Seyfried").onclick = () => selectImage("Amenda Seyfried");
+//1$
+document.getElementById("Kate Hudson").onclick = () => selectImage("Kate Hudson");
+document.getElementById("Charlize Theron").onclick = () => selectImage("Charlize Theron");
+document.getElementById("Blake Lively").onclick = () => selectImage("Blake Lively");
+document.getElementById("Peyton List").onclick = () => selectImage("Peyton List");
 //buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
 document.getElementById("gamehub-btn").addEventListener("click", function() {
