@@ -7,6 +7,7 @@ body {
   margin-top: 50px;
   border-style: solid;
   border-color: rgb(224, 160, 64);
+  color: gold;
 }
 
 .selected {
@@ -25,7 +26,7 @@ body {
 }
 
 .col-12 h5 {
-  color: white;
+  color: gold;
   text-align: center;
   margin-top: 10;
   margin-bottom: 10;
@@ -33,12 +34,12 @@ body {
 }
 
 .text-center {
-  color: white;
+  color: gold;
   text-align: center;
 }
 
 #copyButton {
-  background-color: #c5a230; /* Hintergrundfarbe */
+  background-color: orangered; /* Hintergrundfarbe */
   color: rgb(0, 0, 0); /* Schriftfarbe */
   padding: 10px 20px; /* Abstand von Text zum Button-Rand */
   border: none; /* keine Umrandung */
@@ -48,7 +49,7 @@ body {
 }
 
 #copyButton:hover {
-  background-color: #3e8e41; /* Hintergrundfarbe beim Hover-Effekt */
+  background-color: green; /* Hintergrundfarbe beim Hover-Effekt */
 }
 
 #gamehub-btn {
