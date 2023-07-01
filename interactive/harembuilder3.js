@@ -3,12 +3,12 @@ let budget = 20;
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
-
+        
 const updateselectedcelebs = () => {
   const joinedCelebs = "My celeb harem: " + selectedcelebs.join(", ");
   document.getElementById("selectedcelebs").value = joinedCelebs;
 }
-
+   
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
   textarea.select();
