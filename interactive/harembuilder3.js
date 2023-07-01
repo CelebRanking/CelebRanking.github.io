@@ -1,12 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-});
-
 let budget = 20;
 const selectedcelebs = [];
-
-  const updateBudget = () => {
-    document.getElementById("budget").textContent = budget;
-  };
+const updateBudget = () => {
+  document.getElementById("budget").textContent = budget;
+};
         
 const updateselectedcelebs = () => {
   const joinedCelebs = "My celeb harem: " + selectedcelebs.join(", ");
