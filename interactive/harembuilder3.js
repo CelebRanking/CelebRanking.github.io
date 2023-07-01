@@ -61,7 +61,6 @@ document.getElementById("Kendall Jenner").onclick = () => selectImage("Kendall J
 document.getElementById("Diane Guerrero").onclick = () => selectImage("Diane Guerrero");
 //1$
 document.getElementById("Ariel Winter").onclick = () => selectImage("Ariel Winter");
-document.getElementById("Emmy Rossum").onclick = () => selectImage("Emmy Rossum");
 document.getElementById("Emmanuelle Chriqui").onclick = () => selectImage("Emmanuelle Chriqui");
 document.getElementById("Morena Baccarin").onclick = () => selectImage("Morena Baccarin");
 document.getElementById("Nina Dobrev").onclick = () => selectImage("Nina Dobrev");
