@@ -1,13 +1,15 @@
-let budget = 20;
- const selectedcelebs = [];
-const updateBudget = () => {
-  document.getElementById("budget").textContent = budget;
-};
+window.addEventListener("DOMContentLoaded"), () => {}
+  let budget = 20;
+  const selectedcelebs = [];
+
+  const updateBudget = () => {
+    document.getElementById("budget").textContent = budget;
+  };
         
 const updateselectedcelebs = () => {
   const joinedCelebs = "My celeb harem: " + selectedcelebs.join(", ");
   document.getElementById("selectedcelebs").value = joinedCelebs;
-}
+};
    
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
