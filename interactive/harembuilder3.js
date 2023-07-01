@@ -4,12 +4,12 @@ const selectedcelebs = [];
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
-        
+
 const updateselectedcelebs = () => {
   const joinedCelebs = "My celeb harem: " + selectedcelebs.join(", ");
   document.getElementById("selectedcelebs").value = joinedCelebs;
 }
-   
+
 const copyToClipboard = () => {
   const textarea = document.getElementById("selectedcelebs");
   textarea.select();
@@ -35,7 +35,23 @@ const selectImage = (id) => {
   updateBudget();
   updateselectedcelebs();
   document.getElementById("currentbudget").innerHTML = "Current budget: " + budget;
-  };
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  var celebrityImages = document.querySelectorAll("img[id^='celebrity']");
+
+  celebrityImages.forEach(function(image) {
+    image.addEventListener("click", function() {
+      var id = this.getAttribute("id");
+      selectImage(id);
+    });
+  });
+
+  var copyButton = document.getElementById("copyButton");
+  copyButton.addEventListener("click", function() {
+    copyToClipboard();
+  });
+});
 
 //5P
 document.getElementById("Alexandra Daddario").onclick = () => selectImage("Alexandra Daddario");
