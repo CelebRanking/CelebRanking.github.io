@@ -1,167 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Build your celeb harem #3 black hair edition</title>
-  <link rel="icon" type="image/png" href="../icons/favicon.png" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="harembuilder3.css">
+  <head>
+    <title>Build your celeb harem #2 blond hair edition</title>
+    <link rel="icon" type="image/png" href="../icons/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="harembuilder3.css">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD29N4856F"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD29N4856F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-HD29N4856F');
-  </script>
+      gtag('config', 'G-HD29N4856F');
+    </script>
 
-
-</head>
-<body>
-<h1  id="dtxt" style=" font-weight: bold;font-size: 25px; text-align:center;  position: fixed; z-index: 1; top: 0; left:0;"></h1>
-  <div class="container">
-    <h1>Build your celeb harem #3 black hair edition</h1>
-    <div class="budget">
-      <p>Total Budget: <span id="budget">20</span></p>
-    </div>
-    <div class="info-text">You have 20 Points to build your own celeb harem. Simple click on the celebs to choose them. When you're done feel free to click on the "copy to clipboard" button and past your results as a reddit comment. Have fun and thank you for playing!</div>
-    <div class="row">
-      <div class="col-12">
-        <h5>5 Points for each celeb</h5>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Build your celeb harem #2 blond hair edition</h1>
+      <div class="budget">  
+        <p>Total Budget: <span id="budget">20</span></p>
       </div>
-      <script>
-        var celebrities5 = [
-          { name: 'Alexandra Daddario', price: 5 },
-          { name: 'Hailee Steinfeld', price: 5 },
-          { name: 'Gal Gadot', price: 5 },
-          { name: 'Dua Lipa', price: 5 },
-          { name: 'Zendaya', price: 5 },
-          { name: 'Olivia Rodrigo', price: 5 },
-          { name: 'Selena Gomez', price: 5 },
-          { name: 'Selma Hayek', price: 5 },
-        ];
+      <div class="info-text">You have 20$ to build your own celeb harem. Simple click on the celebs to buy them. When you're done feel free to click on the "copy to clipboard" button and paste your results as a reddit comment. Have fun and thank you for playing!</div>
 
-        celebrities5.forEach(function(celebrity) {
-          document.write(`
-            <div class="col-md-3">
-              <img src="../assets/img/${celebrity.name}.jpg" class="img-fluid rounded" alt="${celebrity.name}" id="${celebrity.name}" data-price="${celebrity.price}">
-              <p class="text-center">${celebrity.name}</p>
-            </div>
-          `);
-        });
-      </script>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h5>4 Points for each celeb</h5>
+      <!-- Celebs -->
+      <div class="row">
+        <div class="col-12">
+          <h5>5$ for each celeb</h5>
+        </div>
+        <!-- Dynamically generate celebs from array -->
+        <div class="col-md-3" id="celeb-section-5"></div>
       </div>
-      <script>
-        var celebrities4 = [
-          { name: 'Vanessa Hudgens', price: 4 },
-          { name: 'Madison Beer', price: 4 },
-          { name: 'Mila Kunis', price: 4 },
-          { name: 'Lucy Hale', price: 4 },
-          { name: 'Nathalie Emmanuel', price: 4 },
-          { name: 'Olivia Munn', price: 4 },
-          { name: 'Zoe Kravitz', price: 4 },
-          { name: 'Megan Fox', price: 4 },
-        ];
 
-        celebrities4.forEach(function(celebrity) {
-          document.write(`
-            <div class="col-md-3">
-              <img src="../assets/img/${celebrity.name}.jpg" class="img-fluid rounded" alt="${celebrity.name}" id="${celebrity.name}" data-price="${celebrity.price}">
-              <p class="text-center">${celebrity.name}</p>
-            </div>
-          `);
-        });
-      </script>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h5>3 Points for each celeb</h5>
+      <div class="row">
+        <div class="col-12">
+          <h5>4$ for each celeb</h5>
+        </div>
+        <!-- Dynamically generate celebs from array -->
+        <div class="col-md-3" id="celeb-section-4"></div>
       </div>
-      <script>
-        var celebrities3 = [
-          { name: 'Jaime Alexander', price: 3 },
-          { name: 'Kat Dennings', price: 3 },
-          { name: 'Kira Kosarin', price: 3 },
-          { name: 'Priyanka Chopra', price: 3 },
-          { name: 'Kylie Jenner', price: 3 },
-          { name: 'Hayley Atwell', price: 3 },
-          { name: 'Naomi Scott', price: 3 },
-          { name: 'Tessa Thompson', price: 3 },
-        ];
 
-        celebrities3.forEach(function(celebrity) {
-          document.write(`
-            <div class="col-md-3">
-              <img src="../assets/img/${celebrity.name}.jpg" class="img-fluid rounded" alt="${celebrity.name}" id="${celebrity.name}" data-price="${celebrity.price}">
-              <p class="text-center">${celebrity.name}</p>
-            </div>
-          `);
-        });
-      </script>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h5>2 Points for each celeb</h5>
+      <div class="row">
+        <div class="col-12">
+          <h5>3$ for each celeb</h5>
+        </div>
+        <!-- Dynamically generate celebs from array -->
+        <div class="col-md-3" id="celeb-section-3"></div>
       </div>
-      <script>
-        var celebrities2 = [
-          { name: 'Kendall Jenner', price: 2 },
-          { name: 'Jennifer Connelly', price: 2 },
-          { name: 'Diane Guerrero', price: 2 },
-          { name: 'Maisie Williams', price: 2 },
-          { name: 'Felicity Jones', price: 2 },
-          { name: 'Ariel Winter', price: 2 },
-          { name: 'Emmy Rossum', price: 2 },
-          { name: 'Constance Wu', price: 2 },
-        ];
 
-        celebrities2.forEach(function(celebrity) {
-          document.write(`
-            <div class="col-md-3">
-              <img src="../assets/img/${celebrity.name}.jpg" class="img-fluid rounded" alt="${celebrity.name}" id="${celebrity.name}" data-price="${celebrity.price}">
-              <p class="text-center">${celebrity.name}</p>
-            </div>
-          `);
-        });
-      </script>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h5>1 Point for each celeb</h5>
+      <div class="row">
+        <div class="col-12">
+          <h5>2$ for each celeb</h5>
+        </div>
+        <!-- Dynamically generate celebs from array -->
+        <div class="col-md-3" id="celeb-section-2"></div>
       </div>
-      <script>
-        var celebrities1 = [
-          { name: 'Emmanuelle Chriqui', price: 1 },
-          { name: 'Lucy Liu', price: 1 },
-          { name: 'Kim Kardashian', price: 1 },
-          { name: 'Mary Elizabeth Winstead', price: 1 },
-          { name: 'Morena Baccarin', price: 1 },
-          { name: 'Charly Caruso', price: 1 },
-          { name: 'Anya Chalotra', price: 1 },
-          { name: 'Nina Dobrev', price: 1 },
-        ];
 
-        celebrities1.forEach(function(celebrity) {
-          document.write(`
-            <div class="col-md-3">
-              <img src="../assets/img/${celebrity.name}.jpg" class="img-fluid rounded" alt="${celebrity.name}" id="${celebrity.name}" data-price="${celebrity.price}">
-              <p class="text-center">${celebrity.name}</p>
-            </div>
-          `);
-        });
-      </script>
-    </div>
-    <h2>Selected Celebs:</h2>
-    <textarea id="selectedcelebs" rows="3" cols="50" readonly></textarea>
-    <button id="copyButton">Copy results to Clipboard</button>
-    <h6>made by u/Txmmy_CR</h6>
+      <div class="row">
+        <div class="col-12">
+          <h5>1$ for each celeb</h5>
+        </div>
+        <!-- Dynamically generate celebs from array -->
+        <div class="col-md-3" id="celeb-section-1"></div>
+      </div>
 
-    <button id="gamehub-btn">Go to Gamehub</button>
+      <h2>Selected Celebs:</h2>
+      <textarea id="selectedcelebs" rows="3" cols="50" readonly></textarea>
+      <button id="copyButton">Copy results to Clipboard</button>
+      <h6>made by u/Txmmy_CR</h6>
+
+      <button id="gamehub-btn">Go to Gamehub</button>
 
     </div>
 
