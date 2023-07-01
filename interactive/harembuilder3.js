@@ -1,6 +1,7 @@
-window.addEventListener("DOMContentLoaded"), () => {}
+document.addEventListener("DOMContentLoaded", function() {
   let budget = 20;
   const selectedcelebs = [];
+});
 
   const updateBudget = () => {
     document.getElementById("budget").textContent = budget;
