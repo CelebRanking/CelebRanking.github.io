@@ -7,7 +7,7 @@ body {
   margin-top: 50px;
   border-style: solid;
   border-color: rgb(224, 160, 64);
-  color: gold;
+  color: white;
 }
 
 .selected {
@@ -26,7 +26,7 @@ body {
 }
 
 .col-12 h5 {
-  color: gold;
+  color: white;
   text-align: center;
   margin-top: 10;
   margin-bottom: 10;
@@ -34,7 +34,7 @@ body {
 }
 
 .text-center {
-  color: gold;
+  color: white;
   text-align: center;
 }
 

@@ -1,5 +1,4 @@
 let budget = 20;
-document.getElementById("currentbudget").innerHTML = "Current budget: " + budget;
  const selectedcelebs = [];
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
@@ -34,8 +33,7 @@ const selectImage = (id) => {
   }
   updateBudget();
   updateselectedcelebs();
-  document.getElementById("currentbudget").innerHTML = "Current budget: " + budget;
-};
+  };
 
 //5P
 document.getElementById("Alexandra Daddario").onclick = () => selectImage("Alexandra Daddario");
