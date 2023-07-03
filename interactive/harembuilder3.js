@@ -43,7 +43,7 @@ document.getElementById("Dua Lipa").onclick = () => selectImage("Dua Lipa");
 //5 Points
 document.getElementById("Olivia Rodrigo").onclick = () => selectImage("Olivia Rodrigo");
 document.getElementById("Selena Gomez").onclick = () => selectImage("Selena Gomez");
-document.getElementById("Selma Hayek").onclick = () => selectImage("Selma Hayek");
+document.getElementById("Salma Hayek").onclick = () => selectImage("Salma Hayek");
 document.getElementById("Vanessa Hudgens").onclick = () => selectImage("Vanessa Hudgens");
 //4 Points
 document.getElementById("Nathalie Emmanuel").onclick = () => selectImage("Nathalie Emmanuel");
