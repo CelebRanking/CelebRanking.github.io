@@ -3,6 +3,19 @@ body {
   color: white;
 }
 
+#globalpoints {
+  color:white; 
+  background:black; 
+  font-weight: bold;
+  font-size: 25px; 
+  text-align:center;  
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left:0; 
+  text-shadow: 2px 2px black;"
+}
+
 .container {
   margin-top: 50px;
   border-style: solid;

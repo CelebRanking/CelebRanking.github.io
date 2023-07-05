@@ -33,7 +33,7 @@ const selectImage = (id) => {
   }
   updateBudget();
   updateselectedcelebs();
-  document.getElementById("dtxt").innerHTML = "POINTS: " + budget;
+  document.getElementById("globalpoints").innerHTML = "POINTS: " + budget;
   };
 
 //6 Points
