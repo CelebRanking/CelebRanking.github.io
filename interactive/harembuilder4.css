@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.container {
+  margin-top: 50px;
+  border-style: solid;
+  border-color: blueviolet;
+  color: violet;
+}
+
+.selected {
+  border: 2px solid red;
+}
+
+.budget {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.info-text {
+  color: white;
+  font-size: 16px;
+}
+
+.col-12 h5 {
+  color: violet;
+  text-align: center;
+  margin-top: 10;
+  margin-bottom: 10;
+  font-weight: bold;
+}
+
+.text-center {
+  color: violet;
+  text-align: center;
+}
+
+#copyButton {
+  background-color: orangered; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: none; /* keine Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+}
+
+#copyButton:hover {
+  background-color: green; /* Hintergrundfarbe beim Hover-Effekt */
+}
+
+#gamehub-btn {
+  background-color: #c53030; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: none; /* keine Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
+}
+
+#gamehub-btn:hover {
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
+}
