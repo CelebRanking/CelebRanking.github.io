@@ -53,8 +53,8 @@ body {
 .text-center {
   color: violet;
   text-align: center;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 #copyButton {
