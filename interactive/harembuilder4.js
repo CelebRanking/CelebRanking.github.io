@@ -55,7 +55,7 @@ document.getElementById("Debby Ryan").onclick = () => selectImage("Debby Ryan");
 // 3 Points
 document.getElementById("Rachel McAdams").onclick = () => selectImage("Rachel McAdams");
 document.getElementById("Emma Roberts").onclick = () => selectImage("Emma Roberts");
-document.getElementById("Isla Fischer").onclick = () => selectImage("Isla Fischer");
+document.getElementById("Isla Fisher").onclick = () => selectImage("Isla Fisher");
 document.getElementById("Rose Leslie").onclick = () => selectImage("Rose Leslie");
 document.getElementById("Deborah Ann Woll").onclick = () => selectImage("Deborah Ann Woll");
 document.getElementById("Kate Mara").onclick = () => selectImage("Kate Mara");
