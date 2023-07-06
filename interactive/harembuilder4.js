@@ -66,7 +66,7 @@ document.getElementById("Julianne Moore").onclick = () => selectImage("Julianne 
 document.getElementById("Sarah Snook").onclick = () => selectImage("Sarah Snook");
 document.getElementById("Jayma Mays").onclick = () => selectImage("Jayma Mays");
 document.getElementById("Zoey Deutch").onclick = () => selectImage("Zoey Deutch");
-document.getElementById("Gillian Anderson").onclick = () => selectImage("Gillian Anderson");
+document.getElementById("Lindsay Lohan").onclick = () => selectImage("Lindsay Lohan");
 
 // 1 Point
 document.getElementById("Palina Rojinski").onclick = () => selectImage("Palina Rojinski");
