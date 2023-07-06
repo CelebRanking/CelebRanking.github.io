@@ -4,7 +4,7 @@ body {
 }
 
 #globalpoints {
-  color:white; 
+  color:orange; 
   background:black; 
   font-weight: bold;
   font-size: 25px; 
@@ -13,7 +13,7 @@ body {
   z-index: 1; 
   top: 0; 
   left:0; 
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px yellow;
 }
 
 .container {
