@@ -55,6 +55,7 @@ p {
 
 #image-container img:hover {
   border-color: gold;
+  cursor: url('../icons/trophy.png'), auto;
 }
 
 #text-container {
