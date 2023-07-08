@@ -1,6 +1,8 @@
 body {
   text-align: center;
   padding-top: 100px;
+  color: gold;
+  background-color: black;
 }
 
 h1 {
@@ -34,6 +36,15 @@ p {
 
 #image-container img {
   width: 300px;
-  border: 2px solid red;
-  border-radius: 5px;
+  border-style: solid;
+  border-color: black
+}
+
+#image-container img:hover {
+  border-color: gold;
+}
+
+#text-container {
+  margin-top: 10px;
+  font-size: 20px;
 }
