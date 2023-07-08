@@ -47,7 +47,6 @@ p {
 }
 
 #image-container img {
-  cursor: auto;
   width: 300px;
   border-radius: 10px;
   border-style: solid;
@@ -56,7 +55,6 @@ p {
 
 #image-container img:hover {
   border-color: gold;
-  cursor: url('../icons/trophy.png'), auto;
 }
 
 #text-container {
