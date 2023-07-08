@@ -15,6 +15,14 @@ p {
   margin-bottom: 30px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 #gamehub-btn {
   background-color: #c53030; /* Hintergrundfarbe */
   color: rgb(255, 255, 255); /* Schriftfarbe */
