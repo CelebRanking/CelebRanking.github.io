@@ -13,6 +13,12 @@ p {
   margin-bottom: 30px;
 }
 
+.img-hailee {
+  width: 200px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
 #gamehub-btn {
   background-color: #c53030; /* Hintergrundfarbe */
   color: rgb(255, 255, 255); /* Schriftfarbe */
