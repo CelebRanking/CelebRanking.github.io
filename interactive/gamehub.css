@@ -44,10 +44,10 @@ p {
 
 #image-container {
   margin-top: 20px;
-  cursor: auto;
 }
 
 #image-container img {
+  cursor: auto;
   width: 300px;
   border-radius: 10px;
   border-style: solid;
