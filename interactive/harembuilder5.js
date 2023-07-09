@@ -37,12 +37,12 @@ const selectImage = (id) => {
   };
 
 // 5 Points
-document.getElementById("Madelaine Petsch (5)").onclick = () => selectImage("Madelaine Petsch");
-document.getElementById("Emma Stone (5)").onclick = () => selectImage("Emma Stone");
-document.getElementById("Sadie Sink (5)").onclick = () => selectImage("Sadie Sink");
-document.getElementById("Sophie Turner (5)").onclick = () => selectImage("Sophie Turner");
-document.getElementById("Jessica Chastain (5)").onclick = () => selectImage("Jessica Chastain");
-document.getElementById("Amy Adams (5)").onclick = () => selectImage("Amy Adams");
+document.getElementById("Madelaine Petsch (5)").onclick = () => selectImage("Madelaine Petsch (5)");
+document.getElementById("Emma Stone (5)").onclick = () => selectImage("Emma Stone (5)");
+document.getElementById("Sadie Sink (5)").onclick = () => selectImage("Sadie Sink (5)");
+document.getElementById("Sophie Turner (5)").onclick = () => selectImage("Sophie Turner (5)");
+document.getElementById("Jessica Chastain (5)").onclick = () => selectImage("Jessica Chastain (5)");
+document.getElementById("Amy Adams (5)").onclick = () => selectImage("Amy Adams (5)");
 
 // 4 Points
 document.getElementById("Bella Thorne").onclick = () => selectImage("Bella Thorne");
