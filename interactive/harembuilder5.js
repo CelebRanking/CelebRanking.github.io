@@ -51,7 +51,7 @@ document.getElementById("Angelina Jolie (5)").onclick = () => selectImage("Angel
 document.getElementById("Lily-Rose Depp (4)").onclick = () => selectImage("Lily-Rose Depp (4)");
 document.getElementById("Lily James (4)").onclick = () => selectImage("Lily James (4)");
 document.getElementById("Kaley Cuoco (4)").onclick = () => selectImage("Kaley Cuoco (4)");
-document.getElementById("Penélope Cruz (4)").onclick = () => selectImage("Penélope Cruz (4)");
+document.getElementById("Penelope Cruz (4)").onclick = () => selectImage("Penelope Cruz (4)");
 document.getElementById("Keira Knightley (4)").onclick = () => selectImage("Keira Knightley (4)");
 document.getElementById("Olivia Wilde (4)").onclick = () => selectImage("Olivia Wilde (4)");
 document.getElementById("Rachel McAdams (4)").onclick = () => selectImage("Rachel McAdams (4)");
