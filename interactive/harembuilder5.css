@@ -4,7 +4,7 @@ body {
 }
 
 #globalpoints {
-  color:orange; 
+  color:sandybrown; 
   background:black; 
   font-weight: bold;
   font-size: 25px; 
@@ -21,8 +21,8 @@ body {
   height:100%;
   margin-top: 50px;
   border-style: solid;
-  border-color: mediumvioletred;
-  color: orange;
+  border-color: violet;
+  color: sandybrown;
 }
 
 .selected {
@@ -43,7 +43,7 @@ body {
 }
 
 .col-12 h5 {
-  color: orange;
+  color: sandybrown;
   text-align: center;
   margin-top: 10;
   margin-bottom: 10;
@@ -51,7 +51,7 @@ body {
 }
 
 .text-center {
-  color: palevioletred;
+  color: skyblue;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
