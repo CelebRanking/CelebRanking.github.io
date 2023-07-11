@@ -56,16 +56,16 @@ document.getElementById("Keira Knightley (4)").onclick = () => selectImage("Keir
 document.getElementById("Olivia Wilde (4)").onclick = () => selectImage("Olivia Wilde (4)");
 document.getElementById("Rachel McAdams (4)").onclick = () => selectImage("Rachel McAdams (4)");
 document.getElementById("Lucy Hale (4)").onclick = () => selectImage("Lucy Hale (4)");
-document.getElementById("Amy Adams (4)").onclick = () => selectImage("Amy Adams (4)");
+document.getElementById("Alessandra Ambrosio (4)").onclick = () => selectImage("Alessandra Ambrosio (4)");
 
 // 3 Points
 document.getElementById("Eva Mendes (3)").onclick = () => selectImage("Eva Mendes (3)");
-document.getElementById("Megan Markle (3)").onclick = () => selectImage("Megan Markle (3)");
+document.getElementById("Meghan Markle (3)").onclick = () => selectImage("Meghan Markle (3)");
 document.getElementById("Kate Middleton (3)").onclick = () => selectImage("Kate Middleton (3)");
 document.getElementById("Dakota Johnson (3)").onclick = () => selectImage("Dakota Johnson (3)");
 document.getElementById("Camila Cabello (3)").onclick = () => selectImage("Camila Cabello (3)");
 document.getElementById("Priyanka Chopra (3)").onclick = () => selectImage("Priyanka Chopra (3)");
-document.getElementById("Blake Lively (3)").onclick = () => selectImage("Blake Lively (3)");
+document.getElementById("Barbara Palvin (3)").onclick = () => selectImage("Barbara Palvin (3)");
 document.getElementById("Lily Collins (3)").onclick = () => selectImage("Lily Collins (3)");
 document.getElementById("Zooey Deschanel (3)").onclick = () => selectImage("Zooey Deschanel (3)");
 
@@ -84,7 +84,7 @@ document.getElementById("Sarah Jessica Parker (2)").onclick = () => selectImage(
 document.getElementById("Sandra Bullock (1)").onclick = () => selectImage("Sandra Bullock (1)");
 document.getElementById("Jessica Alba (1)").onclick = () => selectImage("Jessica Alba (1)");
 document.getElementById("Jennifer Love Hewitt (1)").onclick = () => selectImage("Jennifer Love Hewitt (1)");
-document.getElementById("Kristen Bell (1)").onclick = () => selectImage("Kristen Bell (1)");
+document.getElementById("Margaret Qualley (1)").onclick = () => selectImage("Margaret Qualley (1)");
 document.getElementById("Ashley Benson (1)").onclick = () => selectImage("Ashley Benson (1)");
 document.getElementById("Jenna Dewan (1)").onclick = () => selectImage("Jenna Dewan (1)");
 document.getElementById("Leighton Meester (1)").onclick = () => selectImage("Leighton Meester (1)");
