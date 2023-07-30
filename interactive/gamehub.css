@@ -42,6 +42,13 @@ p {
   color: gold;
 }
 
+/* Disabled styles for the gamehub-btn */
+#gamehub-btn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
 #image-container {
   margin-top: 20px;
 }
