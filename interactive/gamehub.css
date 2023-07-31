@@ -94,3 +94,22 @@ p {
 .popup button:hover {
   background-color: blue;
 }
+
+#suggestions-btn {
+  background-color: green; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: solid; /* solid Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  border-color: black;
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
+}
+
+#suggestions-btn:hover {
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
+  border-style: solid;
+  border-color: gold;
+  color: gold;
+}

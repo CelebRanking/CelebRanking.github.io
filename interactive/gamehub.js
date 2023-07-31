@@ -17,3 +17,7 @@ image.addEventListener("click", showPopup);
 // Add click event listener to the close button
 var closeButton = document.getElementById("close-button");
 closeButton.addEventListener("click", hidePopup);
+
+document.getElementById("suggestions-btn").addEventListener("click", function() {
+  window.location.href = "suggestions.html";
+});
