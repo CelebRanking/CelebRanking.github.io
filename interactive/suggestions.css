@@ -1,11 +1,18 @@
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 100px;
+  color: gold;
+  background-color: black;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 .form-container {
@@ -25,4 +32,36 @@ iframe {
   .form-container {
       width: 95%;
   }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#gamehub-btn {
+  background-color: #c53030; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: solid; /* solid Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  border-color: black;
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
+}
+
+#gamehub-btn:hover {
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
+  border-style: solid;
+  border-color: gold;
+  color: gold;
+}
+
+#text-container {
+  margin-top: 10px;
+  font-size: 20px;
 }
