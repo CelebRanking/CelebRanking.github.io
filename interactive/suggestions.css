@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  width: 90%; /* Adjust the width as needed */
+  max-width: 800px; /* Set a maximum width to avoid stretching on larger screens */
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .form-container {
+      width: 95%;
+  }
+}
