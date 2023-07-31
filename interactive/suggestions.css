@@ -16,21 +16,23 @@ p {
 }
 
 .form-container {
-  width: 90%; /* Adjust the width as needed */
-  max-width: 800px; /* Set a maximum width to avoid stretching on larger screens */
-  height: 100%;
-}
-
-iframe {
   width: 100%;
+  max-width: 800px;
   height: 100%;
-  border: 0;
+  overflow: hidden; /* Hide horizontal scrollbar on small screens */
+  border-radius: 10px; /* Add some rounded corners for aesthetics */
 }
 
+/* Optimize for mobile devices */
 @media (max-width: 600px) {
-  /* Adjust styles for smaller screens */
   .form-container {
-      width: 95%;
+      max-width: 95%; /* Reduce max-width for better fit on small screens */
+      border-radius: 0; /* Remove border radius for full-width appearance */
+  }
+
+  iframe {
+      max-width: 100%; /* Allow iframe to expand to full width on small screens */
+      max-height: 100vh; /* Limit iframe height to the screen height to avoid overflow */
   }
 }
 
