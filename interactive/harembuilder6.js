@@ -65,7 +65,7 @@ document.getElementById("Emma Thompson").onclick = () => selectImage("Emma Thomp
 document.getElementById("Judi Dench").onclick = () => selectImage("Judi Dench");
 document.getElementById("Helen Mirren").onclick = () => selectImage("Helen Mirren");
 document.getElementById("Thandie Newton").onclick = () => selectImage("Thandie Newton");
-document.getElementById("Florence Welch").onclick = () => selectImage("Florence Welch");
+document.getElementById("Jodie Comer").onclick = () => selectImage("Jodie Comer");
 document.getElementById("Rosamund Pike").onclick = () => selectImage("Rosamund Pike");
 
 // 1 Points
@@ -75,7 +75,7 @@ document.getElementById("Jodie Comer").onclick = () => selectImage("Jodie Comer"
 document.getElementById("Sophie Ellis-Bextor").onclick = () => selectImage("Sophie Ellis-Bextor");
 document.getElementById("Sienna Miller").onclick = () => selectImage("Sienna Miller");
 document.getElementById("Ellie Kemper").onclick = () => selectImage("Ellie Kemper");
-
+document.getElementById("Florence Welch").onclick = () => selectImage("Florence Welch");
 
 //buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
