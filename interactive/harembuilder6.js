@@ -82,3 +82,7 @@ document.getElementById("copyButton").onclick = copyToClipboard;
 document.getElementById("gamehub-btn").addEventListener("click", function() {
   window.location.href = "gamehub.html";
 });
+
+document.getElementById("suggestions-btn").addEventListener("click", function() {
+  window.location.href = "suggestions.html";
+});
