@@ -45,7 +45,7 @@ document.getElementById("Lily Collins").onclick = () => selectImage("Lily Collin
 document.getElementById("Cara Delevingne").onclick = () => selectImage("Cara Delevingne");
 
 // 4 Points
-document.getElementById("Angelina Jolie").onclick = () => selectImage("Angelina Jolie");
+document.getElementById("Kate Beckinsale").onclick = () => selectImage("Kate Beckinsale");
 document.getElementById("Sophie Turner").onclick = () => selectImage("Sophie Turner");
 document.getElementById("Rachel Weisz").onclick = () => selectImage("Rachel Weisz");
 document.getElementById("Kate Winslet").onclick = () => selectImage("Kate Winslet");
@@ -74,7 +74,7 @@ document.getElementById("Tilda Swinton").onclick = () => selectImage("Tilda Swin
 document.getElementById("Jodie Comer").onclick = () => selectImage("Jodie Comer");
 document.getElementById("Sophie Ellis-Bextor").onclick = () => selectImage("Sophie Ellis-Bextor");
 document.getElementById("Sienna Miller").onclick = () => selectImage("Sienna Miller");
-document.getElementById("Ellie Kemper").onclick = () => selectImage("Ellie Kemper");
+document.getElementById("Kelly Brook").onclick = () => selectImage("Kelly Brook");
 document.getElementById("Florence Welch").onclick = () => selectImage("Florence Welch");
 
 //buttons
