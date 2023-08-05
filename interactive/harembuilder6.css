@@ -68,7 +68,7 @@ body {
 }
 
 #copyButton:hover {
-  background-color: green; /* Hintergrundfarbe beim Hover-Effekt */
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
 }
 
 #gamehub-btn {
