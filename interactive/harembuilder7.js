@@ -77,7 +77,7 @@ const selectImage = (id) => {
   document.getElementById("Katy Perry").onclick = () => selectImage("Katy Perry");
   document.getElementById("Jessica Alba").onclick = () => selectImage("Jessica Alba");
   document.getElementById("Sandra Bullock").onclick = () => selectImage("Sandra Bullock");
-  document.getElementById("Kristen Stewart").onclick = () => selectImage("Kirsten Stewart");
+  document.getElementById("Kristen Stewart").onclick = () => selectImage("Kristen Stewart");
   document.getElementById("Jessica Biel").onclick = () => selectImage("Jessica Biel");
   document.getElementById("Eva Mendes").onclick = () => selectImage("Eva Mendes");
   //1 Point
