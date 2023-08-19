@@ -60,7 +60,7 @@ document.getElementById("Naomi Campbell").onclick = () => selectImage("Naomi Cam
 document.getElementById("Kate Moss").onclick = () => selectImage("Kate Moss");
 document.getElementById("Victoria Beckham").onclick = () => selectImage("Victoria Beckham");
 
-// 2 points
+// 2 Points
 document.getElementById("Emma Thompson").onclick = () => selectImage("Emma Thompson");
 document.getElementById("Judi Dench").onclick = () => selectImage("Judi Dench");
 document.getElementById("Helen Mirren").onclick = () => selectImage("Helen Mirren");
@@ -68,7 +68,7 @@ document.getElementById("Thandie Newton").onclick = () => selectImage("Thandie N
 document.getElementById("Jodie Comer").onclick = () => selectImage("Jodie Comer");
 document.getElementById("Rosamund Pike").onclick = () => selectImage("Rosamund Pike");
 
-// 1 Points
+// 1 Point
 document.getElementById("Helena Bonham Carter").onclick = () => selectImage("Helena Bonham Carter");
 document.getElementById("Tilda Swinton").onclick = () => selectImage("Tilda Swinton");
 document.getElementById("Jodie Comer").onclick = () => selectImage("Jodie Comer");
