@@ -1,4 +1,4 @@
-let budget = 30;
+let budget = 25;
 const selectedcelebs = [];
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
