@@ -21,7 +21,7 @@ body {
   height:100%;
   margin-top: 50px;
   border-style: solid;
-  border-color: darkblue;
+  border-color: lightskyblue;
   color: gold;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .col-12 h5 {
-  color: palevioletred;
+  color: deepskyblue;
   text-align: center;
   margin-top: 10;
   margin-bottom: 10;
@@ -51,7 +51,7 @@ body {
 }
 
 .text-center {
-  color: deepskyblue;
+  color: palevioletred;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
