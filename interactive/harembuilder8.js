@@ -87,7 +87,7 @@ const selectImage = (id) => {
   //1 Point
   document.getElementById("Nazan Eckes (1)").onclick = () => selectImage("Nazan Eckes (1)");
   document.getElementById("Angelina Pannek (1)").onclick = () => selectImage("Angelina Pannek (1)");
-  document.getElementById("Beatrice Egli (1)").onclick = () => selectImage("Beatrice Egli (1)");
+  document.getElementById("Nina Chuba (1)").onclick = () => selectImage("Nina Chuba (1)");
   document.getElementById("Betty Taube (1)").onclick = () => selectImage("Betty Taube (1)");
   document.getElementById("Carina Spack (1)").onclick = () => selectImage("Carina Spack (1)");
   document.getElementById("Cathy Lugner (1)").onclick = () => selectImage("Cathy Lugner (1)");
