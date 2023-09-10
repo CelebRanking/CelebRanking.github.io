@@ -64,7 +64,7 @@ const selectImage = (id) => {
   document.getElementById("Motsi Mabuse (4)").onclick = () => selectImage("Motsi Mabuse (4)");
   document.getElementById("Annemarie Carpendale (4)").onclick = () => selectImage("Annemarie Carpendale (4)");
   document.getElementById("Sylvie Meis (4)").onclick = () => selectImage("Sylvie Meis (4)");
-  document.getElementById("Victoria Swarowski (4)").onclick = () => selectImage("Victoria Swarowski (4)");
+  document.getElementById("Toni Garrn (4)").onclick = () => selectImage("Toni Garrn (4)");
   document.getElementById("Janine Kunze (4)").onclick = () => selectImage("Janine Kunze (4)");
   document.getElementById("Laura Müller (4)").onclick = () => selectImage("Laura Müller (4)");
 
@@ -73,7 +73,7 @@ const selectImage = (id) => {
   document.getElementById("Nilam Farooq (3)").onclick = () => selectImage("Nilam Farooq (3)");
   document.getElementById("Cheyenne Pahde (3)").onclick = () => selectImage("Cheyenne Pahde (3)");
   document.getElementById("Valentina Pahde (3)").onclick = () => selectImage("Valentina Pahde (3)");
-  document.getElementById("Ann-Katrin Götze (3)").onclick = () => selectImage("Ann-Katrin Götze (3)");
+  document.getElementById("Ann-Kathrin Götze (3)").onclick = () => selectImage("Ann-Kathrin Götze (3)");
   document.getElementById("Cathy Hummels (3)").onclick = () => selectImage("Cathy Hummels (3)");
 
   //2 Points
