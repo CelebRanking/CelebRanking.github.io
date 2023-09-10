@@ -47,7 +47,7 @@ const selectImage = (id) => {
   //6 Points
   document.getElementById("Elena Kamperi (6)").onclick = () => selectImage("Elena Kamperi (6)");
   document.getElementById("Helene Fischer (6)").onclick = () => selectImage("Helene Fischer (6)");
-  document.getElementById("Vannessa Mai (6)").onclick = () => selectImage("Vannessa Mai (6)");
+  document.getElementById("Vanessa Mai (6)").onclick = () => selectImage("Vanessa Mai (6)");
   document.getElementById("Stefanie Giesinger (6)").onclick = () => selectImage("Stefanie Giesinger (6)");
   document.getElementById("Palina Rojinski (6)").onclick = () => selectImage("Palina Rojinski (6)");
   document.getElementById("Verona Pooth (6)").onclick = () => selectImage("Verona Pooth (6)");
@@ -71,8 +71,8 @@ const selectImage = (id) => {
   //3 Points
   document.getElementById("Barbara Meier (3)").onclick = () => selectImage("Barbara Meier (3)");
   document.getElementById("Nilam Farooq (3)").onclick = () => selectImage("Nilam Farooq (3)");
-  document.getElementById("Cheyenne Phade (3)").onclick = () => selectImage("Cheyenne Phade (3)");
-  document.getElementById("Valentina Phade (3)").onclick = () => selectImage("Valentina Phade (3)");
+  document.getElementById("Cheyenne Pahde (3)").onclick = () => selectImage("Cheyenne Pahde (3)");
+  document.getElementById("Valentina Pahde (3)").onclick = () => selectImage("Valentina Pahde (3)");
   document.getElementById("Ann-Katrin Götze (3)").onclick = () => selectImage("Ann-Katrin Götze (3)");
   document.getElementById("Cathy Hummels (3)").onclick = () => selectImage("Cathy Hummels (3)");
 
