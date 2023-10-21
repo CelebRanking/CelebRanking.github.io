@@ -49,7 +49,7 @@ const selectImage = (id) => {
   document.getElementById("Carmella").onclick = () => selectImage("Carmella");
   document.getElementById("Liv Morgan").onclick = () => selectImage("Liv Morgan");
   document.getElementById("Jade Cargill").onclick = () => selectImage("Jade Cargill");
-  document.getElementById("Mercedes Mone (Sasha Banks)").onclick = () => selectImage("Mercedes Mone (Sasha Banks)");
+  document.getElementById("Mercedes Mone").onclick = () => selectImage("Mercedes Mone");
   document.getElementById("Ronda Rousey").onclick = () => selectImage("Ronda Rousey");
 
   //5 Points
@@ -81,7 +81,7 @@ const selectImage = (id) => {
   document.getElementById("Scarlett").onclick = () => selectImage("Scarlett");
   document.getElementById("Lacey Evans").onclick = () => selectImage("Lacey Evans");
   document.getElementById("Dakota Kai").onclick = () => selectImage("Dakota Kai");
-  document.getElementById("Ruby Riott (Ruby Soho)").onclick = () => selectImage("Ruby Riott (Ruby Soho)");
+  document.getElementById("Ruby Riott").onclick = () => selectImage("Ruby Riott");
   document.getElementById("Scarlett Bordeaux").onclick = () => selectImage("Scarlett Bordeaux");
 
   //1 Points
