@@ -78,11 +78,11 @@ const selectImage = (id) => {
 
   //2 Points
   document.getElementById("Tiffany Stratton (2)").onclick = () => selectImage("Tiffany Stratton (2)");
-  document.getElementById("Scarlett (2)").onclick = () => selectImage("Scarlett (2)");
+  document.getElementById("Scarlett Bordeaux (2)").onclick = () => selectImage("Scarlett Bordeaux (2)");
   document.getElementById("Lacey Evans (2)").onclick = () => selectImage("Lacey Evans (2)");
   document.getElementById("Dakota Kai (2)").onclick = () => selectImage("Dakota Kai (2)");
   document.getElementById("Ruby Riott (2)").onclick = () => selectImage("Ruby Riott (2)");
-  document.getElementById("Scarlett Bordeaux (2)").onclick = () => selectImage("Scarlett Bordeaux (2)");
+  document.getElementById("Sarah Logan (2)").onclick = () => selectImage("Sarah Logan (2)");
 
   //1 Points
   document.getElementById("Toni Storm (1)").onclick = () => selectImage("Toni Storm (1)");
