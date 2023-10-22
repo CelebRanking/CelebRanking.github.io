@@ -37,63 +37,63 @@ const selectImage = (id) => {
   };
 
   //7 Points
-  document.getElementById("Alexa Bliss").onclick = () => selectImage("Alexa Bliss");
-  document.getElementById("Charlotte Flair").onclick = () => selectImage("Charlotte Flair");
-  document.getElementById("Becky Lynch").onclick = () => selectImage("Becky Lynch");
-  document.getElementById("Bayley").onclick = () => selectImage("Bayley");
-  document.getElementById("Asuka").onclick = () => selectImage("Asuka");
-  document.getElementById("Bianca Belair").onclick = () => selectImage("Bianca Belair");
+  document.getElementById("Alexa Bliss (7)").onclick = () => selectImage("Alexa Bliss (7)");
+  document.getElementById("Charlotte Flair (7)").onclick = () => selectImage("Charlotte Flair (7)");
+  document.getElementById("Becky Lynch (7)").onclick = () => selectImage("Becky Lynch (7)");
+  document.getElementById("Bayley (7)").onclick = () => selectImage("Bayley (7)");
+  document.getElementById("Asuka (7)").onclick = () => selectImage("Asuka (7)");
+  document.getElementById("Bianca Belair (7)").onclick = () => selectImage("Bianca Belair (7)");
 
   //6 Points
-  document.getElementById("Rhea Ripley").onclick = () => selectImage("Rhea Ripley");
-  document.getElementById("Carmella").onclick = () => selectImage("Carmella");
-  document.getElementById("Liv Morgan").onclick = () => selectImage("Liv Morgan");
-  document.getElementById("Jade Cargill").onclick = () => selectImage("Jade Cargill");
-  document.getElementById("Mercedes Mone").onclick = () => selectImage("Mercedes Mone");
-  document.getElementById("Ronda Rousey").onclick = () => selectImage("Ronda Rousey");
+  document.getElementById("Rhea Ripley (6)").onclick = () => selectImage("Rhea Ripley (6)");
+  document.getElementById("Carmella (6)").onclick = () => selectImage("Carmella (6)");
+  document.getElementById("Liv Morgan (6)").onclick = () => selectImage("Liv Morgan (6)");
+  document.getElementById("Jade Cargill (6)").onclick = () => selectImage("Jade Cargill (6)");
+  document.getElementById("Mercedes Mone (6)").onclick = () => selectImage("Mercedes Mone (6)");
+  document.getElementById("Ronda Rousey (6)").onclick = () => selectImage("Ronda Rousey (6)");
 
   //5 Points
-  document.getElementById("Chelsea Green").onclick = () => selectImage("Chelsea Green");
-  document.getElementById("Raquel Rodriguez").onclick = () => selectImage("Raquel Rodriguez");
-  document.getElementById("Mandy Rose").onclick = () => selectImage("Mandy Rose");
-  document.getElementById("Dana Brooke").onclick = () => selectImage("Dana Brooke");
-  document.getElementById("Naomi").onclick = () => selectImage("Naomi");
-  document.getElementById("Natalya").onclick = () => selectImage("Natalya");
+  document.getElementById("Chelsea Green (5)").onclick = () => selectImage("Chelsea Green (5)");
+  document.getElementById("Raquel Rodriguez (5)").onclick = () => selectImage("Raquel Rodriguez (5)");
+  document.getElementById("Mandy Rose (5)").onclick = () => selectImage("Mandy Rose (5)");
+  document.getElementById("Dana Brooke (5)").onclick = () => selectImage("Dana Brooke (5)");
+  document.getElementById("Naomi (5)").onclick = () => selectImage("Naomi (5)");
+  document.getElementById("Natalya (5)").onclick = () => selectImage("Natalya (5)");
 
   //4 Points
-  document.getElementById("Zelina Vega").onclick = () => selectImage("Zelina Vega");
-  document.getElementById("Sonya Deville").onclick = () => selectImage("Sonya Deville");
-  document.getElementById("Trish Stratus").onclick = () => selectImage("Trish Stratus");
-  document.getElementById("Shayna Baszler").onclick = () => selectImage("Shayna Baszler");
-  document.getElementById("Alba Fyre").onclick = () => selectImage("Alba Fyre");
-  document.getElementById("Iyo Sky").onclick = () => selectImage("Iyo Sky");
+  document.getElementById("Zelina Vega (4)").onclick = () => selectImage("Zelina Vega (4)");
+  document.getElementById("Sonya Deville (4)").onclick = () => selectImage("Sonya Deville (4)");
+  document.getElementById("Trish Stratus (4)").onclick = () => selectImage("Trish Stratus (4)");
+  document.getElementById("Shayna Baszler (4)").onclick = () => selectImage("Shayna Baszler (4)");
+  document.getElementById("Alba Fyre (4)").onclick = () => selectImage("Alba Fyre (4)");
+  document.getElementById("Iyo Sky (4)").onclick = () => selectImage("Iyo Sky (4)");
 
   //3 Points
-  document.getElementById("Mia Yim").onclick = () => selectImage("Mia Yim");
-  document.getElementById("Tegan Nox").onclick = () => selectImage("Tegan Nox");
-  document.getElementById("Aliyah").onclick = () => selectImage("Aliyah");
-  document.getElementById("Peyton Royce").onclick = () => selectImage("Peyton Royce");
-  document.getElementById("Gigi Dolin").onclick = () => selectImage("Gigi Dolin");
-  document.getElementById("Cora Jade").onclick = () => selectImage("Cora Jade");
+  document.getElementById("Mia Yim (3)").onclick = () => selectImage("Mia Yim (3)");
+  document.getElementById("Tegan Nox (3)").onclick = () => selectImage("Tegan Nox (3)");
+  document.getElementById("Aliyah (3)").onclick = () => selectImage("Aliyah (3)");
+  document.getElementById("Peyton Royce (3)").onclick = () => selectImage("Peyton Royce (3)");
+  document.getElementById("Gigi Dolin (3)").onclick = () => selectImage("Gigi Dolin (3)");
+  document.getElementById("Cora Jade (3)").onclick = () => selectImage("Cora Jade (3)");
 
   //2 Points
-  document.getElementById("Tiffany Stratton").onclick = () => selectImage("Tiffany Stratton");
-  document.getElementById("Scarlett").onclick = () => selectImage("Scarlett");
-  document.getElementById("Lacey Evans").onclick = () => selectImage("Lacey Evans");
-  document.getElementById("Dakota Kai").onclick = () => selectImage("Dakota Kai");
-  document.getElementById("Ruby Riott").onclick = () => selectImage("Ruby Riott");
-  document.getElementById("Scarlett Bordeaux").onclick = () => selectImage("Scarlett Bordeaux");
+  document.getElementById("Tiffany Stratton (2)").onclick = () => selectImage("Tiffany Stratton (2)");
+  document.getElementById("Scarlett (2)").onclick = () => selectImage("Scarlett (2)");
+  document.getElementById("Lacey Evans (2)").onclick = () => selectImage("Lacey Evans (2)");
+  document.getElementById("Dakota Kai (2)").onclick = () => selectImage("Dakota Kai (2)");
+  document.getElementById("Ruby Riott (2)").onclick = () => selectImage("Ruby Riott (2)");
+  document.getElementById("Scarlett Bordeaux (2)").onclick = () => selectImage("Scarlett Bordeaux (2)");
 
   //1 Points
-  document.getElementById("Toni Storm").onclick = () => selectImage("Toni Storm");
-  document.getElementById("Zoey Stark").onclick = () => selectImage("Zoey Stark");
-  document.getElementById("Candice LeRae").onclick = () => selectImage("Candice LeRae");
-  document.getElementById("Indi Hartwell").onclick = () => selectImage("Indi Hartwell");
-  document.getElementById("Shotzi").onclick = () => selectImage("Shotzi");
-  document.getElementById("Ember Moon").onclick = () => selectImage("Ember Moon");
-  document.getElementById("Nia Jax").onclick = () => selectImage("Nia Jax");
-  document.getElementById("Tamina").onclick = () => selectImage("Tamina");
-  document.getElementById("Xia Li").onclick = () => selectImage("Xia Li");
+  document.getElementById("Toni Storm (1)").onclick = () => selectImage("Toni Storm (1)");
+  document.getElementById("Zoey Stark (1)").onclick = () => selectImage("Zoey Stark (1)");
+  document.getElementById("Candice LeRae (1)").onclick = () => selectImage("Candice LeRae (1)");
+  document.getElementById("Indi Hartwell (1)").onclick = () => selectImage("Indi Hartwell (1)");
+  document.getElementById("Shotzi (1)").onclick = () => selectImage("Shotzi (1)");
+  document.getElementById("Ember Moon (1)").onclick = () => selectImage("Ember Moon (1)");
+  document.getElementById("Nia Jax (1)").onclick = () => selectImage("Nia Jax (1)");
+  document.getElementById("Tamina (1)").onclick = () => selectImage("Tamina (1)");
+  document.getElementById("Xia Li (1)").onclick = () => selectImage("Xia Li (1)");
   
 
 //buttons
