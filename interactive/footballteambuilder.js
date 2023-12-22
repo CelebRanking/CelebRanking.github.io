@@ -6,7 +6,7 @@ const updateBudget = () => {
 };
 
 const updateselectedcelebs = () => {
-  const joinedCelebs = "My celeb harem: " + selectedcelebs.map(item => item.name).join(", ");
+  const joinedCelebs = "My celeb football team: " + selectedcelebs.map(item => item.name).join(", ");
   document.getElementById("selectedcelebs").value = joinedCelebs;
 };
 
@@ -45,12 +45,12 @@ const selectImage = (id, points, position) => {
 };
 
   //Goalkeeper
-  document.getElementById("Merle Frohms (7)").onclick = () => selectImage("Merle Frohms (7)", 7, "Goalkeeper");
-  document.getElementById("Manuela Zinsberger (7)").onclick = () => selectImage("Manuela Zinsberger (7)", 7, "Goalkeeper");
-  document.getElementById("Hope Solo (7)").onclick = () => selectImage("Hope Solo (7)", 7, "Goalkeeper");
-  document.getElementById("Stephanie Labbe (7)").onclick = () => selectImage("Stephanie Labbe (7)", 7, "Goalkeeper");
-  document.getElementById("Almuth Schult (7)").onclick = () => selectImage("Almuth Schult (7)", 7, "Goalkeeper");
-  document.getElementById("Carly Telford (7)").onclick = () => selectImage("Carly Telford (7)", 7, "Goalkeeper");
+  document.getElementById("Merle Frohms (3)").onclick = () => selectImage("Merle Frohms (3)", 3, "Goalkeeper");
+  document.getElementById("Hope Solo (2)").onclick = () => selectImage("Hope Solo (2)", 2, "Goalkeeper");
+  document.getElementById("Almuth Schult (1)").onclick = () => selectImage("Almuth Schult (1)", 1, "Goalkeeper");
+  document.getElementById("Manuela Zinsberger (3)").onclick = () => selectImage("Manuela Zinsberger (1)", 1, "Goalkeeper");
+  document.getElementById("Stephanie Labbe (2)").onclick = () => selectImage("Stephanie Labbe (1)", 1, "Goalkeeper");
+  document.getElementById("Carly Telford (1)").onclick = () => selectImage("Carly Telford (1)", 1, "Goalkeeper");
 
   //Left-Back
   document.getElementById("Rhea Ripley (6)").onclick = () => selectImage("Rhea Ripley (6)", 6, "Left-Back");
