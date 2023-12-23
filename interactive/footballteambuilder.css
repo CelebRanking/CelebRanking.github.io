@@ -51,7 +51,7 @@ body {
 }
 
 .text-center {
-  color: #8bc34a; /* Light Green */
+  color: greenyellow; /* Light Green */
   text-align: center;
   font-size: 20px;
   font-weight: 400;
