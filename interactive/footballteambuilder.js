@@ -70,12 +70,12 @@ const selectImage = (id, points, position) => {
   document.getElementById("Irene Paredes (1)", 1).onclick = () => selectImage("Irene Paredes (1)", 1, "Centre-Back");
 
   //Right-Back
-  document.getElementById("Mia Yim (3)").onclick = () => selectImage("Mia Yim (3)", 3, "Right-Back");
-  document.getElementById("Tegan Nox (3)").onclick = () => selectImage("Tegan Nox (3)", 3, "Right-Back");
-  document.getElementById("Aliyah (3)").onclick = () => selectImage("Aliyah (3)", 3, "Right-Back");
-  document.getElementById("Peyton Royce (3)").onclick = () => selectImage("Peyton Royce (3)", 3, "Right-Back");
-  document.getElementById("Gigi Dolin (3)").onclick = () => selectImage("Gigi Dolin (3)", 3, "Right-Back");
-  document.getElementById("Cora Jade (3)").onclick = () => selectImage("Cora Jade (3)", 3, "Right-Back");
+  document.getElementById("Giulia Gwinn (3)", 3).onclick = () => selectImage("Giulia Gwinn (3)", 3, "Right-Back");
+  document.getElementById("Lucy Bronze (2)", 2).onclick = () => selectImage("Lucy Bronze (2)", 2, "Right-Back");
+  document.getElementById("Eve Perisset (1)", 1).onclick = () => selectImage("Eve Perisset (1)", 1, "Right-Back");
+  document.getElementById("Ashley Lawrence (3)", 3).onclick = () => selectImage("Ashley Lawrence (3)", 3, "Right-Back");
+  document.getElementById("Tuva Hansen (2)", 2).onclick = () => selectImage("Tuva Hansen (2)", 2, "Right-Back");
+  document.getElementById("Maximilliane Rall (1)", 1).onclick = () => selectImage("Maximilliane Rall (1)", 1, "Right-Back");
 
   //Centre-Midfield
   document.getElementById("Chelsea Green (5)", 5).onclick = () => selectImage("Chelsea Green (5)", 5, "Centre-Defensive-Midfield");
