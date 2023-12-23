@@ -4,9 +4,8 @@ const selectedcelebs = [];
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
-
 const updateselectedcelebs = () => {
-  const joinedCelebs = "My celeb football team: " + selectedcelebs.map(item => item.name).join(", ");
+  const joinedCelebs = "My celeb football team: " + selectedcelebs.map(item => `${item.name} (${item.position})`).join(", ");
   document.getElementById("selectedcelebs").value = joinedCelebs;
 };
 
@@ -66,9 +65,9 @@ const selectImage = (id, points, position) => {
   document.getElementById("Sara Doorsoun (1)", 1).onclick = () => selectImage("Sara Doorsoun (1)", 1, "Centre-Back");
 
   //Centre-Back (right)
-  document.getElementById("Mapi Leon (3)", 3).onclick = () => selectImage("Mapi Leon (3)", 3, "Centre-Back");
-  document.getElementById("Amanda Ilestedt (2)", 2).onclick = () => selectImage("Amanda Ilestedt (2)", 2, "Centre-Back");
-  document.getElementById("Sara Doorsoun (1)", 1).onclick = () => selectImage("Sara Doorsoun (1)", 1, "Centre-Back");
+  document.getElementById("Jana Fernandez (3)", 3).onclick = () => selectImage("Jana Fernandez (3)", 3, "Centre-Back");
+  document.getElementById("Kadeisha Buchanan (2)", 2).onclick = () => selectImage("Kadeisha Buchanan (2)", 2, "Centre-Back");
+  document.getElementById("Irene Paredes (1)", 1).onclick = () => selectImage("Irene Paredes (1)", 1, "Centre-Back");
 
   //Right-Back
   document.getElementById("Mia Yim (3)").onclick = () => selectImage("Mia Yim (3)", 3, "Right-Back");
