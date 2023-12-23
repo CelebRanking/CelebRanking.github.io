@@ -97,7 +97,7 @@ const selectImage = (id, points, position) => {
 
   //Centre-Attacking-Midfield (right)
   document.getElementById("Alexia Putellas (3)", 3).onclick = () => selectImage("Alexia Putellas (3)", 3, "Centre-Attacking-Midfield-right");
-  document.getElementById("Korbin Albert (2)", 2).onclick = () => selectImage("Korbin Albert (2)", 2, "Centre-Attacking-Midfield-left");
+  document.getElementById("Korbin Albert (2)", 2).onclick = () => selectImage("Korbin Albert (2)", 2, "Centre-Attacking-Midfield-right");
   document.getElementById("Lina Magull (1)", 1).onclick = () => selectImage("Lina Magull (1)", 1, "Centre-Attacking-Midfield-right");
   document.getElementById("Jule Brand (3)", 3).onclick = () => selectImage("Jule Brand (3)", 3, "Centre-Attacking-Midfield-right");
   document.getElementById("Johanna Rytting Kaneryd (2)", 2).onclick = () => selectImage("Johanna Rytting Kaneryd (2)", 2, "Centre-Attacking-Midfield-right");
