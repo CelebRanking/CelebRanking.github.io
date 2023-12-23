@@ -1,4 +1,4 @@
-let budget = 25;
+let budget = 20;
 const selectedcelebs = [];
 
 const updateBudget = () => {
@@ -110,7 +110,7 @@ const selectImage = (id, points, position) => {
 
   //Striker (right)
   document.getElementById("Ana Maria Markovic (3)", 3).onclick = () => selectImage("Ana Maria Markovic (3)", 3, "Striker-right");
-  document.getElementById("Jordyn Huitema (2)", 2).onclick = () => selectImage("Jordyn Huitema (2)", 2, "Striker-left");
+  document.getElementById("Jordyn Huitema (2)", 2).onclick = () => selectImage("Jordyn Huitema (2)", 2, "Striker-right");
   document.getElementById("Lieke Martens (1)", 1).onclick = () => selectImage("Lieke Martens (1)", 1, "Striker-right");
   document.getElementById("Sam Kerr (3)", 3).onclick = () => selectImage("Sam Kerr (3)", 3, "Striker-right");
   document.getElementById("Fridolina Rolfö (2)", 2).onclick = () => selectImage("Fridolina Rolfö (2)", 2, "Striker-right");
