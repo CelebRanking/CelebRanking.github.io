@@ -60,14 +60,14 @@ const selectImage = (id, points, position) => {
   document.getElementById("Nuria Rabano (1)", 1).onclick = () => selectImage("Nuria Rabano (1)", 1, "Left-Back");
 
   //Center-Back (left)
-  document.getElementById("Mapi Leon (3)", 3).onclick = () => selectImage("Mapi Leon (3)", 3, "Centre-Back");
-  document.getElementById("Amanda Ilestedt (2)", 2).onclick = () => selectImage("Amanda Ilestedt (2)", 2, "Centre-Back");
-  document.getElementById("Sara Doorsoun (1)", 1).onclick = () => selectImage("Sara Doorsoun (1)", 1, "Centre-Back");
+  document.getElementById("Mapi Leon (3)", 3).onclick = () => selectImage("Mapi Leon (3)", 3, "Centre-Back (left)");
+  document.getElementById("Amanda Ilestedt (2)", 2).onclick = () => selectImage("Amanda Ilestedt (2)", 2, "Centre-Back (left)");
+  document.getElementById("Sara Doorsoun (1)", 1).onclick = () => selectImage("Sara Doorsoun (1)", 1, "Centre-Back (left)");
 
   //Centre-Back (right)
-  document.getElementById("Jana Fernandez (3)", 3).onclick = () => selectImage("Jana Fernandez (3)", 3, "Centre-Back");
-  document.getElementById("Kadeisha Buchanan (2)", 2).onclick = () => selectImage("Kadeisha Buchanan (2)", 2, "Centre-Back");
-  document.getElementById("Irene Paredes (1)", 1).onclick = () => selectImage("Irene Paredes (1)", 1, "Centre-Back");
+  document.getElementById("Jana Fernandez (3)", 3).onclick = () => selectImage("Jana Fernandez (3)", 3, "Centre-Back (right)");
+  document.getElementById("Kadeisha Buchanan (2)", 2).onclick = () => selectImage("Kadeisha Buchanan (2)", 2, "Centre-Back (right)");
+  document.getElementById("Irene Paredes (1)", 1).onclick = () => selectImage("Irene Paredes (1)", 1, "Centre-Back (right)");
 
   //Right-Back
   document.getElementById("Giulia Gwinn (3)", 3).onclick = () => selectImage("Giulia Gwinn (3)", 3, "Right-Back");
