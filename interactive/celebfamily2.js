@@ -44,34 +44,34 @@ const selectImage = (id, points, position) => {
 };
 
   //Your mother
-  document.getElementById("Brie Larson (3)").onclick = () => selectImage("Brie Larson (3)", 3, "Your mother");
-  document.getElementById("Megan Fox (2)").onclick = () => selectImage("Megan Fox (2)", 2, "Your mother");
-  document.getElementById("Salma Hayek (1)").onclick = () => selectImage("Salma Hayek (1)", 1, "Your mother");
+  document.getElementById("Brie Larson (3)").onclick = () => selectImage("Brie Larson (3)", 3, "mother");
+  document.getElementById("Megan Fox (2)").onclick = () => selectImage("Megan Fox (2)", 2, "mother");
+  document.getElementById("Salma Hayek (1)").onclick = () => selectImage("Salma Hayek (1)", 1, "mother");
 
   //Your older sister
-  document.getElementById("Madison Beer (3)", 3).onclick = () => selectImage("Madison Beer (3)", 3, "Your older sister");
-  document.getElementById("Florence Pugh (2)", 2).onclick = () => selectImage("Florence Pugh (2)", 2, "Your older sister");
-  document.getElementById("Gigi Hadid (1)", 1).onclick = () => selectImage("Gigi Hadid (1)", 1, "Your older sister");
+  document.getElementById("Madison Beer (3)", 3).onclick = () => selectImage("Madison Beer (3)", 3, "older sister");
+  document.getElementById("Florence Pugh (2)", 2).onclick = () => selectImage("Florence Pugh (2)", 2, "older sister");
+  document.getElementById("Gigi Hadid (1)", 1).onclick = () => selectImage("Gigi Hadid (1)", 1, "older sister");
 
   //Your younger sister
-  document.getElementById("Sydney Sweeney (3)", 3).onclick = () => selectImage("Sydney Sweeney (3)", 3, "Your younger sister");
-  document.getElementById("Hailee Steinfeld (2)", 2).onclick = () => selectImage("Hailee Steinfeld (2)", 2, "Your younger sister");
-  document.getElementById("Sadie Sink (1)", 1).onclick = () => selectImage("Sadie Sink (1)", 1, "Your younger sister");
+  document.getElementById("Sydney Sweeney (3)", 3).onclick = () => selectImage("Sydney Sweeney (3)", 3, "younger sister");
+  document.getElementById("Hailee Steinfeld (2)", 2).onclick = () => selectImage("Hailee Steinfeld (2)", 2, "younger sister");
+  document.getElementById("Sadie Sink (1)", 1).onclick = () => selectImage("Sadie Sink (1)", 1, "younger sister");
 
   //Your 1st aunt
-  document.getElementById("Dua Lipa (3)", 3).onclick = () => selectImage("Dua Lipa (3)", 3, "Your 1st aunt");
-  document.getElementById("Emilia Clarke (2)", 2).onclick = () => selectImage("Emilia Clarke (2)", 2, "Your 1st aunt");
-  document.getElementById("Camila Cabello (1)", 1).onclick = () => selectImage("Camila Cabello (1)", 1, "Your 1st aunt");
+  document.getElementById("Dua Lipa (3)", 3).onclick = () => selectImage("Dua Lipa (3)", 3, "1st aunt");
+  document.getElementById("Emilia Clarke (2)", 2).onclick = () => selectImage("Emilia Clarke (2)", 2, "1st aunt");
+  document.getElementById("Camila Cabello (1)", 1).onclick = () => selectImage("Camila Cabello (1)", 1, "1st aunt");
 
   //Your 2nd aunt
-  document.getElementById("Emma Watson (3)", 3).onclick = () => selectImage("Emma Watson (3)", 3, "Your 2nd aunt");
-  document.getElementById("Kate Upton (2)", 2).onclick = () => selectImage("Kate Upton (2)", 2, "Your 2nd aunt");
-  document.getElementById("Jessica Chastain (1)", 1).onclick = () => selectImage("Jessica Chastain (1)", 1, "Your 2nd aunt");
+  document.getElementById("Emma Watson (3)", 3).onclick = () => selectImage("Emma Watson (3)", 3, "2nd aunt");
+  document.getElementById("Kate Upton (2)", 2).onclick = () => selectImage("Kate Upton (2)", 2, "2nd aunt");
+  document.getElementById("Jessica Chastain (1)", 1).onclick = () => selectImage("Jessica Chastain (1)", 1, "2nd aunt");
 
   //Your friends mother
-  document.getElementById("Elizabeth Olsen (3)", 3).onclick = () => selectImage("Elizabeth Olsen (3)", 3, "Your friends mother");
-  document.getElementById("Jennifer Lawrence (2)", 2).onclick = () => selectImage("Jennifer Lawrence (2)", 2, "Your friends mother");
-  document.getElementById("Natalie Portman (1)", 1).onclick = () => selectImage("Natalie Portman (1)", 1, "Your friends mother");
+  document.getElementById("Elizabeth Olsen (3)", 3).onclick = () => selectImage("Elizabeth Olsen (3)", 3, "friends mother");
+  document.getElementById("Jennifer Lawrence (2)", 2).onclick = () => selectImage("Jennifer Lawrence (2)", 2, "friends mother");
+  document.getElementById("Natalie Portman (1)", 1).onclick = () => selectImage("Natalie Portman (1)", 1, "friends mother");
   
 //buttons
 document.getElementById("copyButton").onclick = copyToClipboard;
