@@ -5,7 +5,7 @@ const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
 };
 const updateselectedcelebs = () => {
-  const joinedCelebs = "My celeb football team: " + selectedcelebs.map(item => `${item.name} (${item.position})`).join(", ");
+  const joinedCelebs = "My celeb family: " + selectedcelebs.map(item => `${item.name} (${item.position})`).join(", ");
   document.getElementById("selectedcelebs").value = joinedCelebs;
 };
 
