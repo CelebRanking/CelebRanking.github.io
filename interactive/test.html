@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Person Game</title>
+<style>
+    #image {
+        max-width: 100%;
+        height: auto;
+        filter: blur(20px);
+        transition: filter 1s linear;
+    }
+    #congrats-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+</style>
+</head>
+<body>
+    <h1>Guess the Person Game</h1>
+    <p>Who is in the picture?</p>
+    <img id="image" src="../assets/img/2024/Jennifer Lawrence.jpg" alt="Blurred Image">
+    <br>
+    <label for="guess">Your Guess:</label>
+    <input type="text" id="guess" name="guess">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="result"></p>
+    <p id="counter">Time Left: 20</p>
+    <p id="score">Score: 0</p>
+
+    <!-- Congratulations Popup -->
+    <div id="congrats-popup">
+        <h2>Congratulations!</h2>
+        <p>You've reached 10 points!</p>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
+
+    <script>
+        var people = [
+            { name: "Jennifer Lawrence", image: "../assets/img/2024/Jennifer Lawrence.jpg" },
+            { name: "Megan Fox", image: "../assets/img/2024/Megan Fox.jpg" },
+            { name: "Brie Larson", image: "../assets/img/2024/Brie Larson.jpg" }
+            // Add more people as needed
+        ];
+
+        var counter = 20;
+        var blurLevel = 20;
+        var personIndex = 0;
+        var timerInterval;
+        var score = 0;
+        var gamePaused = false;
+
+        function revealImage() {
+            clearInterval(timerInterval);
+            document.getElementById('counter').textContent = 'Time Left: 0';
+            personIndex++;
+            if (personIndex >= people.length) {
+                personIndex = 0; // Reset back to the first person if end of list reached
+            }
+            // Set blur filter before changing the image source
+            document.getElementById('image').style.filter = 'blur(20px)';
+            document.getElementById('image').src = people[personIndex].image;
+            resetTimer();
+}
+
+        function updateCounter() {
+        counter--;
+        document.getElementById('counter').textContent = 'Time Left: ' + counter;
+        if (counter <= 0) { // Adjusted timing here
+            revealImage();
+        } else {
+            blurLevel -= 1; // Decrease blur level faster each second
+            document.getElementById('image').style.filter = 'blur(' + blurLevel + 'px)';
+        }
+}
+
+
+        function resetTimer() {
+            counter = 20;
+            blurLevel = 20;
+            timerInterval = setInterval(updateCounter, 1000);
+        }
+
+        resetTimer();
+
+        function checkGuess() {
+            if (!gamePaused) {
+                var guess = document.getElementById('guess').value.toLowerCase();
+                var result = document.getElementById('result');
+                if (guess === people[personIndex].name.toLowerCase()) {
+                    result.textContent = "Correct! It's " + people[personIndex].name + "!";
+                    score++;
+                    document.getElementById('score').textContent = 'Score: ' + score;
+                    if (score === 1) {
+                        document.getElementById('congrats-popup').style.display = 'block';
+                        pauseGame();
+                    } else {
+                        revealImage();
+                    }
+                } else {
+                    result.textContent = "Sorry, that's incorrect. Try again!";
+                }
+                // Clear input field after submitting guess
+                document.getElementById('guess').value = '';
+            }
+        }
+
+        document.getElementById('guess').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                checkGuess();
+            }
+        });
+
+        function pauseGame() {
+            clearInterval(timerInterval);
+            gamePaused = true;
+        }
+
+        function restartGame() {
+            document.getElementById('congrats-popup').style.display = 'none';
+            score = 0;
+            document.getElementById('score').textContent = 'Score: ' + score;
+            personIndex = 0;
+            gamePaused = false;
+            resetTimer();
+            revealImage();
+        }
+    </script>
+</body>
+</html>
