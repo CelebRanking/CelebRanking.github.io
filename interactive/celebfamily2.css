@@ -43,7 +43,7 @@ body {
 }
 
 .col-12 h5 {
-  color: #e67e22; /* Carrot */
+  color: greenyellow;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -51,7 +51,7 @@ body {
 }
 
 .text-center {
-  color: greenyellow; /* Light Green */
+  color: lightskyblue;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
