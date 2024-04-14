@@ -61,7 +61,7 @@ const selectImage = (id, points, position) => {
   //Your 1st aunt
   document.getElementById("Dua Lipa (3)", 3).onclick = () => selectImage("Dua Lipa (3)", 3, "Your 1st aunt");
   document.getElementById("Emilia Clarke (2)", 2).onclick = () => selectImage("Emilia Clarke (2)", 2, "Your 1st aunt");
-  document.getElementById("Camilla Cabello (1)", 1).onclick = () => selectImage("Camilla Cabello (1)", 1, "Your 1st aunt");
+  document.getElementById("Camila Cabello (1)", 1).onclick = () => selectImage("Camila Cabello (1)", 1, "Your 1st aunt");
 
   //Your 2nd aunt
   document.getElementById("Emma Watson (3)", 3).onclick = () => selectImage("Emma Watson (3)", 3, "Your 2nd aunt");
@@ -69,7 +69,7 @@ const selectImage = (id, points, position) => {
   document.getElementById("Jessica Chastain (1)", 1).onclick = () => selectImage("Jessica Chastain (1)", 1, "Your 2nd aunt");
 
   //Your friends mother
-  document.getElementById("Elizabeth OIsen (3)", 3).onclick = () => selectImage("Elizabeth OIsen (3)", 3, "Your friends mother");
+  document.getElementById("Elizabeth Olsen (3)", 3).onclick = () => selectImage("Elizabeth Olsen (3)", 3, "Your friends mother");
   document.getElementById("Jennifer Lawrence (2)", 2).onclick = () => selectImage("Jennifer Lawrence (2)", 2, "Your friends mother");
   document.getElementById("Natalie Portman (1)", 1).onclick = () => selectImage("Natalie Portman (1)", 1, "Your friends mother");
   
