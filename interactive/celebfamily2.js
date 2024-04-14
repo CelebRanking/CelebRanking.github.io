@@ -1,4 +1,4 @@
-let budget = 25;
+let budget = 15;
 const selectedcelebs = [];
 
 const updateBudget = () => {
