@@ -1,5 +1,5 @@
 body {
-  background-color: midnightblue;
+  background-color: black;
   color: white;
 }
 
@@ -21,7 +21,7 @@ body {
   height: 100%;
   margin-top: 50px;
   border-style: solid;
-  border-color: #2ecc71; /* Emerald Green */
+  border-color: goldenrod; /* Emerald Green */
   color: #ffcc29; /* Golden Yellow */
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 #suggestions-btn {
-  background-color: #2ecc71; /* Emerald Green */
+  background-color: blueviolet; /* Emerald Green */
   color: white;
   padding: 10px 20px;
   border: solid;
