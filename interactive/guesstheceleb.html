@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Celeb Game</title>
+<link rel="stylesheet" type="text/css" href="guesstheceleb.css">
+</head>
+<body>
+    <!-- Start Game Modal -->
+    <div id="startGameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="startGame()">&times;</span>
+            <h2>Welcome to Guess the Celeb Game!</h2>
+            <p>Are you ready to start?</p>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Next Picture Modal -->
+    <div id="nextPictureModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="nextPicture()">&times;</span>
+            <h2>Correct!</h2>
+            <p>Would you like to continue to the next picture?</p>
+            <button onclick="nextPicture()">Next Picture</button>
+        </div>
+    </div>
+
+    <h1>Guess the Celeb Game</h1>
+    <p>Who is in the picture?</p>
+    <img id="image" src="../assets/img/2024/Jennifer Lawrence.jpg" alt="Blurred Image">
+    <br>
+    <label for="guess">Your Guess:</label>
+    <input type="text" id="guess" name="guess">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="result"></p>
+    <p id="counter">Time Left: 20</p>
+    <p id="score">Score: 0</p>
+
+    <!-- Congratulations Popup -->
+    <div id="congrats-popup">
+        <h2>Congratulations!</h2>
+        <p>You've reached 10 points!</p>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
+    <div id="secret-message">
+        <p>Found the secret game? Please write me on reddit <a href="https://www.reddit.com/user/Txmmy_CR" target="_blank">u/Txmmy_CR</a>.</p>
+    </div>
+
+    <script src="guesstheceleb.js"></script>
+</body>
+</html>

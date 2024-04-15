@@ -51,6 +51,8 @@ p {
 
 #image-container {
   margin-top: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 #image-container img {
@@ -112,4 +114,33 @@ p {
   border-style: solid;
   border-color: gold;
   color: gold;
+}
+
+#guesstheceleb {
+  background-color: darkmagenta;
+  color : gold;
+}
+
+#guesstheceleb:hover {
+  cursor: grab;
+}
+
+#gamehub-image {
+  width: 200px;
+  height: auto;
+}
+
+#secret-text {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 5px;
+  display: none;
+  border-radius: 5px;
+}
+
+#image-container:hover #secret-text {
+  display: block;
 }

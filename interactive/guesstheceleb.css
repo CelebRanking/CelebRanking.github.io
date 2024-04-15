@@ -1,0 +1,177 @@
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f3d999; /* Golden */
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #000; /* Black */
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #000; /* Black */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #888; /* Dark Gray */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Game Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black */
+    color: #f3d999; /* Golden */
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #f3d999; /* Golden */
+}
+
+p {
+    margin: 10px 0;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3d999; /* Golden */
+    color: #000; /* Black */
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+button:hover {
+    background-color: #ffcc66; /* Light Golden */
+}
+
+#image {
+    width: 100%; /* Adjusted for mobile devices */
+    max-width: 500px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the entire image is visible */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+#congrats-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000; /* Black */
+    padding: 20px;
+    border: 2px solid #f3d999; /* Golden */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#congrats-popup h2 {
+    color: #f3d999; /* Golden */
+}
+
+#congrats-popup p {
+    color: #fff; /* White */
+}
+
+#congrats-popup button {
+    background-color: #f3d999; /* Golden */
+    color: #000; /* Black */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#congrats-popup button:hover {
+    background-color: #ffcc66; /* Light Golden */
+}
+
+/* Start Game Modal Styling */
+#startGameModal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#startGameModal .modal-content {
+    background-color: #000; /* Black */
+    color: #f3d999; /* Golden */
+    border: 2px solid #f3d999; /* Golden */
+}
+
+#startGameModal h2 {
+    margin-top: 0;
+}
+
+#startGameModal p {
+    margin-bottom: 20px;
+}
+
+#startGameModal button {
+    background-color: #f3d999; /* Golden */
+    color: #000; /* Black */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startGameModal button:hover {
+    background-color: #ffcc66; /* Light Golden */
+}
+
+/* Mobile Device Adjustments */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    body {
+        padding-top: 50px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+        width: 150px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    #image {
+        width: 250px;
+    }
+}
