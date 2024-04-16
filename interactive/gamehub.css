@@ -132,15 +132,24 @@ p {
 
 #secret-text {
   position: absolute;
-  bottom: 130px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  padding: 5px;
-  display: none;
-  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  background-color: darkmagenta;
+  color : gold;
+  padding: 10px;
+  border-radius: 10px;
+  animation: slideIn 4s infinite forwards;
 }
 
-#image-container:hover #secret-text {
-  display: block;
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

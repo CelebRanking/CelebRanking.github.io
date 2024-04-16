@@ -17,7 +17,18 @@ var people = [
     { name: "Camila Cabello", image: "../assets/img/2024/Camila Cabello.jpg" },
     { name: "Dua Lipa", image: "../assets/img/2024/Dua Lipa.jpg" },
     { name: "Emilia Clarke", image: "../assets/img/2024/Emilia Clarke.jpg" },
-    { name: "Gigi Hadid", image: "../assets/img/2024/Gigi Hadid.jpg" }
+    { name: "Gigi Hadid", image: "../assets/img/2024/Gigi Hadid.jpg" },
+    { name: "Sydney Sweeney", image: "../assets/img/2024/Sydney Sweeney.jpg" },
+    { name: "Hailee Steinfeld", image: "../assets/img/2024/Hailee Steinfeld.jpg" },
+    { name: "Elizabeth Olsen", image: "../assets/img/2024/Elizabeth Olsen.jpg" },
+    { name: "Florence Pugh", image: "../assets/img/2024/Florence Pugh.jpg" },
+    { name: "Emma Watson", image: "../assets/img/2024/Emma Watson.jpg" },
+    { name: "Natalie Portman", image: "../assets/img/2024/Natalie Portman.jpg" },
+    { name: "Salma Hayek", image: "../assets/img/2024/Salma Hayek.jpg" },
+    { name: "Sadie Sink", image: "../assets/img/2024/Sadie Sink.jpg" },
+    { name: "Jessica Chastain", image: "../assets/img/2024/Jessica Chastain.jpg" },
+    { name: "Kate Upton", image: "../assets/img/2024/Kate Upton.jpg" },
+    { name: "Madison Beer", image: "../assets/img/2024/Madison Beer.jpg" }
     // Add more people as needed
 ];
 
@@ -67,7 +78,7 @@ function checkGuess() {
             result.textContent = "Correct! It's " + personIndex.name + "!";
             score++;
             document.getElementById('score').textContent = 'Score: ' + score;
-            if (score === 3) {
+            if (score === 10) {
                 document.getElementById('congrats-popup').style.display = 'block';
                 pauseGame();
             } else {
@@ -101,3 +112,7 @@ function restartGame() {
     resetTimer();
     revealImage();
 }
+
+document.getElementById("gamehub-btn").addEventListener("click", function() {
+    window.location.href = "gamehub.html";
+  });
