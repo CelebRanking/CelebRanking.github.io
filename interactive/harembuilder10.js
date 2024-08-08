@@ -1,4 +1,4 @@
-let budget = 30;
+let budget = 25;
 const selectedcelebs = [];
 const updateBudget = () => {
   document.getElementById("budget").textContent = budget;
@@ -61,28 +61,28 @@ const selectImage = (id) => {
   document.getElementById("Chloe Bennet (4)").onclick = () => selectImage("Chloe Bennet (4)");
 
   //3 Points
-  document.getElementById("Mia Yim (3)").onclick = () => selectImage("Mia Yim (3)");
-  document.getElementById("Tegan Nox (3)").onclick = () => selectImage("Tegan Nox (3)");
-  document.getElementById("Aliyah (3)").onclick = () => selectImage("Aliyah (3)");
-  document.getElementById("Peyton Royce (3)").onclick = () => selectImage("Peyton Royce (3)");
-  document.getElementById("Gigi Dolin (3)").onclick = () => selectImage("Gigi Dolin (3)");
-  document.getElementById("Cora Jade (3)").onclick = () => selectImage("Cora Jade (3)");
+  document.getElementById("Gemma Chan (3)").onclick = () => selectImage("Gemma Chan (3)");
+  document.getElementById("Danai Gurira (3)").onclick = () => selectImage("Danai Gurira (3)");
+  document.getElementById("Letitia Wright (3)").onclick = () => selectImage("Letitia Wright (3)");
+  document.getElementById("Emily VanCamp (3)").onclick = () => selectImage("Emily VanCamp (3)");
+  document.getElementById("Michelle Pfeiffer (3)").onclick = () => selectImage("Michelle Pfeiffer (3)");
+  document.getElementById("Rachel Weisz (3)").onclick = () => selectImage("Rachel Weisz (3)");
 
   //2 Points
-  document.getElementById("Tiffany Stratton (2)").onclick = () => selectImage("Tiffany Stratton (2)");
-  document.getElementById("Scarlett Bordeaux (2)").onclick = () => selectImage("Scarlett Bordeaux (2)");
-  document.getElementById("Lacey Evans (2)").onclick = () => selectImage("Lacey Evans (2)");
-  document.getElementById("Dakota Kai (2)").onclick = () => selectImage("Dakota Kai (2)");
-  document.getElementById("Ruby Riott (2)").onclick = () => selectImage("Ruby Riott (2)");
-  document.getElementById("Sarah Logan (2)").onclick = () => selectImage("Sarah Logan (2)");
+  document.getElementById("Pom Klementieff (2)").onclick = () => selectImage("Pom Klementieff (2)");
+  document.getElementById("Jamie Alexander (2)").onclick = () => selectImage("Jamie Alexander (2)");
+  document.getElementById("Ming-Na Wen (2)").onclick = () => selectImage("Ming-Na Wen (2)");
+  document.getElementById("Tatiana Maslany (2)").onclick = () => selectImage("Tatiana Maslany (2)");
+  document.getElementById("Iman Vellani (2)").onclick = () => selectImage("Iman Vellani (2)");
+  document.getElementById("Sophia Di Martino (2)").onclick = () => selectImage("Sophia Di Martino (2)");
 
   //1 Points
-  document.getElementById("Toni Storm (1)").onclick = () => selectImage("Toni Storm (1)");
-  document.getElementById("Zoey Stark (1)").onclick = () => selectImage("Zoey Stark (1)");
-  document.getElementById("Candice LeRae (1)").onclick = () => selectImage("Candice LeRae (1)");
-  document.getElementById("Indi Hartwell (1)").onclick = () => selectImage("Indi Hartwell (1)");
-  document.getElementById("Shotzi (1)").onclick = () => selectImage("Shotzi (1)");
-  document.getElementById("Ember Moon (1)").onclick = () => selectImage("Ember Moon (1)");
+  document.getElementById("Teyonah Parris (1)").onclick = () => selectImage("Teyonah Parris (1)");
+  document.getElementById("Alaqua Cox (1)").onclick = () => selectImage("Alaqua Cox (1)");
+  document.getElementById("Rene Russo (1)").onclick = () => selectImage("Rene Russo (1)");
+  document.getElementById("Hannah John-Kamen (1)").onclick = () => selectImage("Hannah John-Kamen (1)");
+  document.getElementById("Laura Haddock (1)").onclick = () => selectImage("Laura Haddock (1)");
+  document.getElementById("Florence Kasumba (1)").onclick = () => selectImage("Florence Kasumba (1)");
   
 
 //buttons
@@ -94,49 +94,3 @@ document.getElementById("gamehub-btn").addEventListener("click", function() {
 document.getElementById("suggestions-btn").addEventListener("click", function() {
   window.location.href = "suggestions.html";
 });
-
-/*
-
-Scarlett Johansson
-Elizabeth Olsen
-Brie Larson
-Florence Pugh
-Salma Hayek
-Angelina Jolie
-
-Natalie Portman
-Hayley Atwell
-Kat Dennings
-Zoe Saldana
-Gwyneth Paltrow
-Evangeline Lilly
-
-Karen Gillan
-Tessa Thompson
-Rachel McAdams
-Lupita Nyong'o
-Cobie Smulders
-Chloe Bennet
-
-Gemma Chan
-Danai Gurira
-Letitia Wright
-Emily VanCamp
-Michelle Pfeiffer
-Rachel Weisz
-
-Pom Klementieff
-Jamie Alexander
-Ming-Na Wen
-Tatiana Maslany
-Iman Vellani
-Sophia Di Martino
-
-Teyonah Parris
-Alaqua Cox
-Rene Russo
-Hannah John-Kamen
-Laura Haddock
-Florence Kasumba
-
-*/
