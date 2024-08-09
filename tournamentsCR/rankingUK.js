@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("suggestions-btn").addEventListener("click", function() {
-    window.location.href = "suggestions.html";
+    window.location.href = "../interactive/suggestions.html";
   });
 });
 
-document.getElementById("gamehub-btn").addEventListener("click", function() {
-  window.location.href = "gamehub.html";
+document.getElementById("rankinghub-btn").addEventListener("click", function() {
+  window.location.href = "rankinghub.html";
 });
 
 var categoryImages = document.querySelectorAll(".category img");

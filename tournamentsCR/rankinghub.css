@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  padding-top: 100px;
+  color: gold;
+  background-color: black;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#gamehub-btn {
+  background-color: #c53030; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: solid; /* solid Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  border-color: black;
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
+}
+
+#gamehub-btn:hover {
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
+  border-style: solid;
+  border-color: gold;
+  color: gold;
+}
+
+/* Disabled styles for the gamehub-btn */
+#gamehub-btn:disabled {
+  background-color: grey;
+  color: white;
+  cursor: not-allowed;
+}
+
+#image-container {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+#image-container img {
+  width: 300px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+#image-container img:hover {
+  border-color: gold;
+}
+
+#text-container {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.popup {
+  color: gold;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  text-align: center;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: blue;
+}
+
+#suggestions-btn {
+  background-color: green; /* Hintergrundfarbe */
+  color: rgb(255, 255, 255); /* Schriftfarbe */
+  padding: 10px 20px; /* Abstand von Text zum Button-Rand */
+  border: solid; /* solid Umrandung */
+  border-radius: 5px; /* abgerundete Ecken */
+  border-color: black;
+  font-size: 16px; /* Schriftgröße */
+  cursor: pointer; /* Cursor-Veränderung beim Hover-Effekt */
+  margin-bottom: 10px; /* Platz nach unten */
+}
+
+#suggestions-btn:hover {
+  background-color: blue; /* Hintergrundfarbe beim Hover-Effekt */
+  border-style: solid;
+  border-color: gold;
+  color: gold;
+}
+
+#guesstheceleb {
+  background-color: darkmagenta;
+  color : gold;
+}
+
+#guesstheceleb:hover {
+  cursor: grab;
+}
+
+#gamehub-image {
+  width: 200px;
+  height: auto;
+}
+
+#secret-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: darkmagenta;
+  color : gold;
+  padding: 10px;
+  border-radius: 10px;
+  animation: slideIn 4s infinite forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

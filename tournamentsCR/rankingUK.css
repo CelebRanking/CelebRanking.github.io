@@ -74,7 +74,7 @@ p {
   color: gold;
 }
 
-#gamehub-btn {
+#rankinghub-btn {
   background-color: #c53030; /* Hintergrundfarbe */
   color: rgb(255, 255, 255); /* Schriftfarbe */
   padding: 10px 20px; /* Abstand von Text zum Button-Rand */
@@ -85,7 +85,7 @@ p {
   margin-bottom: 10px; /* Platz nach unten */
 }
 
-#gamehub-btn:hover {
+#rankinghub-btn:hover {
   background-color: blue;
   border-style: solid;
   border-color: gold;

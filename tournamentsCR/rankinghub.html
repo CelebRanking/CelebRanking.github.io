@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankinghub</title>
+    <link rel="icon" type="image/png" href="../icons/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="rankinghub.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD29N4856F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HD29N4856F');
+    </script>
+  </head>
+
+    <body>
+        <h1>Welcome to the r/CelebRanking rankinghub</h1>
+        <p>Please select a tournament</p>
+        
+        <div class="button-container">
+          <button id="gamehub-btn" onclick="location.href='rankingUK.html'">UK edition</button>
+          <button id="gamehub-btn" onclick="location.href='rankingXYZ.html'"disabled>coming soon</button>
+        </div>
+
+        <div id="image-container">
+          <img id="gamehub-image" src="../icons/download.png" class="img-hailee">
+          <div id="secret-text">Click on me for a secret 🤫</div>
+        </div>
+
+        <div id="text-container">
+          Have fun!
+        </div>
+
+        <div id="popup" class="popup">
+          <p>Now all current games mobile device friendly!</p>
+          <button id="guesstheceleb" onclick="location.href='../interactive/guesstheceleb.html'">Secret gamemode???</button>
+          <button id="close-button">Close</button>
+        </div>
+        
+        <button id="suggestions-btn">Leave some suggestions & feedback here!</button>
+
+        <script src="rankinghub.js"></script>
+      </body>
+    </html>
