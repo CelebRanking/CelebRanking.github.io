@@ -49,6 +49,42 @@ p {
   cursor: not-allowed;
 }
 
+#rankinghub-btn {
+  background-color: purple;
+  color: gold;
+  padding: 10px 20px; 
+  border: solid; 
+  border-radius: 5px; 
+  border-color: lime;
+  font-size: 16px; 
+  cursor: pointer; 
+  margin-bottom: 10px; 
+  position: relative;
+}
+
+#rankinghub-btn:hover {
+  background-color: violet;
+  border-style: solid;
+  border-color: gold;
+  color: gold;
+}
+
+#rankinghub-btn::after {
+  content: "\1F514 NEW!!!";
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-color: yellow;
+  color: black;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
 #image-container {
   margin-top: 20px;
   position: relative;
