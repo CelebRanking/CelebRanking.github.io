@@ -111,7 +111,7 @@ function updateOutput() {
     output.value = selectedNames;
 }
 
-document.getElementById('copy-btn').addEventListener('click', () => {
+document.getElementById('copyButton').addEventListener('click', () => {
     output.select();
     document.execCommand('copy');
     alert("Copied to clipboard!");

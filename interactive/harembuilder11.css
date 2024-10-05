@@ -29,6 +29,10 @@ h1 {
   position: relative;
 }
 
+h5 {
+  color: orangered;
+}
+
 /* Container anpassen */
 .container {
   width: 80%; /* 80% Breite für besseres zentrieren */
@@ -91,6 +95,26 @@ img {
   max-width: 100%; 
   height: auto; 
   border-radius: 10px;
+}
+
+#gamehub-btn,
+#suggestions-btn {
+  position: relative; /* Ermöglicht die Verwendung von z-index */
+  z-index: 10; /* Höherer z-index, damit die Buttons oben sind */
+  display: inline-block; /* Inline-Block, um die Breite anzupassen */
+}
+
+/* Container für Buttons */
+.button-container {
+  display: flex; /* Flexbox für horizontale Ausrichtung */
+  justify-content: center; /* Mittige Ausrichtung */
+  margin-top: 20px; /* Abstand oben */
+}
+
+/* Anpassungen für den Container */
+.container {
+  position: relative; /* Ermöglicht z-index und Flexbox */
+  z-index: 5; /* Niedrigerer z-index als die Buttons */
 }
 
 /* Buttons */
