@@ -166,63 +166,32 @@ img {
   color: gold;
 }
 
-/* Textbox unten (z. B. Footer oder Button-Bereich) */
 .textbox {
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 20px;
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%; /* Breite der Textbox */
+  max-width: 600px; /* Maximalbreite der Textbox */
+  margin: 20px auto; /* Zentrierung */
+  display: flex; /* Flexbox für das Layout */
+  flex-direction: column; /* Spaltenlayout */
+  align-items: center; /* Zentrierung der Elemente */
 }
 
-/* Media Queries für Mobile Ansicht */
-@media (max-width: 768px) {
-  .col-2 {
-      width: 45%; 
-  }
+#output {
+  width: 100%; /* Volle Breite der Textbox */
+  height: 80px; /* Höhe der Textbox, auf 80px verringert */
+  font-size: 16px; /* Schriftgröße */
+  padding: 10px; /* Innenabstand */
+  color: black; /* Schriftfarbe */
+  resize: none; /* Verhindert das manuelle Größenänderung */
+}
 
-  h1 {
-      font-size: 30px;
-  }
-
-  .info-text {
-      font-size: 14px; 
-  }
-
-  .container {
-      width: 90%; /* Vergrößern des Containers auf kleineren Bildschirmen */
+/* Mobile Anpassungen */
+@media (max-width: 600px) {
+  #output {
+      height: 60px; /* Höhe der Textbox auf mobilen Geräten */
+      font-size: 14px; /* Kleinere Schriftgröße */
   }
 
   .textbox {
-      width: 90%; /* Verkleinerung auf mobilen Geräten */
-      height: 25%; /* Textbox auf die Hälfte der Höhe verkleinern */
-  }
-}
-
-@media (max-width: 480px) {
-  .col-2 {
-      width: 100%;
-  }
-
-  img {
-      width: 90%;
-  }
-
-  h1 {
-      font-size: 28px;
-  }
-
-  .info-text {
-      font-size: 12px;
-  }
-
-  .container {
-      width: 95%; /* Fast volle Breite für sehr kleine Bildschirme */
-  }
-
-  .textbox {
-      width: 95%; /* Noch kleinere Anpassung */
-      height: 20%; /* Weiter verkleinern für mobile Geräte */
+      width: 95%; /* Breite für mobile Geräte */
   }
 }
