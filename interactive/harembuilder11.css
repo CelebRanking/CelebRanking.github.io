@@ -144,9 +144,46 @@ img {
 
 /* Textbox unten (z. B. Footer oder Button-Bereich) */
 .textbox {
-  width: 80%; /* Breite anpassen für bessere Zentrierung */
+  width: auto; /* Breite anpassen für bessere Zentrierung */
   margin: auto; /* Zentrierung */
   height: 50%; /* Höhe halbieren */
   padding: 10px;
   background-color: black;
+}
+
+/* Medienabfrage für mobile Geräte */
+@media (max-width: 768px) {
+  /* Container anpassen */
+  .container {
+    width: 90%; /* Weniger Rand auf mobilen Geräten */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Spaltenbreite für Bilder vergrößern */
+  .col-2 {
+    width: 45%; /* Bilder breiter auf mobilen Geräten */
+    margin-bottom: 20px; /* Mehr Platz zwischen den Bildern */
+  }
+
+  /* Schriftgröße verkleinern */
+  h1 {
+    font-size: 28px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .text-center {
+    font-size: 18px;
+  }
+
+  /* Buttons anpassen */
+  #copyButton,
+  #gamehub-btn,
+  #suggestions-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
 }
