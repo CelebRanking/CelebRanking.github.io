@@ -57,7 +57,7 @@ h5 {
   font-size: 20px; /* Standard Schriftgröße für Desktop */
   font-weight: 400;
   margin-top: 5px; /* Reduziere den Abstand über den Celeb-Namen */
-  margin-bottom: 0; /* Entferne den Abstand unter den Celeb-Namen */
+  margin-bottom: 0px; /* Entferne den Abstand unter den Celeb-Namen */
 }
 
 /* Auswahl von Celebs */
@@ -80,7 +80,7 @@ h5 {
 .arrow {
   text-align: center;
   font-size: 50px;
-  margin: 0px 0;
+  margin: 20px 0;
 }
 
 .budget {
@@ -189,7 +189,11 @@ img {
 @media (max-width: 800px) {
 
   .col-2 {
-    width: 48%; /* Breite auf 48% für mobile Geräte, um mehr Platz zu nutzen */
+    width: 50%; /* Breite auf 48% für mobile Geräte, um mehr Platz zu nutzen */
+  }
+
+  .arrow {
+    margin: 0px 0;
   }
 
   .text-center {
