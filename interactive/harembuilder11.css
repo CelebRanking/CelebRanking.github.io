@@ -33,12 +33,17 @@ h5 {
   color: orangered;
 }
 
+.text-center {
+  font-size: 18px; /* Standard Schriftgröße */
+}
+
 /* Container anpassen */
 .container {
   width: 80%; /* 80% Breite für besseres zentrieren */
   margin: 0 auto; /* Zentriert den Container */
   margin-top: 50px;
   padding: 20px;
+  padding-right: 0px;
   border: 3px solid rebeccapurple; /* Lila Rahmen */
   box-sizing: border-box; /* Rahmen zur Gesamtbreite hinzufügen */
   color: gold;
@@ -85,7 +90,7 @@ h5 {
 /* Spalten und Bilder anpassen */
 .col-2 {
   display: inline-block;
-  width: 18%; 
+  width: 22%; 
   margin: 0 1%; /* Gleichmäßiger Abstand links und rechts der Bilder */
   vertical-align: top;
   box-sizing: border-box;
@@ -109,12 +114,6 @@ img {
   display: flex; /* Flexbox für horizontale Ausrichtung */
   justify-content: center; /* Mittige Ausrichtung */
   margin-top: 20px; /* Abstand oben */
-}
-
-/* Anpassungen für den Container */
-.container {
-  position: relative; /* Ermöglicht z-index und Flexbox */
-  z-index: 5; /* Niedrigerer z-index als die Buttons */
 }
 
 /* Buttons */
@@ -185,10 +184,19 @@ img {
 }
 
 /* Mobile Anpassungen */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+  .col-2 {
+    width: 48%; /* Breite auf 48% für mobile Geräte, um mehr Platz zu nutzen */
+  }
+
+  .text-center {
+    font-size: 14px; /* Kleinere Schriftgröße für mobilen Geräten */
+  }
+
   #output {
       height: 60px; /* Höhe der Textbox auf mobilen Geräten */
-      font-size: 14px; /* Kleinere Schriftgröße */
+      font-size: 8px; /* Kleinere Schriftgröße */
   }
 
   .textbox {
