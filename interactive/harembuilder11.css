@@ -168,11 +168,12 @@ img {
 
 /* Textbox unten (z. B. Footer oder Button-Bereich) */
 .textbox {
-  width: auto; /* Breite anpassen für bessere Zentrierung */
-  margin: auto; /* Zentrierung */
-  height: 50%; /* Höhe halbieren */
   padding: 10px;
-  background-color: black;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Media Queries für Mobile Ansicht */
