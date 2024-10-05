@@ -116,3 +116,11 @@ document.getElementById('copy-btn').addEventListener('click', () => {
     document.execCommand('copy');
     alert("Copied to clipboard!");
 });
+
+document.getElementById("gamehub-btn").addEventListener("click", function() {
+    window.location.href = "gamehub.html";
+  });
+  
+document.getElementById("suggestions-btn").addEventListener("click", function() {
+    window.location.href = "suggestions.html";
+  });
