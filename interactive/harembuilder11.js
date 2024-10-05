@@ -114,4 +114,5 @@ function updateOutput() {
 document.getElementById('copy-btn').addEventListener('click', () => {
     output.select();
     document.execCommand('copy');
+    alert("Copied to clipboard!");
 });
