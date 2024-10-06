@@ -1,23 +1,34 @@
 const celebs1 = document.querySelectorAll('#celeb-selection .celeb');
 const celebs2 = document.querySelectorAll('#celeb-selection-2 .celeb');
 const celebs3 = document.querySelectorAll('#celeb-selection-3 .celeb');
+const celebs4 = document.querySelectorAll('#celeb-selection-4 .celeb');
+const celebs5 = document.querySelectorAll('#celeb-selection-5 .celeb');
+const celebs6 = document.querySelectorAll('#celeb-selection-6 .celeb');
 const output = document.getElementById('output');
+
 const celebSelection2 = document.getElementById('celeb-selection-2');
 const celebSelection3 = document.getElementById('celeb-selection-3');
+const celebSelection4 = document.getElementById('celeb-selection-4');
+const celebSelection5 = document.getElementById('celeb-selection-5');
+const celebSelection6 = document.getElementById('celeb-selection-6');
 
-let selectedCelebs = [null, null, null];
+let selectedCelebs = [null, null, null, null, null, null];
 
-// Disable the second and third rows initially
+// Disable rows initially
 celebs2.forEach(celeb => celeb.classList.add('disabled'));
 celebs3.forEach(celeb => celeb.classList.add('disabled'));
+celebs4.forEach(celeb => celeb.classList.add('disabled'));
+celebs5.forEach(celeb => celeb.classList.add('disabled'));
+celebs6.forEach(celeb => celeb.classList.add('disabled'));
 
+// Celeb selection logic for all rows
 celebs1.forEach((celeb, index) => {
     celeb.addEventListener('click', () => {
-        // Reset selections in the second and third rows
-        resetCelebs(2);
-        resetCelebs(3);  
+        resetLowerSelections(2);
         celebSelection3.classList.add('hidden');
-        output.value = ''; // Clear the output when a new selection is made
+        celebSelection4.classList.add('hidden');
+        celebSelection5.classList.add('hidden');
+        celebSelection6.classList.add('hidden');
 
         if (selectedCelebs[0] === index) {
             celeb.classList.remove('selected');
@@ -32,17 +43,20 @@ celebs1.forEach((celeb, index) => {
             celebSelection2.classList.remove('hidden');
             updateCelebs(2, selectedCelebs[0]);
         }
-        
-        updateOutput(); // Update the output text area after selections are reset
+        updateOutput();
     });
 });
 
 celebs2.forEach((celeb, index) => {
     celeb.addEventListener('click', () => {
+        resetLowerSelections(3);
+        celebSelection4.classList.add('hidden');
+        celebSelection5.classList.add('hidden');
+        celebSelection6.classList.add('hidden');
+
         if (selectedCelebs[1] === index) {
             celeb.classList.remove('selected');
             selectedCelebs[1] = null;
-            resetCelebs(3);
             celebSelection3.classList.add('hidden');
         } else {
             if (selectedCelebs[1] !== null) {
@@ -53,33 +67,95 @@ celebs2.forEach((celeb, index) => {
             celebSelection3.classList.remove('hidden');
             updateCelebs(3, selectedCelebs[1]);
         }
-        // Remove selection from third row if it was made already
-        if (selectedCelebs[2] !== null) {
-            celebs3[selectedCelebs[2]].classList.remove('selected');
-            selectedCelebs[2] = null;
-        }
         updateOutput();
     });
 });
 
 celebs3.forEach((celeb, index) => {
     celeb.addEventListener('click', () => {
+        resetLowerSelections(4); // Reset all rows below 4
+        celebSelection5.classList.add('hidden');
+        celebSelection6.classList.add('hidden');
+
         if (selectedCelebs[2] === index) {
             celeb.classList.remove('selected');
             selectedCelebs[2] = null;
+            celebSelection4.classList.add('hidden');
         } else {
             if (selectedCelebs[2] !== null) {
                 celebs3[selectedCelebs[2]].classList.remove('selected');
             }
             selectedCelebs[2] = index;
             celeb.classList.add('selected');
+            celebSelection4.classList.remove('hidden');
+            updateCelebs(4, selectedCelebs[2]);
         }
         updateOutput();
     });
 });
 
+celebs4.forEach((celeb, index) => {
+    celeb.addEventListener('click', () => {
+        resetLowerSelections(5);
+        celebSelection6.classList.add('hidden');
+
+        if (selectedCelebs[3] === index) {
+            celeb.classList.remove('selected');
+            selectedCelebs[3] = null;
+            celebSelection5.classList.add('hidden');
+        } else {
+            if (selectedCelebs[3] !== null) {
+                celebs4[selectedCelebs[3]].classList.remove('selected');
+            }
+            selectedCelebs[3] = index;
+            celeb.classList.add('selected');
+            celebSelection5.classList.remove('hidden');
+            updateCelebs(5, selectedCelebs[3]);
+        }
+        updateOutput();
+    });
+});
+
+celebs5.forEach((celeb, index) => {
+    celeb.addEventListener('click', () => {
+        resetLowerSelections(6);
+
+        if (selectedCelebs[4] === index) {
+            celeb.classList.remove('selected');
+            selectedCelebs[4] = null;
+            celebSelection6.classList.add('hidden');
+        } else {
+            if (selectedCelebs[4] !== null) {
+                celebs5[selectedCelebs[4]].classList.remove('selected');
+            }
+            selectedCelebs[4] = index;
+            celeb.classList.add('selected');
+            celebSelection6.classList.remove('hidden');
+            updateCelebs(6, selectedCelebs[4]);
+        }
+        updateOutput();
+    });
+});
+
+celebs6.forEach((celeb, index) => {
+    celeb.addEventListener('click', () => {
+        if (selectedCelebs[5] === index) {
+            celeb.classList.remove('selected');
+            selectedCelebs[5] = null;
+        } else {
+            if (selectedCelebs[5] !== null) {
+                celebs6[selectedCelebs[5]].classList.remove('selected');
+            }
+            selectedCelebs[5] = index;
+            celeb.classList.add('selected');
+        }
+        updateOutput();
+    });
+});
+
+// Update Celebs logic for each row based on selection
 function updateCelebs(row, selectedIndex) {
-    const celebs = row === 2 ? celebs2 : celebs3;
+    const celebs = row === 2 ? celebs2 : row === 3 ? celebs3 : row === 4 ? celebs4 : row === 5 ? celebs5 : celebs6;
     celebs.forEach((el, idx) => {
         el.classList.toggle('disabled', !((selectedIndex === 0 && idx <= 1) || 
                                           (selectedIndex === 1 && idx <= 2) || 
@@ -89,8 +165,22 @@ function updateCelebs(row, selectedIndex) {
     });
 }
 
+// Function to reset selections and visibility for all rows below a certain one
+function resetLowerSelections(startRow) {
+    for (let row = startRow; row <= 6; row++) {
+        resetCelebs(row);
+        if (row === 2) celebSelection2.classList.add('hidden');
+        if (row === 3) celebSelection3.classList.add('hidden');
+        if (row === 4) celebSelection4.classList.add('hidden');
+        if (row === 5) celebSelection5.classList.add('hidden');
+        if (row === 6) celebSelection6.classList.add('hidden');
+    }
+    updateOutput(); // Update the output after resetting the selections
+}
+
+// Function to reset selections in a specific row
 function resetCelebs(row) {
-    const celebs = row === 2 ? celebs2 : celebs3;
+    const celebs = row === 2 ? celebs2 : row === 3 ? celebs3 : row === 4 ? celebs4 : row === 5 ? celebs5 : celebs6;
     celebs.forEach((el) => {
         el.classList.remove('selected');
         el.classList.remove('disabled');
@@ -98,12 +188,16 @@ function resetCelebs(row) {
     selectedCelebs[row - 1] = null;
 }
 
+// Update the text output to reflect the selected celebrities
 function updateOutput() {
     const selectedNames = selectedCelebs.map((index, row) => {
         if (index !== null) {
             return row === 0 ? celebs1[index].getAttribute('data-name') :
                    row === 1 ? celebs2[index].getAttribute('data-name') :
-                               celebs3[index].getAttribute('data-name');
+                   row === 2 ? celebs3[index].getAttribute('data-name') :
+                   row === 3 ? celebs4[index].getAttribute('data-name') :
+                   row === 4 ? celebs5[index].getAttribute('data-name') :
+                               celebs6[index].getAttribute('data-name');
         }
         return '';
     }).filter(name => name !== '').join(', ');
