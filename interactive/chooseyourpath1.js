@@ -196,7 +196,7 @@ function updateOutput() {
         return '';
     }).filter(name => name !== '').join(', ');
 
-    output.value = selectedNames;
+    output.value = 'My path: ' + selectedNames.join(', ');
 }
 
 document.getElementById('copyButton').addEventListener('click', () => {
