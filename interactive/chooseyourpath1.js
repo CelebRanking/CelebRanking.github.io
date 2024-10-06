@@ -14,14 +14,12 @@ const celebSelection6 = document.getElementById('celeb-selection-6');
 
 let selectedCelebs = [null, null, null, null, null, null];
 
-// Disable rows initially
 celebs2.forEach(celeb => celeb.classList.add('disabled'));
 celebs3.forEach(celeb => celeb.classList.add('disabled'));
 celebs4.forEach(celeb => celeb.classList.add('disabled'));
 celebs5.forEach(celeb => celeb.classList.add('disabled'));
 celebs6.forEach(celeb => celeb.classList.add('disabled'));
 
-// Celeb selection logic for all rows
 celebs1.forEach((celeb, index) => {
     celeb.addEventListener('click', () => {
         resetLowerSelections(2);
@@ -73,7 +71,7 @@ celebs2.forEach((celeb, index) => {
 
 celebs3.forEach((celeb, index) => {
     celeb.addEventListener('click', () => {
-        resetLowerSelections(4); // Reset all rows below 4
+        resetLowerSelections(4);
         celebSelection5.classList.add('hidden');
         celebSelection6.classList.add('hidden');
 
@@ -153,7 +151,6 @@ celebs6.forEach((celeb, index) => {
     });
 });
 
-// Update Celebs logic for each row based on selection
 function updateCelebs(row, selectedIndex) {
     const celebs = row === 2 ? celebs2 : row === 3 ? celebs3 : row === 4 ? celebs4 : row === 5 ? celebs5 : celebs6;
     celebs.forEach((el, idx) => {
@@ -165,7 +162,6 @@ function updateCelebs(row, selectedIndex) {
     });
 }
 
-// Function to reset selections and visibility for all rows below a certain one
 function resetLowerSelections(startRow) {
     for (let row = startRow; row <= 6; row++) {
         resetCelebs(row);
@@ -175,10 +171,9 @@ function resetLowerSelections(startRow) {
         if (row === 5) celebSelection5.classList.add('hidden');
         if (row === 6) celebSelection6.classList.add('hidden');
     }
-    updateOutput(); // Update the output after resetting the selections
+    updateOutput();
 }
 
-// Function to reset selections in a specific row
 function resetCelebs(row) {
     const celebs = row === 2 ? celebs2 : row === 3 ? celebs3 : row === 4 ? celebs4 : row === 5 ? celebs5 : celebs6;
     celebs.forEach((el) => {
@@ -188,7 +183,6 @@ function resetCelebs(row) {
     selectedCelebs[row - 1] = null;
 }
 
-// Update the text output to reflect the selected celebrities
 function updateOutput() {
     const selectedNames = selectedCelebs.map((index, row) => {
         if (index !== null) {
