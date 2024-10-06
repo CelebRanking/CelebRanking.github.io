@@ -194,7 +194,7 @@ function updateOutput() {
                                celebs6[index].getAttribute('data-name');
         }
         return '';
-    }).filter(name => name !== '').join(', ');
+    }).filter(name => name !== '');
 
     output.value = 'My path: ' + selectedNames.join(', ');
 }
